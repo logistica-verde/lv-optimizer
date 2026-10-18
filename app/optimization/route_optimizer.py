@@ -11,9 +11,20 @@ from app.optimization.fitness.emission import SegmentEmissionFitnessFunction
 from app.optimization.genetic_algorithm import GeneticAlgorithm
 
 TIME_LIMIT_S = 55.0
-# Tuned on the synthetic instances: the default 120 x 300 with 15% mutation converged within
-# ~15 generations on the emission criterion and missed the optimum on 10 points.
-GA_PARAMETERS = dict(population_size=300, generations=2000, mutation_rate=0.4)
+
+
+@dataclass(frozen=True)
+class GaParameters:
+    """Tuned on the synthetic instances: the default 120 x 300 with 15% mutation converged within
+    ~15 generations on the emission criterion and missed the optimum on 10 points."""
+
+    population_size: int = 300
+    generations: int = 2000
+    crossover_rate: float = 0.9
+    mutation_rate: float = 0.4
+
+
+DEFAULT_GA_PARAMETERS = GaParameters()
 
 
 @dataclass(frozen=True)
@@ -56,11 +67,13 @@ def optimize_route(
     load_ratio: float = 1.0,
     seed: int | None = None,
     time_limit_s: float = TIME_LIMIT_S,
+    ga_parameters: GaParameters | None = None,
 ) -> RouteResult:
     """Best visiting order over all points, starting at point 0 (depot) with no return leg.
 
     best_fitness_history is in the criterion's own unit: grams of CO2 or km.
     """
+    ga_parameters = ga_parameters or DEFAULT_GA_PARAMETERS
     start = time.perf_counter()
     distance, speed, slope = build_matrices(point_count, legs)
     distance_fitness = DistanceFitnessFunction(distance, return_to_depot=False)
@@ -75,7 +88,14 @@ def optimize_route(
         history, converged_at = [fitness_function.evaluate(best)], 0
     else:
         ga = GeneticAlgorithm(
-            fitness_function, n_genes, seed=seed, time_limit_s=time_limit_s, **GA_PARAMETERS
+            fitness_function,
+            n_genes,
+            population_size=ga_parameters.population_size,
+            generations=ga_parameters.generations,
+            crossover_rate=ga_parameters.crossover_rate,
+            mutation_rate=ga_parameters.mutation_rate,
+            seed=seed,
+            time_limit_s=time_limit_s,
         )
         best, generations = ga.evolve()
         history, converged_at = ga.best_fitness_history, ga.converged_at_generation()

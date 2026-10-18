@@ -36,6 +36,10 @@ uvicorn app.main:app --reload --port 8000
 
 Documentacao interativa da API em `http://localhost:8000/docs`.
 
+## Parametros do algoritmo genetico
+
+`POST /optimize` aceita `ga_params` com `population_size`, `generations`, `crossover_rate` e `mutation_rate`. Campos omitidos usam os valores calibrados nas instancias sinteticas (populacao 300, 2000 geracoes, cruzamento 0,9, mutacao 0,4). O limite de tempo de 55 s continua valendo.
+
 ## Contrato
 
 O OpenAPI gerado pelo FastAPI e versionado em `contracts/optimizer-v1.json`. A `lv-api` consome essa interface, entao qualquer mudanca no formato de entrada ou saida deve ser tratada como decisao consciente e refletida no arquivo.
