@@ -35,6 +35,8 @@ class GeneticAlgorithm:
         self.elitism = elitism
         self.time_limit_s = time_limit_s
         self.rng = np.random.default_rng(seed)
+        self.best_fitness_history: list[float] = []
+        self.elapsed_s: float = 0.0
 
     def initial_population(self) -> list[Chromosome]:
         return [Chromosome.random(self.n_genes, self.rng) for _ in range(self.population_size)]
@@ -72,16 +74,25 @@ class GeneticAlgorithm:
         return offspring
 
     def evolve(self) -> tuple[Chromosome, int]:
+        """Best individual and generations run; best_fitness_history[g] is the best after generation g (0 = initial)."""
         start = time.perf_counter()
         population = self.initial_population()
         self.evaluate(population)
+        self.best_fitness_history = [min(c.fitness for c in population)]
 
         generations_executed = 0
         for _ in range(self.generations):
             if self.time_limit_s is not None and time.perf_counter() - start > self.time_limit_s:
                 break
             population = self.next_generation(population)
+            self.best_fitness_history.append(min(c.fitness for c in population))
             generations_executed += 1
 
         best = min(population, key=lambda c: c.fitness)
+        self.elapsed_s = time.perf_counter() - start
         return best, generations_executed
+
+    def converged_at_generation(self) -> int:
+        """First generation that reached the final best fitness."""
+        final = self.best_fitness_history[-1]
+        return next(g for g, f in enumerate(self.best_fitness_history) if f <= final)

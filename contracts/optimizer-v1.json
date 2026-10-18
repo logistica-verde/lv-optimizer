@@ -1,0 +1,294 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "lv-optimizer",
+    "description": "Genetic Algorithm optimization microservice for the Green-VRP",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/optimize": {
+      "post": {
+        "summary": "Optimize",
+        "operationId": "optimize_optimize_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OptimizeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizeResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health Check",
+        "operationId": "health_check_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "OptimizeRequest": {
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "emission",
+              "distance"
+            ],
+            "title": "Criterion"
+          },
+          "vehicle_mass_kg": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Vehicle Mass Kg"
+          },
+          "point_count": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Point Count"
+          },
+          "segments": {
+            "items": {
+              "$ref": "#/components/schemas/SegmentIn"
+            },
+            "type": "array",
+            "title": "Segments"
+          },
+          "load_ratio": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Load Ratio",
+            "default": 1.0
+          },
+          "seed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Seed"
+          }
+        },
+        "type": "object",
+        "required": [
+          "criterion",
+          "vehicle_mass_kg",
+          "point_count",
+          "segments"
+        ],
+        "title": "OptimizeRequest"
+      },
+      "OptimizeResponse": {
+        "properties": {
+          "sequence": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Sequence"
+          },
+          "total_emission_kg": {
+            "type": "number",
+            "title": "Total Emission Kg"
+          },
+          "total_distance_meters": {
+            "type": "number",
+            "title": "Total Distance Meters"
+          },
+          "segment_emissions": {
+            "items": {
+              "$ref": "#/components/schemas/SegmentEmissionOut"
+            },
+            "type": "array",
+            "title": "Segment Emissions"
+          },
+          "generations": {
+            "type": "integer",
+            "title": "Generations"
+          },
+          "elapsed_seconds": {
+            "type": "number",
+            "title": "Elapsed Seconds"
+          },
+          "converged_at_generation": {
+            "type": "integer",
+            "title": "Converged At Generation"
+          },
+          "best_fitness_history": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Best Fitness History",
+            "description": "Best fitness after each generation (index 0 = initial population), in kg of CO2 for the emission criterion or meters for distance"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sequence",
+          "total_emission_kg",
+          "total_distance_meters",
+          "segment_emissions",
+          "generations",
+          "elapsed_seconds",
+          "converged_at_generation",
+          "best_fitness_history"
+        ],
+        "title": "OptimizeResponse"
+      },
+      "SegmentEmissionOut": {
+        "properties": {
+          "from_index": {
+            "type": "integer",
+            "title": "From Index"
+          },
+          "to_index": {
+            "type": "integer",
+            "title": "To Index"
+          },
+          "emission_kg": {
+            "type": "number",
+            "title": "Emission Kg"
+          }
+        },
+        "type": "object",
+        "required": [
+          "from_index",
+          "to_index",
+          "emission_kg"
+        ],
+        "title": "SegmentEmissionOut"
+      },
+      "SegmentIn": {
+        "properties": {
+          "from_index": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "From Index"
+          },
+          "to_index": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "To Index"
+          },
+          "distance_meters": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Distance Meters"
+          },
+          "average_speed_kmh": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Average Speed Kmh"
+          },
+          "slope_percent": {
+            "type": "number",
+            "title": "Slope Percent"
+          }
+        },
+        "type": "object",
+        "required": [
+          "from_index",
+          "to_index",
+          "distance_meters",
+          "average_speed_kmh",
+          "slope_percent"
+        ],
+        "title": "SegmentIn"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}
