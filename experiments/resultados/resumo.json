@@ -1,0 +1,60 @@
+{
+  "optimizer_version": "0.1.0",
+  "run_at": "2026-10-18T20:46:50+00:00",
+  "delta_target_percent": 5.0,
+  "instances_meeting_target": 4,
+  "experiment_passes": true,
+  "all_under_60_seconds": true,
+  "instances": [
+    {
+      "instance": "sintetica-10",
+      "points": 10,
+      "mean_e_distance_kg": 3.9092150120912783,
+      "mean_e_emission_kg": 3.9092150120912783,
+      "mean_delta_percent": 0.0,
+      "std_delta_percent": 0.0,
+      "max_seconds": 11.340157313999953,
+      "meets_target": false
+    },
+    {
+      "instance": "sintetica-15",
+      "points": 15,
+      "mean_e_distance_kg": 5.817474108862958,
+      "mean_e_emission_kg": 5.4237732131968945,
+      "mean_delta_percent": 6.690252649550938,
+      "std_delta_percent": 3.1338841217734372,
+      "max_seconds": 11.794058723000035,
+      "meets_target": true
+    },
+    {
+      "instance": "sintetica-20",
+      "points": 20,
+      "mean_e_distance_kg": 7.293948261969743,
+      "mean_e_emission_kg": 5.101909903158497,
+      "mean_delta_percent": 29.725791613850948,
+      "std_delta_percent": 5.326022214965186,
+      "max_seconds": 12.115139621000026,
+      "meets_target": true
+    },
+    {
+      "instance": "sintetica-25",
+      "points": 25,
+      "mean_e_distance_kg": 9.279293645538642,
+      "mean_e_emission_kg": 7.660947406300259,
+      "mean_delta_percent": 17.14060004078271,
+      "std_delta_percent": 4.554715633211754,
+      "max_seconds": 12.456403479000073,
+      "meets_target": true
+    },
+    {
+      "instance": "sintetica-30",
+      "points": 30,
+      "mean_e_distance_kg": 8.507655334894457,
+      "mean_e_emission_kg": 7.939843468856824,
+      "mean_delta_percent": 6.6538358747219,
+      "std_delta_percent": 3.66540380098964,
+      "max_seconds": 12.636955045000036,
+      "meets_target": true
+    }
+  ]
+}

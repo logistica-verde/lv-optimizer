@@ -4,7 +4,12 @@ import pytest
 from app.models.chromosome import Chromosome
 from app.optimization.fitness.base import FitnessFunction
 from app.optimization.fitness.distance import DistanceFitnessFunction
-from app.optimization.fitness.emission import EmissionFitnessFunction, MeetCoefficients
+from app.optimization.fitness.emission import (
+    EmissionFitnessFunction,
+    MeetCoefficients,
+    SegmentEmissionFitnessFunction,
+)
+from app.optimization.meet_emission_model import MeetEmissionModel
 
 
 @pytest.fixture
@@ -109,3 +114,51 @@ def test_emission_base_depends_on_speed(distance_matrix):
     cruise = make_emission_fitness(distance_matrix, [0.0, 0.0, 0.0], avg_speed_kmh=50.0)
 
     assert slow.base_emission_g_per_km() > cruise.base_emission_g_per_km()
+
+
+
+def make_segment_emission(distance_matrix, speed=50.0, slope=0.0, mass=7500.0, **overrides):
+    shape = distance_matrix.shape
+    params = dict(
+        distance_matrix_km=distance_matrix,
+        speed_matrix_kmh=np.full(shape, speed),
+        slope_matrix_percent=np.full(shape, slope),
+        vehicle_mass_kg=mass,
+    )
+    params.update(overrides)
+    return SegmentEmissionFitnessFunction(**params)
+
+
+def test_segment_emission_sums_meet_emission_over_every_leg(distance_matrix):
+    fitness_function = make_segment_emission(distance_matrix)
+
+    emission = fitness_function.evaluate(Chromosome(np.array([0, 1, 2])))
+
+    per_km = float(MeetEmissionModel(7500.0).calculate_emission(50.0, 0.0, 1.0))
+    assert emission == pytest.approx(per_km * (1.0 + 4.0 + 6.0 + 10.0))
+
+
+def test_segment_emission_open_route_skips_the_return_leg(distance_matrix):
+    fitness_function = make_segment_emission(distance_matrix, return_to_depot=False)
+
+    emission = fitness_function.evaluate(Chromosome(np.array([0, 1, 2])))
+
+    per_km = float(MeetEmissionModel(7500.0).calculate_emission(50.0, 0.0, 1.0))
+    assert emission == pytest.approx(per_km * (1.0 + 4.0 + 6.0))
+
+
+def test_segment_emission_uses_each_leg_speed_and_slope():
+    distance_matrix = np.full((3, 3), 10.0) - np.eye(3) * 10.0
+    speed = np.full((3, 3), 50.0)
+    slope = np.zeros((3, 3))
+    speed[0, 1] = 20.0
+    slope[1, 2] = 3.0
+    fitness_function = make_segment_emission(
+        distance_matrix, speed_matrix_kmh=speed, slope_matrix_percent=slope, return_to_depot=False
+    )
+
+    legs = fitness_function.leg_emissions_g(Chromosome(np.array([0, 1])))
+
+    model = MeetEmissionModel(7500.0)
+    assert legs[0] == pytest.approx(float(model.calculate_emission(20.0, 0.0, 10.0)))
+    assert legs[1] == pytest.approx(float(model.calculate_emission(50.0, 3.0, 10.0)))

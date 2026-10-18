@@ -116,3 +116,32 @@ def test_time_limit_stops_evolution_early(fitness_function):
 def test_elitism_must_be_smaller_than_population(fitness_function):
     with pytest.raises(ValueError):
         make_ga(fitness_function, 7, population_size=10, elitism=10)
+
+
+def test_best_fitness_history_has_one_entry_per_generation_and_never_worsens(fitness_function):
+    ga = make_ga(fitness_function, 7)
+
+    best, generations = ga.evolve()
+
+    history = ga.best_fitness_history
+    assert len(history) == generations + 1
+    assert all(later <= earlier for earlier, later in zip(history, history[1:]))
+    assert history[-1] == pytest.approx(best.fitness)
+
+
+def test_converged_at_generation_is_where_the_final_best_first_appears(fitness_function):
+    ga = make_ga(fitness_function, 7)
+    ga.evolve()
+
+    g = ga.converged_at_generation()
+
+    assert ga.best_fitness_history[g] == pytest.approx(ga.best_fitness_history[-1])
+    assert all(f > ga.best_fitness_history[-1] for f in ga.best_fitness_history[:g])
+
+
+def test_elapsed_time_is_recorded(fitness_function):
+    ga = make_ga(fitness_function, 7)
+
+    ga.evolve()
+
+    assert ga.elapsed_s > 0
