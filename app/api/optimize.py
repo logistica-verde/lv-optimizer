@@ -1,9 +1,11 @@
+from dataclasses import replace
 from typing import Literal
 
 from fastapi import APIRouter
 from pydantic import BaseModel, Field, model_validator
 
-from app.optimization.route_optimizer import Leg, optimize_route
+from app.optimization import route_optimizer
+from app.optimization.route_optimizer import GaParameters, Leg, optimize_route
 
 router = APIRouter()
 
@@ -16,6 +18,13 @@ class SegmentIn(BaseModel):
     slope_percent: float
 
 
+class GaParamsIn(BaseModel):
+    population_size: int | None = Field(default=None, ge=4, le=2000)
+    generations: int | None = Field(default=None, ge=1, le=10000)
+    crossover_rate: float | None = Field(default=None, ge=0, le=1)
+    mutation_rate: float | None = Field(default=None, ge=0, le=1)
+
+
 class OptimizeRequest(BaseModel):
     criterion: Literal["emission", "distance"]
     vehicle_mass_kg: float = Field(gt=0)
@@ -23,6 +32,10 @@ class OptimizeRequest(BaseModel):
     segments: list[SegmentIn]
     load_ratio: float = Field(default=1.0, ge=0, le=1)
     seed: int | None = None
+    ga_params: GaParamsIn | None = Field(
+        default=None,
+        description="Genetic algorithm settings; the tuned defaults are used for omitted fields or when absent",
+    )
 
     @model_validator(mode="after")
     def segments_cover_every_ordered_pair(self) -> "OptimizeRequest":
@@ -63,6 +76,11 @@ class OptimizeResponse(BaseModel):
     )
 
 
+def ga_parameters_of(request: OptimizeRequest) -> GaParameters:
+    provided = request.ga_params.model_dump(exclude_none=True) if request.ga_params else {}
+    return replace(route_optimizer.DEFAULT_GA_PARAMETERS, **provided)
+
+
 @router.post("/optimize", response_model=OptimizeResponse)
 def optimize(request: OptimizeRequest) -> OptimizeResponse:
     legs = [
@@ -72,6 +90,7 @@ def optimize(request: OptimizeRequest) -> OptimizeResponse:
     result = optimize_route(
         request.criterion, request.vehicle_mass_kg, request.point_count, legs,
         load_ratio=request.load_ratio, seed=request.seed,
+        ga_parameters=ga_parameters_of(request),
     )
     return OptimizeResponse(
         sequence=result.sequence,

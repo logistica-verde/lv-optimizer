@@ -19,6 +19,10 @@ O servico expoe os dois criterios de otimizacao que o experimento compara: menor
 | Mutacao | Inversao de subsequencia |
 | Avaliacao | Vetorizada com NumPy |
 
+## Parametros do algoritmo genetico
+
+`POST /optimize` aceita `ga_params` com `population_size`, `generations`, `crossover_rate` e `mutation_rate`. Campos omitidos usam os valores calibrados nas instancias sinteticas (populacao 300, 2000 geracoes, cruzamento 0,9, mutacao 0,4). O limite de tempo de 55 s continua valendo.
+
 ## Stack
 
 - Python 3.11

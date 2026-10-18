@@ -63,6 +63,64 @@
   },
   "components": {
     "schemas": {
+      "GaParamsIn": {
+        "properties": {
+          "population_size": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 2000.0,
+                "minimum": 4.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Population Size"
+          },
+          "generations": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 10000.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generations"
+          },
+          "crossover_rate": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Crossover Rate"
+          },
+          "mutation_rate": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mutation Rate"
+          }
+        },
+        "type": "object",
+        "title": "GaParamsIn"
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
@@ -120,6 +178,17 @@
               }
             ],
             "title": "Seed"
+          },
+          "ga_params": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GaParamsIn"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Genetic algorithm settings; the tuned defaults are used for omitted fields or when absent"
           }
         },
         "type": "object",
@@ -272,13 +341,6 @@
           "type": {
             "type": "string",
             "title": "Error Type"
-          },
-          "input": {
-            "title": "Input"
-          },
-          "ctx": {
-            "type": "object",
-            "title": "Context"
           }
         },
         "type": "object",
