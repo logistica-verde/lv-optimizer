@@ -40,6 +40,15 @@ uvicorn app.main:app --reload --port 8000
 
 Documentacao interativa da API em `http://localhost:8000/docs`.
 
+## Docker
+
+```bash
+docker build -t lv-optimizer .
+docker run --rm -p 8000:8000 lv-optimizer
+```
+
+A imagem usa Python 3.11, roda sem privilegios e responde `GET /health` no healthcheck. O compose completo do sistema esta no `lv-api` (pasta `deploy`).
+
 ## Contrato
 
 O OpenAPI gerado pelo FastAPI e versionado em `contracts/optimizer-v1.json`. A `lv-api` consome essa interface, entao qualquer mudanca no formato de entrada ou saida deve ser tratada como decisao consciente e refletida no arquivo.
