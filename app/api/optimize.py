@@ -1,10 +1,13 @@
+import asyncio
+from concurrent.futures.process import BrokenProcessPool
 from dataclasses import replace
+from functools import partial
 from typing import Literal
 
 from fastapi import APIRouter
 from pydantic import BaseModel, Field, model_validator
 
-from app.optimization import route_optimizer
+from app.optimization import process_pool, route_optimizer
 from app.optimization.route_optimizer import GaParameters, Leg, optimize_route
 
 router = APIRouter()
@@ -82,16 +85,21 @@ def ga_parameters_of(request: OptimizeRequest) -> GaParameters:
 
 
 @router.post("/optimize", response_model=OptimizeResponse)
-def optimize(request: OptimizeRequest) -> OptimizeResponse:
+async def optimize(request: OptimizeRequest) -> OptimizeResponse:
     legs = [
         Leg(s.from_index, s.to_index, s.distance_meters / 1000, s.average_speed_kmh, s.slope_percent)
         for s in request.segments
     ]
-    result = optimize_route(
-        request.criterion, request.vehicle_mass_kg, request.point_count, legs,
+    solve = partial(
+        optimize_route, request.criterion, request.vehicle_mass_kg, request.point_count, legs,
         load_ratio=request.load_ratio, seed=request.seed,
         ga_parameters=ga_parameters_of(request),
     )
+    try:
+        result = await asyncio.get_running_loop().run_in_executor(process_pool.get_pool(), solve)
+    except BrokenProcessPool:
+        process_pool.reset_pool()
+        raise
     return OptimizeResponse(
         sequence=result.sequence,
         total_emission_kg=result.total_emission_g / 1000,

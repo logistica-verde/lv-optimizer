@@ -19,6 +19,12 @@ O servico expoe os dois criterios de otimizacao que o experimento compara: menor
 | Mutacao | Inversao de subsequencia |
 | Avaliacao | Vetorizada com NumPy |
 
+## Concorrencia
+
+O algoritmo genetico e limitado pela CPU. Duas requisicoes no mesmo processo Python disputam o GIL, e cada uma leva varias vezes mais tempo (medido: 9,6 s sozinha, 55 s cada com duas ao mesmo tempo). Por isso `POST /optimize` entrega o calculo a um pool de processos: cada requisicao roda em um processo proprio, e as que excedem o pool esperam na fila.
+
+O tamanho do pool e o numero de CPUs, no maximo 4. Mude com a variavel `OPTIMIZER_PROCESSES` (valores invalidos voltam ao padrao). A `lv-api` pede os dois criterios de uma rota ao mesmo tempo, entao 2 ou mais processos deixam os dois calcularem em paralelo.
+
 ## Parametros do algoritmo genetico
 
 `POST /optimize` aceita `ga_params` com `population_size`, `generations`, `crossover_rate` e `mutation_rate`. Campos omitidos usam os valores calibrados nas instancias sinteticas (populacao 300, 2000 geracoes, cruzamento 0,9, mutacao 0,4). O limite de tempo de 55 s continua valendo.
