@@ -1,3 +1,4 @@
+import multiprocessing
 import os
 from concurrent.futures import ProcessPoolExecutor
 
@@ -16,7 +17,9 @@ def process_count() -> int:
 def get_pool() -> ProcessPoolExecutor:
     global _pool
     if _pool is None:
-        _pool = ProcessPoolExecutor(max_workers=process_count())
+        _pool = ProcessPoolExecutor(
+            max_workers=process_count(), mp_context=multiprocessing.get_context("spawn")
+        )
     return _pool
 
 
@@ -25,3 +28,15 @@ def reset_pool() -> None:
     if _pool is not None:
         _pool.shutdown(wait=False, cancel_futures=True)
         _pool = None
+
+
+def _import_the_solver() -> int:
+    from app.optimization import route_optimizer
+
+    return os.getpid() if route_optimizer is not None else -1
+
+
+def warm_up() -> list[int]:
+    pool = get_pool()
+    futures = [pool.submit(_import_the_solver) for _ in range(process_count())]
+    return [future.result() for future in futures]

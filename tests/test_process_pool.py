@@ -51,6 +51,33 @@ def test_the_pool_is_created_once_and_can_be_reset():
     assert process_pool.get_pool() is not first
 
 
+def test_the_pool_starts_its_processes_with_spawn_to_avoid_forking_a_busy_server():
+    process_pool.reset_pool()
+
+    assert process_pool.get_pool()._mp_context.get_start_method() == "spawn"
+
+
+def test_warming_up_starts_the_processes_before_the_first_request(monkeypatch):
+    monkeypatch.setenv("OPTIMIZER_PROCESSES", "2")
+    process_pool.reset_pool()
+
+    pids = process_pool.warm_up()
+
+    assert len(pids) == 2
+    assert all(pid > 0 for pid in pids)
+
+
+def test_the_application_warms_the_pool_up_when_it_starts(monkeypatch):
+    monkeypatch.setenv("OPTIMIZER_PROCESSES", "2")
+    process_pool.reset_pool()
+
+    with TestClient(app) as started:
+        assert started.get("/health").status_code == 200
+        assert process_pool._pool is not None
+
+    assert process_pool._pool is None
+
+
 def test_the_same_request_gives_the_same_route_in_the_pool():
     body = make_request(9, criterion="emission")
 

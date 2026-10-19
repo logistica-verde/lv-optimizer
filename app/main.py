@@ -1,3 +1,4 @@
+import asyncio
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -8,6 +9,7 @@ from app.optimization import process_pool
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
+    await asyncio.get_running_loop().run_in_executor(None, process_pool.warm_up)
     yield
     process_pool.reset_pool()
 
