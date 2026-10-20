@@ -1,0 +1,70 @@
+{
+  "optimizer_version": "0.1.0",
+  "run_at": "2026-10-19T23:07:51+00:00",
+  "delta_target_percent": 5.0,
+  "instances_meeting_target": 3,
+  "experiment_passes": false,
+  "all_under_60_seconds": true,
+  "instances": [
+    {
+      "instance": "sintetica-10",
+      "points": 10,
+      "mean_e_distance_kg": 3.9092150120912783,
+      "mean_e_emission_kg": 3.9092150120912783,
+      "mean_delta_percent": 0.0,
+      "std_delta_percent": 0.0,
+      "max_seconds": 9.450159985000028,
+      "mean_ratio_to_random": 0.36197644112864036,
+      "meets_random_target": true,
+      "meets_target": false
+    },
+    {
+      "instance": "sintetica-15",
+      "points": 15,
+      "mean_e_distance_kg": 6.1377471696417265,
+      "mean_e_emission_kg": 5.516950387294718,
+      "mean_delta_percent": 10.139812482819748,
+      "std_delta_percent": 1.0448269920140703,
+      "max_seconds": 9.651214394000021,
+      "mean_ratio_to_random": 0.3869018584443879,
+      "meets_random_target": true,
+      "meets_target": true
+    },
+    {
+      "instance": "sintetica-20",
+      "points": 20,
+      "mean_e_distance_kg": 7.088116212205963,
+      "mean_e_emission_kg": 5.105963388365656,
+      "mean_delta_percent": 27.008554736107033,
+      "std_delta_percent": 9.16877545965096,
+      "max_seconds": 9.620387970000024,
+      "mean_ratio_to_random": 0.27833418805113364,
+      "meets_random_target": true,
+      "meets_target": true
+    },
+    {
+      "instance": "sintetica-25",
+      "points": 25,
+      "mean_e_distance_kg": 8.642807290391085,
+      "mean_e_emission_kg": 8.154856754100848,
+      "mean_delta_percent": 5.615883427131002,
+      "std_delta_percent": 1.0430609748582822,
+      "max_seconds": 9.919897957999865,
+      "mean_ratio_to_random": 0.3247752786518606,
+      "meets_random_target": true,
+      "meets_target": true
+    },
+    {
+      "instance": "sintetica-30",
+      "points": 30,
+      "mean_e_distance_kg": 8.91202340299045,
+      "mean_e_emission_kg": 8.747834787230879,
+      "mean_delta_percent": 1.8512027134922124,
+      "std_delta_percent": 1.950137847391459,
+      "max_seconds": 9.944081804999996,
+      "mean_ratio_to_random": 0.3017111024386511,
+      "meets_random_target": true,
+      "meets_target": false
+    }
+  ]
+}

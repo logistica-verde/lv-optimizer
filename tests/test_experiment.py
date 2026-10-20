@@ -2,6 +2,7 @@ import json
 
 import pytest
 
+from app.optimization.route_optimizer import GaParameters
 from experiments import run_experiment as experiment
 
 
@@ -58,7 +59,7 @@ def test_summary_applies_the_five_percent_in_four_of_five_rule():
     def row(name, delta):
         return {
             "instance": name, "points": 10, "e_distance_kg": 1.0, "e_emission_kg": 1.0 - delta / 100,
-            "delta_percent": delta, "seconds_distance": 1.0, "seconds_emission": 2.0,
+            "delta_percent": delta, "seconds_distance": 1.0, "seconds_emission": 2.0, "ratio_to_random": 0.4,
         }
 
     rows = [row("a", 6), row("a", 4), row("b", 10), row("c", 5), row("d", 7), row("e", 1)]
@@ -69,6 +70,7 @@ def test_summary_applies_the_five_percent_in_four_of_five_rule():
     assert summary["instances"][0]["mean_delta_percent"] == pytest.approx(5.0)
     assert summary["experiment_passes"] is True
     assert summary["all_under_60_seconds"] is True
+    assert all(i["meets_random_target"] for i in summary["instances"])
 
 
 def test_main_writes_results_for_instances_from_a_folder(tmp_path, monkeypatch):
@@ -84,10 +86,34 @@ def test_main_writes_results_for_instances_from_a_folder(tmp_path, monkeypatch):
         json.dumps({"vehicle_mass_kg": 7500, "point_count": 5, "segments": segments})
     )
     monkeypatch.setattr(experiment, "SEEDS", (1,))
-    monkeypatch.setattr(experiment.run_instance, "__defaults__", ((1,),))
+    monkeypatch.setattr(experiment.run_instance, "__defaults__", ((1,), GaParameters(30, 40, 0.9, 0.4)))
 
     summary = experiment.main(["--instances-dir", str(instances_dir), "--output-dir", str(tmp_path / "out")])
 
     assert summary["instances"][0]["instance"] == "pequena"
     assert (tmp_path / "out" / "execucoes.csv").exists()
     assert json.loads((tmp_path / "out" / "resumo.json").read_text())["optimizer_version"] == "0.1.0"
+
+
+def test_run_instance_reports_the_random_route_reference_and_the_convergence_curves():
+    instance = experiment.synthetic_instance(8, seed=3)
+
+    row = experiment.run_instance(instance, seeds=(1,), ga_parameters=GaParameters(40, 60, 0.9, 0.4))[0]
+
+    assert row["e_random_kg"] > 0
+    assert row["ratio_to_random"] == pytest.approx(row["e_emission_kg"] / row["e_random_kg"])
+    assert row["ratio_to_random"] < 1
+    assert len(row["history_emission"]) >= 1 and len(row["history_distance"]) >= 1
+
+
+def test_csv_keeps_the_scalars_and_drops_the_sequences_and_curves(tmp_path):
+    rows = experiment.run_instance(
+        experiment.synthetic_instance(6, seed=1), seeds=(1,), ga_parameters=GaParameters(30, 40, 0.9, 0.4)
+    )
+
+    experiment.write_results(rows, experiment.summarize(rows), tmp_path)
+
+    header = (tmp_path / "execucoes.csv").read_text(encoding="utf-8").splitlines()[0].split(",")
+    assert "ratio_to_random" in header
+    assert not [column for column in header if column.startswith(("sequence", "history"))]
+    assert "history_emission" in json.loads((tmp_path / "execucoes.json").read_text(encoding="utf-8"))[0]

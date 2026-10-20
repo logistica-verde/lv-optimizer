@@ -1,0 +1,39 @@
+{
+  "users": 10,
+  "duration_s": 120.5,
+  "think_s": 0.5,
+  "endpoints": {
+    "calculate": {
+      "requests": 220,
+      "ok": 220,
+      "p50": 94.2,
+      "p95": 310.1,
+      "mean": 119.6,
+      "max": 461.7
+    },
+    "route": {
+      "requests": 661,
+      "ok": 661,
+      "p50": 26.1,
+      "p95": 70.7,
+      "mean": 31.7,
+      "max": 185.9
+    },
+    "integrity": {
+      "requests": 660,
+      "ok": 660,
+      "p50": 30.2,
+      "p95": 69.4,
+      "mean": 35.3,
+      "max": 146.7
+    },
+    "comparison": {
+      "requests": 666,
+      "ok": 666,
+      "p50": 32.6,
+      "p95": 79.6,
+      "mean": 39.3,
+      "max": 250.6
+    }
+  }
+}
