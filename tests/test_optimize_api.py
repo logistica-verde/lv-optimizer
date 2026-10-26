@@ -169,3 +169,30 @@ def test_response_reports_convergence_in_the_criterion_unit(criterion, total_key
     assert history[-1] == pytest.approx(data[total_key])
     assert history[data["converged_at_generation"]] == pytest.approx(history[-1])
     assert 0 < data["elapsed_seconds"] < 60
+
+
+@pytest.mark.parametrize("criterion", ["distance", "emission"])
+def test_return_to_depot_closes_the_route_and_counts_the_return_leg(criterion):
+    body = make_request(7, criterion, return_to_depot=True)
+
+    data = client.post("/optimize", json=body).json()
+
+    sequence = data["sequence"]
+    assert sequence[0] == 0 and sequence[-1] == 0
+    assert sorted(sequence[:-1]) == list(range(7))
+    assert len(data["segment_emissions"]) == 7
+    assert data["total_distance_meters"] == pytest.approx(open_route_distance(body, sequence))
+
+
+def test_the_route_stays_open_by_default():
+    data = client.post("/optimize", json=make_request(6)).json()
+
+    assert data["sequence"][-1] != 0
+    assert len(data["segment_emissions"]) == 5
+
+
+def test_a_closed_route_is_never_shorter_than_the_open_one_for_the_same_points():
+    open_route = client.post("/optimize", json=make_request(8, "distance")).json()
+    closed_route = client.post("/optimize", json=make_request(8, "distance", return_to_depot=True)).json()
+
+    assert closed_route["total_distance_meters"] >= open_route["total_distance_meters"] - 1e-6
