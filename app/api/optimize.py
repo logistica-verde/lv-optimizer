@@ -35,6 +35,11 @@ class OptimizeRequest(BaseModel):
     segments: list[SegmentIn]
     load_ratio: float = Field(default=1.0, ge=0, le=1)
     seed: int | None = None
+    end_index: int | None = Field(
+        default=None,
+        ge=1,
+        description="Index of a point the route must finish at; the other points are visited in between",
+    )
     return_to_depot: bool = Field(
         default=False,
         description="When true the route returns to point 0 after the last stop and the sequence ends with 0",
@@ -47,6 +52,11 @@ class OptimizeRequest(BaseModel):
     @model_validator(mode="after")
     def segments_cover_every_ordered_pair(self) -> "OptimizeRequest":
         n = self.point_count
+        if self.end_index is not None:
+            if self.end_index >= n:
+                raise ValueError(f"end_index {self.end_index} is outside point_count {n}")
+            if self.return_to_depot:
+                raise ValueError("end_index and return_to_depot cannot be used together")
         pairs = set()
         for s in self.segments:
             if s.from_index >= n or s.to_index >= n:
@@ -97,6 +107,7 @@ async def optimize(request: OptimizeRequest) -> OptimizeResponse:
     solve = partial(
         optimize_route, request.criterion, request.vehicle_mass_kg, request.point_count, legs,
         load_ratio=request.load_ratio, seed=request.seed, return_to_depot=request.return_to_depot,
+        end_index=request.end_index,
         ga_parameters=ga_parameters_of(request),
     )
     try:

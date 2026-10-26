@@ -179,6 +179,19 @@
             ],
             "title": "Seed"
           },
+          "end_index": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "End Index",
+            "description": "Index of a point the route must finish at; the other points are visited in between"
+          },
           "return_to_depot": {
             "type": "boolean",
             "title": "Return To Depot",

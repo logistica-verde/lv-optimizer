@@ -196,3 +196,41 @@ def test_a_closed_route_is_never_shorter_than_the_open_one_for_the_same_points()
     closed_route = client.post("/optimize", json=make_request(8, "distance", return_to_depot=True)).json()
 
     assert closed_route["total_distance_meters"] >= open_route["total_distance_meters"] - 1e-6
+
+
+@pytest.mark.parametrize("criterion", ["distance", "emission"])
+def test_a_fixed_end_finishes_the_route_at_that_point_after_visiting_every_other(criterion):
+    body = make_request(7, criterion, end_index=3)
+
+    data = client.post("/optimize", json=body).json()
+
+    sequence = data["sequence"]
+    assert sequence[0] == 0 and sequence[-1] == 3
+    assert sorted(sequence) == list(range(7))
+    assert len(data["segment_emissions"]) == 6
+    assert data["total_distance_meters"] == pytest.approx(open_route_distance(body, sequence))
+
+
+def test_a_fixed_end_finds_the_shortest_route_on_a_small_instance():
+    body = make_request(6, "distance", end_index=2)
+    best = min(
+        open_route_distance(body, [0, *middle, 2])
+        for middle in itertools.permutations([1, 3, 4, 5])
+    )
+
+    data = client.post("/optimize", json=body).json()
+
+    assert data["total_distance_meters"] == pytest.approx(best)
+
+
+def test_a_fixed_end_with_two_points_goes_straight_to_it():
+    data = client.post("/optimize", json=make_request(2, end_index=1)).json()
+
+    assert data["sequence"] == [0, 1]
+
+
+@pytest.mark.parametrize("overrides", [{"end_index": 5}, {"end_index": 0}, {"end_index": 2, "return_to_depot": True}])
+def test_an_invalid_fixed_end_is_rejected(overrides):
+    response = client.post("/optimize", json=make_request(5, **overrides))
+
+    assert response.status_code == 422
