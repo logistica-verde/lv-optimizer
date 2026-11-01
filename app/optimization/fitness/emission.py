@@ -19,15 +19,17 @@ class SegmentEmissionFitnessFunction(FitnessFunction):
         vehicle_mass_kg: float,
         return_to_depot: bool = True,
         load_ratio: float = 1.0,
+        end_index: int | None = None,
     ):
         self.model = MeetEmissionModel(vehicle_mass_kg, load_ratio)
         self.return_to_depot = return_to_depot
+        self.end_index = end_index
         self.emission_matrix_g = self.model.calculate_emission(
             speed_matrix_kmh, slope_matrix_percent, distance_matrix_km
         )
 
     def leg_emissions_g(self, chromosome: Chromosome) -> np.ndarray:
-        route = route_indices(chromosome.genes, self.return_to_depot)
+        route = route_indices(chromosome.genes, self.return_to_depot, self.end_index)
         return self.emission_matrix_g[route[:-1], route[1:]]
 
     def evaluate(self, chromosome: Chromosome) -> float:

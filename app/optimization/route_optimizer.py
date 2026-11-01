@@ -69,6 +69,7 @@ def optimize_route(
     time_limit_s: float = TIME_LIMIT_S,
     ga_parameters: GaParameters | None = None,
     return_to_depot: bool = False,
+    end_index: int | None = None,
 ) -> RouteResult:
     """Best visiting order over all points, starting at point 0 (depot).
 
@@ -80,13 +81,16 @@ def optimize_route(
     ga_parameters = ga_parameters or DEFAULT_GA_PARAMETERS
     start = time.perf_counter()
     distance, speed, slope = build_matrices(point_count, legs)
-    distance_fitness = DistanceFitnessFunction(distance, return_to_depot=return_to_depot)
+    distance_fitness = DistanceFitnessFunction(
+        distance, return_to_depot=return_to_depot, end_index=end_index
+    )
     emission_fitness = SegmentEmissionFitnessFunction(
-        distance, speed, slope, vehicle_mass_kg, return_to_depot=return_to_depot, load_ratio=load_ratio
+        distance, speed, slope, vehicle_mass_kg, return_to_depot=return_to_depot,
+        load_ratio=load_ratio, end_index=end_index,
     )
     fitness_function = emission_fitness if criterion == "emission" else distance_fitness
 
-    n_genes = point_count - 1
+    n_genes = point_count - 1 - (0 if end_index is None else 1)
     if n_genes < 2:
         best, generations = Chromosome(np.arange(n_genes)), 0
         history, converged_at = [fitness_function.evaluate(best)], 0
@@ -104,7 +108,7 @@ def optimize_route(
         best, generations = ga.evolve()
         history, converged_at = ga.best_fitness_history, ga.converged_at_generation()
 
-    sequence = route_indices(best.genes, return_to_depot=return_to_depot).tolist()
+    sequence = route_indices(best.genes, return_to_depot, end_index).tolist()
     leg_emissions = emission_fitness.leg_emissions_g(best)
     return RouteResult(
         sequence=sequence,
