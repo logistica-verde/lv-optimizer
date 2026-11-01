@@ -35,6 +35,10 @@ class OptimizeRequest(BaseModel):
     segments: list[SegmentIn]
     load_ratio: float = Field(default=1.0, ge=0, le=1)
     seed: int | None = None
+    return_to_depot: bool = Field(
+        default=False,
+        description="When true the route returns to point 0 after the last stop and the sequence ends with 0",
+    )
     ga_params: GaParamsIn | None = Field(
         default=None,
         description="Genetic algorithm settings; the tuned defaults are used for omitted fields or when absent",
@@ -92,7 +96,7 @@ async def optimize(request: OptimizeRequest) -> OptimizeResponse:
     ]
     solve = partial(
         optimize_route, request.criterion, request.vehicle_mass_kg, request.point_count, legs,
-        load_ratio=request.load_ratio, seed=request.seed,
+        load_ratio=request.load_ratio, seed=request.seed, return_to_depot=request.return_to_depot,
         ga_parameters=ga_parameters_of(request),
     )
     try:

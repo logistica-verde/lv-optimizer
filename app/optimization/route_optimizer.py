@@ -68,17 +68,21 @@ def optimize_route(
     seed: int | None = None,
     time_limit_s: float = TIME_LIMIT_S,
     ga_parameters: GaParameters | None = None,
+    return_to_depot: bool = False,
 ) -> RouteResult:
-    """Best visiting order over all points, starting at point 0 (depot) with no return leg.
+    """Best visiting order over all points, starting at point 0 (depot).
+
+    The route ends at the last stop unless return_to_depot is set, in which case the return leg to
+    the depot is part of the fitness and the sequence ends with the depot index.
 
     best_fitness_history is in the criterion's own unit: grams of CO2 or km.
     """
     ga_parameters = ga_parameters or DEFAULT_GA_PARAMETERS
     start = time.perf_counter()
     distance, speed, slope = build_matrices(point_count, legs)
-    distance_fitness = DistanceFitnessFunction(distance, return_to_depot=False)
+    distance_fitness = DistanceFitnessFunction(distance, return_to_depot=return_to_depot)
     emission_fitness = SegmentEmissionFitnessFunction(
-        distance, speed, slope, vehicle_mass_kg, return_to_depot=False, load_ratio=load_ratio
+        distance, speed, slope, vehicle_mass_kg, return_to_depot=return_to_depot, load_ratio=load_ratio
     )
     fitness_function = emission_fitness if criterion == "emission" else distance_fitness
 
@@ -100,7 +104,7 @@ def optimize_route(
         best, generations = ga.evolve()
         history, converged_at = ga.best_fitness_history, ga.converged_at_generation()
 
-    sequence = route_indices(best.genes, return_to_depot=False).tolist()
+    sequence = route_indices(best.genes, return_to_depot=return_to_depot).tolist()
     leg_emissions = emission_fitness.leg_emissions_g(best)
     return RouteResult(
         sequence=sequence,

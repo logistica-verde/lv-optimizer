@@ -179,6 +179,12 @@
             ],
             "title": "Seed"
           },
+          "return_to_depot": {
+            "type": "boolean",
+            "title": "Return To Depot",
+            "description": "When true the route returns to point 0 after the last stop and the sequence ends with 0",
+            "default": false
+          },
           "ga_params": {
             "anyOf": [
               {
