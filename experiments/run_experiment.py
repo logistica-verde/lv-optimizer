@@ -24,10 +24,15 @@ from pathlib import Path
 import numpy as np
 
 from app.main import app
-from app.optimization.route_optimizer import Leg, optimize_route
+from app.models.chromosome import Chromosome
+from app.optimization.fitness.emission import SegmentEmissionFitnessFunction
+from app.optimization.route_optimizer import GaParameters, Leg, build_matrices, optimize_route
 
 INSTANCE_SIZES = (10, 15, 20, 25, 30)
 SEEDS = (1, 2, 3)
+API_GA_PARAMETERS = GaParameters(population_size=300, generations=500, crossover_rate=0.9, mutation_rate=0.4)
+RANDOM_SAMPLES = 1000
+RANDOM_TARGET_RATIO = 0.9
 DELTA_TARGET_PERCENT = 5.0
 INSTANCES_REQUIRED = 4
 VEHICLE_MASS_KG = 7_500.0
@@ -89,16 +94,29 @@ def load_instance(path: Path) -> Instance:
     )
 
 
-def run_instance(instance: Instance, seeds=SEEDS) -> list[dict]:
+def random_route_emission_g(instance: Instance, seed: int, samples: int = RANDOM_SAMPLES) -> float:
+    """Mean emission of random visiting orders, the reference of KPI-6."""
+    distance, speed, slope = build_matrices(instance.point_count, instance.legs)
+    fitness = SegmentEmissionFitnessFunction(
+        distance, speed, slope, instance.vehicle_mass_kg, return_to_depot=False,
+        load_ratio=instance.load_ratio,
+    )
+    rng = np.random.default_rng(seed)
+    genes = instance.point_count - 1
+    return float(np.mean([fitness.evaluate(Chromosome(rng.permutation(genes))) for _ in range(samples)]))
+
+
+def run_instance(instance: Instance, seeds=SEEDS, ga_parameters: GaParameters = API_GA_PARAMETERS) -> list[dict]:
     rows = []
     for seed in seeds:
         runs = {
             criterion: optimize_route(
                 criterion, instance.vehicle_mass_kg, instance.point_count, instance.legs,
-                load_ratio=instance.load_ratio, seed=seed,
+                load_ratio=instance.load_ratio, seed=seed, ga_parameters=ga_parameters,
             )
             for criterion in ("distance", "emission")
         }
+        random_kg = random_route_emission_g(instance, seed) / 1000
         e_distance = runs["distance"].total_emission_g / 1000
         e_emission = runs["emission"].total_emission_g / 1000
         rows.append(
@@ -108,6 +126,8 @@ def run_instance(instance: Instance, seeds=SEEDS) -> list[dict]:
                 "seed": seed,
                 "e_distance_kg": e_distance,
                 "e_emission_kg": e_emission,
+                "e_random_kg": random_kg,
+                "ratio_to_random": e_emission / random_kg if random_kg else 0.0,
                 "delta_percent": (e_distance - e_emission) / e_distance * 100 if e_distance else 0.0,
                 "km_distance_route": runs["distance"].total_distance_km,
                 "km_emission_route": runs["emission"].total_distance_km,
@@ -117,6 +137,8 @@ def run_instance(instance: Instance, seeds=SEEDS) -> list[dict]:
                 "converged_at_emission": runs["emission"].converged_at_generation,
                 "sequence_distance": runs["distance"].sequence,
                 "sequence_emission": runs["emission"].sequence,
+                "history_emission": runs["emission"].best_fitness_history,
+                "history_distance": runs["distance"].best_fitness_history,
             }
         )
     return rows
@@ -136,6 +158,8 @@ def summarize(rows: list[dict]) -> dict:
                 "mean_delta_percent": mean_delta,
                 "std_delta_percent": float(np.std([r["delta_percent"] for r in group])),
                 "max_seconds": max(max(r["seconds_distance"], r["seconds_emission"]) for r in group),
+                "mean_ratio_to_random": float(np.mean([r["ratio_to_random"] for r in group])),
+                "meets_random_target": float(np.mean([r["ratio_to_random"] for r in group])) <= RANDOM_TARGET_RATIO,
                 "meets_target": mean_delta >= DELTA_TARGET_PERCENT,
             }
         )
@@ -154,7 +178,7 @@ def summarize(rows: list[dict]) -> dict:
 def write_results(rows: list[dict], summary: dict, output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     with (output_dir / "execucoes.csv").open("w", newline="", encoding="utf-8") as f:
-        fields = [k for k in rows[0] if not k.startswith("sequence")]
+        fields = [k for k in rows[0] if not k.startswith(("sequence", "history"))]
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
@@ -166,14 +190,19 @@ def main(argv: list[str] | None = None) -> dict:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--instances-dir", type=Path, help="folder with *.json instances in the /optimize format")
     parser.add_argument("--output-dir", type=Path, default=Path("experiments/resultados"))
+    parser.add_argument("--population", type=int, default=API_GA_PARAMETERS.population_size)
+    parser.add_argument("--generations", type=int, default=API_GA_PARAMETERS.generations)
+    parser.add_argument("--crossover", type=float, default=API_GA_PARAMETERS.crossover_rate)
+    parser.add_argument("--mutation", type=float, default=API_GA_PARAMETERS.mutation_rate)
     args = parser.parse_args(argv)
+    ga_parameters = GaParameters(args.population, args.generations, args.crossover, args.mutation)
 
     if args.instances_dir:
         instances = [load_instance(p) for p in sorted(args.instances_dir.glob("*.json"))]
     else:
         instances = [synthetic_instance(n, seed=n) for n in INSTANCE_SIZES]
 
-    rows = [row for instance in instances for row in run_instance(instance)]
+    rows = [row for instance in instances for row in run_instance(instance, ga_parameters=ga_parameters)]
     summary = summarize(rows)
     write_results(rows, summary, args.output_dir)
 
