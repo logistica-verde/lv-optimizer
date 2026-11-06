@@ -1,14 +1,21 @@
 import asyncio
+import json
+from collections.abc import AsyncIterator
 from concurrent.futures.process import BrokenProcessPool
 from dataclasses import replace
 from functools import partial
 from typing import Literal
 
 from fastapi import APIRouter
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field, model_validator
 
 from app.optimization import process_pool, route_optimizer
-from app.optimization.route_optimizer import GaParameters, Leg, optimize_route
+from app.optimization.progress import ProgressQueue, latest, optimize_reporting_progress
+from app.optimization.route_optimizer import GaParameters, Leg, RouteResult, optimize_route
+
+NDJSON = "application/x-ndjson"
+PROGRESS_POLL_S = 0.1
 
 router = APIRouter()
 
@@ -98,23 +105,76 @@ def ga_parameters_of(request: OptimizeRequest) -> GaParameters:
     return replace(route_optimizer.DEFAULT_GA_PARAMETERS, **provided)
 
 
-@router.post("/optimize", response_model=OptimizeResponse)
-async def optimize(request: OptimizeRequest) -> OptimizeResponse:
+def solve_of(request: OptimizeRequest) -> partial[RouteResult]:
     legs = [
         Leg(s.from_index, s.to_index, s.distance_meters / 1000, s.average_speed_kmh, s.slope_percent)
         for s in request.segments
     ]
-    solve = partial(
+    return partial(
         optimize_route, request.criterion, request.vehicle_mass_kg, request.point_count, legs,
         load_ratio=request.load_ratio, seed=request.seed, return_to_depot=request.return_to_depot,
         end_index=request.end_index,
         ga_parameters=ga_parameters_of(request),
     )
+
+
+@router.post("/optimize", response_model=OptimizeResponse)
+async def optimize(request: OptimizeRequest) -> OptimizeResponse:
     try:
-        result = await asyncio.get_running_loop().run_in_executor(process_pool.get_pool(), solve)
+        result = await asyncio.get_running_loop().run_in_executor(process_pool.get_pool(), solve_of(request))
     except BrokenProcessPool:
         process_pool.reset_pool()
         raise
+    return response_of(request, result)
+
+
+@router.post(
+    "/optimize/stream",
+    response_class=StreamingResponse,
+    responses={
+        200: {
+            "description": "One JSON object per line (application/x-ndjson): "
+            '{"type": "progress", "generation": g, "generations": total} while the GA runs, then '
+            '{"type": "result", "result": <OptimizeResponse>} or {"type": "error", "detail": "..."}',
+            "content": {NDJSON: {}},
+        }
+    },
+)
+async def optimize_stream(request: OptimizeRequest) -> StreamingResponse:
+    progress = process_pool.get_manager().Queue()
+    solve = partial(optimize_reporting_progress, progress, solve_of(request))
+    future = asyncio.get_running_loop().run_in_executor(process_pool.get_pool(), solve)
+    return StreamingResponse(stream_events(request, future, progress), media_type=NDJSON)
+
+
+async def stream_events(
+    request: OptimizeRequest, future: asyncio.Future[RouteResult], progress: ProgressQueue
+) -> AsyncIterator[str]:
+    yield ndjson({"type": "progress", "generation": 0, "generations": ga_parameters_of(request).generations})
+    finished = False
+    while not finished:
+        await asyncio.wait({future}, timeout=PROGRESS_POLL_S)
+        finished = future.done()
+        newest = await asyncio.to_thread(latest, progress)
+        if newest is not None:
+            yield ndjson({"type": "progress", "generation": newest[0], "generations": newest[1]})
+    try:
+        result = future.result()
+    except BrokenProcessPool:
+        process_pool.reset_pool()
+        yield ndjson({"type": "error", "detail": "The optimizer worker stopped unexpectedly"})
+        return
+    except Exception as error:
+        yield ndjson({"type": "error", "detail": str(error) or type(error).__name__})
+        return
+    yield ndjson({"type": "result", "result": response_of(request, result).model_dump()})
+
+
+def ndjson(event: dict) -> str:
+    return json.dumps(event) + "\n"
+
+
+def response_of(request: OptimizeRequest, result: RouteResult) -> OptimizeResponse:
     return OptimizeResponse(
         sequence=result.sequence,
         total_emission_kg=result.total_emission_g / 1000,
