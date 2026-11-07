@@ -32,6 +32,7 @@ INSTANCE_SIZES = (10, 15, 20, 25, 30)
 SEEDS = (1, 2, 3)
 API_GA_PARAMETERS = GaParameters(population_size=300, generations=500, crossover_rate=0.9, mutation_rate=0.4)
 RANDOM_SAMPLES = 1000
+RANDOM_BASELINE_STREAM = 7_919
 RANDOM_TARGET_RATIO = 0.9
 DELTA_TARGET_PERCENT = 5.0
 INSTANCES_REQUIRED = 4
@@ -94,16 +95,19 @@ def load_instance(path: Path) -> Instance:
     )
 
 
-def random_route_emission_g(instance: Instance, seed: int, samples: int = RANDOM_SAMPLES) -> float:
-    """Mean emission of random visiting orders, the reference of KPI-6."""
+def random_route_emissions_kg(instance: Instance, seed: int, samples: int = RANDOM_SAMPLES) -> np.ndarray:
+    """Emission of each random visiting order, the reference of KPI-6.
+
+    The draws come from a generator of their own, seeded apart from the GA, so adding or changing the
+    baseline never changes the GA results of the same seed."""
     distance, speed, slope = build_matrices(instance.point_count, instance.legs)
     fitness = SegmentEmissionFitnessFunction(
         distance, speed, slope, instance.vehicle_mass_kg, return_to_depot=False,
         load_ratio=instance.load_ratio,
     )
-    rng = np.random.default_rng(seed)
+    rng = np.random.default_rng([RANDOM_BASELINE_STREAM, seed])
     genes = instance.point_count - 1
-    return float(np.mean([fitness.evaluate(Chromosome(rng.permutation(genes))) for _ in range(samples)]))
+    return np.array([fitness.evaluate(Chromosome(rng.permutation(genes))) for _ in range(samples)]) / 1000
 
 
 def run_instance(instance: Instance, seeds=SEEDS, ga_parameters: GaParameters = API_GA_PARAMETERS) -> list[dict]:
@@ -116,7 +120,7 @@ def run_instance(instance: Instance, seeds=SEEDS, ga_parameters: GaParameters = 
             )
             for criterion in ("distance", "emission")
         }
-        random_kg = random_route_emission_g(instance, seed) / 1000
+        random_kg = random_route_emissions_kg(instance, seed)
         e_distance = runs["distance"].total_emission_g / 1000
         e_emission = runs["emission"].total_emission_g / 1000
         rows.append(
@@ -126,8 +130,12 @@ def run_instance(instance: Instance, seeds=SEEDS, ga_parameters: GaParameters = 
                 "seed": seed,
                 "e_distance_kg": e_distance,
                 "e_emission_kg": e_emission,
-                "e_random_kg": random_kg,
-                "ratio_to_random": e_emission / random_kg if random_kg else 0.0,
+                "e_random_kg": float(random_kg.mean()),
+                "e_random_std_kg": float(random_kg.std()),
+                "e_random_min_kg": float(random_kg.min()),
+                "e_random_max_kg": float(random_kg.max()),
+                "random_samples": len(random_kg),
+                "ratio_to_random": e_emission / float(random_kg.mean()),
                 "delta_percent": (e_distance - e_emission) / e_distance * 100 if e_distance else 0.0,
                 "km_distance_route": runs["distance"].total_distance_km,
                 "km_emission_route": runs["emission"].total_distance_km,

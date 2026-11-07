@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from app.optimization.route_optimizer import GaParameters
+from app.optimization.route_optimizer import GaParameters, optimize_route
 from experiments import run_experiment as experiment
 
 
@@ -104,6 +104,41 @@ def test_run_instance_reports_the_random_route_reference_and_the_convergence_cur
     assert row["ratio_to_random"] == pytest.approx(row["e_emission_kg"] / row["e_random_kg"])
     assert row["ratio_to_random"] < 1
     assert len(row["history_emission"]) >= 1 and len(row["history_distance"]) >= 1
+
+
+def test_random_baseline_reports_its_spread_over_every_sample():
+    instance = experiment.synthetic_instance(8, seed=3)
+
+    row = experiment.run_instance(instance, seeds=(1,), ga_parameters=GaParameters(40, 60, 0.9, 0.4))[0]
+
+    assert row["random_samples"] == experiment.RANDOM_SAMPLES
+    assert row["e_random_min_kg"] <= row["e_random_kg"] <= row["e_random_max_kg"]
+    assert row["e_random_std_kg"] > 0
+
+
+def test_random_baseline_does_not_change_the_ga_results_of_the_same_seed():
+    instance = experiment.synthetic_instance(8, seed=3)
+    parameters = GaParameters(40, 60, 0.9, 0.4)
+    alone = optimize_route(
+        "emission", instance.vehicle_mass_kg, instance.point_count, instance.legs,
+        load_ratio=instance.load_ratio, seed=1, ga_parameters=parameters,
+    )
+
+    row = experiment.run_instance(instance, seeds=(1,), ga_parameters=parameters)[0]
+
+    assert row["e_emission_kg"] == alone.total_emission_g / 1000
+    assert row["sequence_emission"] == alone.sequence
+
+
+def test_random_baseline_draws_apart_from_the_ga_seed():
+    instance = experiment.synthetic_instance(8, seed=3)
+
+    first = experiment.random_route_emissions_kg(instance, seed=1, samples=50)
+    again = experiment.random_route_emissions_kg(instance, seed=1, samples=50)
+    other = experiment.random_route_emissions_kg(instance, seed=2, samples=50)
+
+    assert (first == again).all()
+    assert not (first == other).all()
 
 
 def test_csv_keeps_the_scalars_and_drops_the_sequences_and_curves(tmp_path):
