@@ -44,6 +44,40 @@
         }
       }
     },
+    "/optimize/stream": {
+      "post": {
+        "summary": "Optimize Stream",
+        "operationId": "optimize_stream_optimize_stream_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OptimizeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "One JSON object per line (application/x-ndjson): {\"type\": \"progress\", \"generation\": g, \"generations\": total} while the GA runs, then {\"type\": \"result\", \"result\": <OptimizeResponse>} or {\"type\": \"error\", \"detail\": \"...\"}",
+            "content": {
+              "application/x-ndjson": {}
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/health": {
       "get": {
         "summary": "Health Check",

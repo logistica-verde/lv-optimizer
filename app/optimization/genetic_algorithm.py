@@ -1,4 +1,5 @@
 import time
+from collections.abc import Callable
 
 import numpy as np
 
@@ -73,8 +74,11 @@ class GeneticAlgorithm:
         self.evaluate(offspring)
         return offspring
 
-    def evolve(self) -> tuple[Chromosome, int]:
-        """Best individual and generations run; best_fitness_history[g] is the best after generation g (0 = initial)."""
+    def evolve(self, on_generation: Callable[[int, int], None] | None = None) -> tuple[Chromosome, int]:
+        """Best individual and generations run; best_fitness_history[g] is the best after generation g (0 = initial).
+
+        on_generation, when given, is called after each generation with (generations run, generations planned).
+        """
         start = time.perf_counter()
         population = self.initial_population()
         self.evaluate(population)
@@ -87,6 +91,8 @@ class GeneticAlgorithm:
             population = self.next_generation(population)
             self.best_fitness_history.append(min(c.fitness for c in population))
             generations_executed += 1
+            if on_generation is not None:
+                on_generation(generations_executed, self.generations)
 
         best = min(population, key=lambda c: c.fitness)
         self.elapsed_s = time.perf_counter() - start

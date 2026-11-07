@@ -1,3 +1,4 @@
+from collections.abc import Callable
 from dataclasses import dataclass
 
 import time
@@ -70,6 +71,7 @@ def optimize_route(
     ga_parameters: GaParameters | None = None,
     return_to_depot: bool = False,
     end_index: int | None = None,
+    on_generation: Callable[[int, int], None] | None = None,
 ) -> RouteResult:
     """Best visiting order over all points, starting at point 0 (depot).
 
@@ -105,7 +107,7 @@ def optimize_route(
             seed=seed,
             time_limit_s=time_limit_s,
         )
-        best, generations = ga.evolve()
+        best, generations = ga.evolve(on_generation)
         history, converged_at = ga.best_fitness_history, ga.converged_at_generation()
 
     sequence = route_indices(best.genes, return_to_depot, end_index).tolist()

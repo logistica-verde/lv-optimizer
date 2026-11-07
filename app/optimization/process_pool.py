@@ -1,10 +1,12 @@
 import multiprocessing
 import os
 from concurrent.futures import ProcessPoolExecutor
+from multiprocessing.managers import SyncManager
 
 DEFAULT_MAX_PROCESSES = 4
 
 _pool: ProcessPoolExecutor | None = None
+_manager: SyncManager | None = None
 
 
 def process_count() -> int:
@@ -28,6 +30,21 @@ def reset_pool() -> None:
     if _pool is not None:
         _pool.shutdown(wait=False, cancel_futures=True)
         _pool = None
+
+
+def get_manager() -> SyncManager:
+    """Server process that hands out queues the pool workers can write progress into."""
+    global _manager
+    if _manager is None:
+        _manager = multiprocessing.get_context("spawn").Manager()
+    return _manager
+
+
+def shutdown_manager() -> None:
+    global _manager
+    if _manager is not None:
+        _manager.shutdown()
+        _manager = None
 
 
 def _import_the_solver() -> int:
