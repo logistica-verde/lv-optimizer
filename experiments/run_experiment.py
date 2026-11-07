@@ -17,7 +17,7 @@ import csv
 import itertools
 import json
 import math
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -152,11 +152,15 @@ def run_instance(instance: Instance, seeds=SEEDS, ga_parameters: GaParameters = 
     return rows
 
 
-def summarize(rows: list[dict]) -> dict:
+def summarize(rows: list[dict], ga_parameters: GaParameters | None = None, run_at: str | None = None) -> dict:
     instances = []
     for name in dict.fromkeys(r["instance"] for r in rows):
         group = [r for r in rows if r["instance"] == name]
         mean_delta = float(np.mean([r["delta_percent"] for r in group]))
+        ratios = [r["ratio_to_random"] for r in group]
+        distance_increase = [
+            (r["km_emission_route"] - r["km_distance_route"]) / r["km_distance_route"] * 100 for r in group
+        ]
         instances.append(
             {
                 "instance": name,
@@ -165,19 +169,32 @@ def summarize(rows: list[dict]) -> dict:
                 "mean_e_emission_kg": float(np.mean([r["e_emission_kg"] for r in group])),
                 "mean_delta_percent": mean_delta,
                 "std_delta_percent": float(np.std([r["delta_percent"] for r in group])),
+                "mean_distance_increase_percent": float(np.mean(distance_increase)),
+                "mean_seconds_distance": float(np.mean([r["seconds_distance"] for r in group])),
+                "mean_seconds_emission": float(np.mean([r["seconds_emission"] for r in group])),
                 "max_seconds": max(max(r["seconds_distance"], r["seconds_emission"]) for r in group),
-                "mean_ratio_to_random": float(np.mean([r["ratio_to_random"] for r in group])),
-                "meets_random_target": float(np.mean([r["ratio_to_random"] for r in group])) <= RANDOM_TARGET_RATIO,
+                "mean_converged_at_emission": float(np.mean([r["converged_at_emission"] for r in group])),
+                "max_converged_at_emission": max(r["converged_at_emission"] for r in group),
+                "mean_e_random_kg": float(np.mean([r.get("e_random_kg", 0.0) for r in group])),
+                "mean_e_random_std_kg": float(np.mean([r.get("e_random_std_kg", 0.0) for r in group])),
+                "mean_ratio_to_random": float(np.mean(ratios)),
+                "std_ratio_to_random": float(np.std(ratios)),
+                "min_ratio_to_random": float(np.min(ratios)),
+                "max_ratio_to_random": float(np.max(ratios)),
+                "meets_random_target": float(np.mean(ratios)) <= RANDOM_TARGET_RATIO,
                 "meets_target": mean_delta >= DELTA_TARGET_PERCENT,
             }
         )
     passed = sum(i["meets_target"] for i in instances)
     return {
         "optimizer_version": app.version,
-        "run_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "run_at": run_at or datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "ga_parameters": asdict(ga_parameters) if ga_parameters else None,
         "delta_target_percent": DELTA_TARGET_PERCENT,
         "instances_meeting_target": passed,
         "experiment_passes": passed >= INSTANCES_REQUIRED,
+        "mean_delta_percent": float(np.mean([i["mean_delta_percent"] for i in instances])),
+        "mean_distance_increase_percent": float(np.mean([i["mean_distance_increase_percent"] for i in instances])),
         "all_under_60_seconds": all(i["max_seconds"] < 60 for i in instances),
         "instances": instances,
     }
@@ -202,8 +219,19 @@ def main(argv: list[str] | None = None) -> dict:
     parser.add_argument("--generations", type=int, default=API_GA_PARAMETERS.generations)
     parser.add_argument("--crossover", type=float, default=API_GA_PARAMETERS.crossover_rate)
     parser.add_argument("--mutation", type=float, default=API_GA_PARAMETERS.mutation_rate)
+    parser.add_argument(
+        "--resummarize", type=Path,
+        help="rebuild resumo.json of an existing results folder from its execucoes.json, without running again",
+    )
     args = parser.parse_args(argv)
     ga_parameters = GaParameters(args.population, args.generations, args.crossover, args.mutation)
+
+    if args.resummarize:
+        rows = json.loads((args.resummarize / "execucoes.json").read_text(encoding="utf-8"))
+        previous = json.loads((args.resummarize / "resumo.json").read_text(encoding="utf-8"))
+        summary = summarize(rows, ga_parameters, run_at=previous.get("run_at"))
+        (args.resummarize / "resumo.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+        return summary
 
     if args.instances_dir:
         instances = [load_instance(p) for p in sorted(args.instances_dir.glob("*.json"))]
@@ -211,7 +239,7 @@ def main(argv: list[str] | None = None) -> dict:
         instances = [synthetic_instance(n, seed=n) for n in INSTANCE_SIZES]
 
     rows = [row for instance in instances for row in run_instance(instance, ga_parameters=ga_parameters)]
-    summary = summarize(rows)
+    summary = summarize(rows, ga_parameters)
     write_results(rows, summary, args.output_dir)
 
     for i in summary["instances"]:
