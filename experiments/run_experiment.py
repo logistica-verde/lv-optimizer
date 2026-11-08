@@ -63,14 +63,30 @@ def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     return 2 * r * math.asin(math.sqrt(a))
 
 
-def synthetic_instance(point_count: int, seed: int) -> Instance:
-    """Random points with an elevation each, so slope a->b is the negative of slope b->a."""
+@dataclass(frozen=True)
+class SyntheticPoints:
+    latitude: np.ndarray
+    longitude: np.ndarray
+    elevation_m: np.ndarray
+    speed_kmh: np.ndarray
+
+
+def synthetic_points(point_count: int, seed: int) -> SyntheticPoints:
+    """The random draws behind a synthetic instance; point 0 is the depot."""
     rng = np.random.default_rng(seed)
     lat = rng.uniform(*LAT_RANGE, point_count)
     lon = rng.uniform(*LON_RANGE, point_count)
     elevation = rng.uniform(*ELEVATION_RANGE_M, point_count)
     speed = rng.uniform(*SPEED_RANGE_KMH, (point_count, point_count))
-    speed = (speed + speed.T) / 2
+    return SyntheticPoints(lat, lon, elevation, (speed + speed.T) / 2)
+
+
+def synthetic_instance(point_count: int, seed: int) -> Instance:
+    """Random points with an elevation each, so slope a->b is the negative of slope b->a.
+
+    Distances are straight lines (haversine) between the points, not road paths."""
+    points = synthetic_points(point_count, seed)
+    lat, lon, elevation, speed = points.latitude, points.longitude, points.elevation_m, points.speed_kmh
 
     legs = []
     for a, b in itertools.permutations(range(point_count), 2):
