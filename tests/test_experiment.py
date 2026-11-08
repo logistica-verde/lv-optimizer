@@ -55,14 +55,18 @@ def test_run_instance_never_lets_emission_criterion_emit_more_on_a_small_instanc
     assert rows[0]["delta_percent"] >= -1e-9
 
 
-def test_summary_applies_the_five_percent_in_four_of_five_rule():
-    def row(name, delta):
-        return {
-            "instance": name, "points": 10, "e_distance_kg": 1.0, "e_emission_kg": 1.0 - delta / 100,
-            "delta_percent": delta, "seconds_distance": 1.0, "seconds_emission": 2.0, "ratio_to_random": 0.4,
-        }
+def summary_row(name, delta, ratio=0.4, km_distance=10.0, km_emission=12.0, converged=100):
+    return {
+        "instance": name, "points": 10, "e_distance_kg": 1.0, "e_emission_kg": 1.0 - delta / 100,
+        "delta_percent": delta, "seconds_distance": 1.0, "seconds_emission": 2.0, "ratio_to_random": ratio,
+        "km_distance_route": km_distance, "km_emission_route": km_emission, "converged_at_emission": converged,
+        "e_random_kg": 3.0, "e_random_std_kg": 0.5,
+    }
 
-    rows = [row("a", 6), row("a", 4), row("b", 10), row("c", 5), row("d", 7), row("e", 1)]
+
+def test_summary_applies_the_five_percent_in_four_of_five_rule():
+    rows = [summary_row("a", 6), summary_row("a", 4), summary_row("b", 10), summary_row("c", 5),
+            summary_row("d", 7), summary_row("e", 1)]
 
     summary = experiment.summarize(rows)
 
@@ -71,6 +75,38 @@ def test_summary_applies_the_five_percent_in_four_of_five_rule():
     assert summary["experiment_passes"] is True
     assert summary["all_under_60_seconds"] is True
     assert all(i["meets_random_target"] for i in summary["instances"])
+
+
+def test_summary_reports_the_spread_the_distance_cost_the_times_and_the_parameters():
+    rows = [summary_row("a", 6, ratio=0.3, km_emission=11.0, converged=80),
+            summary_row("a", 4, ratio=0.5, km_emission=13.0, converged=120)]
+
+    summary = experiment.summarize(rows, GaParameters(300, 500, 0.9, 0.4), run_at="2026-11-07T20:16:04+00:00")
+
+    instance = summary["instances"][0]
+    assert instance["std_delta_percent"] == pytest.approx(1.0)
+    assert instance["mean_distance_increase_percent"] == pytest.approx(20.0)
+    assert instance["mean_seconds_distance"] == 1.0 and instance["mean_seconds_emission"] == 2.0
+    assert instance["mean_converged_at_emission"] == 100 and instance["max_converged_at_emission"] == 120
+    assert (instance["min_ratio_to_random"], instance["max_ratio_to_random"]) == (0.3, 0.5)
+    assert instance["std_ratio_to_random"] == pytest.approx(0.1)
+    assert summary["ga_parameters"] == {
+        "population_size": 300, "generations": 500, "crossover_rate": 0.9, "mutation_rate": 0.4,
+    }
+    assert summary["run_at"] == "2026-11-07T20:16:04+00:00"
+
+
+def test_resummarize_rebuilds_the_summary_of_a_folder_and_keeps_when_it_ran(tmp_path):
+    rows = [summary_row("a", 6), summary_row("a", 4)]
+    (tmp_path / "execucoes.json").write_text(json.dumps(rows), encoding="utf-8")
+    (tmp_path / "resumo.json").write_text(json.dumps({"run_at": "2026-10-18T20:46:50+00:00"}), encoding="utf-8")
+
+    experiment.main(["--resummarize", str(tmp_path), "--generations", "2000"])
+
+    summary = json.loads((tmp_path / "resumo.json").read_text(encoding="utf-8"))
+    assert summary["run_at"] == "2026-10-18T20:46:50+00:00"
+    assert summary["ga_parameters"]["generations"] == 2000
+    assert summary["instances"][0]["mean_distance_increase_percent"] == pytest.approx(20.0)
 
 
 def test_main_writes_results_for_instances_from_a_folder(tmp_path, monkeypatch):
