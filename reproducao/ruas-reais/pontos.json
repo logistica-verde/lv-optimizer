@@ -1,0 +1,149 @@
+[
+ {
+  "id": 1,
+  "nome": "Praca da Se",
+  "latitude": -23.5505,
+  "longitude": -46.6333,
+  "tipo": "entrega"
+ },
+ {
+  "id": 2,
+  "nome": "MASP Av Paulista",
+  "latitude": -23.5614,
+  "longitude": -46.6559,
+  "tipo": "entrega"
+ },
+ {
+  "id": 3,
+  "nome": "Estacao da Luz",
+  "latitude": -23.5343,
+  "longitude": -46.6361,
+  "tipo": "entrega"
+ },
+ {
+  "id": 4,
+  "nome": "Mercado Municipal",
+  "latitude": -23.5415,
+  "longitude": -46.6291,
+  "tipo": "entrega"
+ },
+ {
+  "id": 5,
+  "nome": "Parque Ibirapuera",
+  "latitude": -23.5874,
+  "longitude": -46.6576,
+  "tipo": "entrega"
+ },
+ {
+  "id": 6,
+  "nome": "Liberdade",
+  "latitude": -23.5589,
+  "longitude": -46.6345,
+  "tipo": "entrega"
+ },
+ {
+  "id": 7,
+  "nome": "Vila Madalena",
+  "latitude": -23.5565,
+  "longitude": -46.691,
+  "tipo": "entrega"
+ },
+ {
+  "id": 8,
+  "nome": "Pinheiros",
+  "latitude": -23.5667,
+  "longitude": -46.6925,
+  "tipo": "entrega"
+ },
+ {
+  "id": 9,
+  "nome": "Morumbi Estadio",
+  "latitude": -23.6,
+  "longitude": -46.7199,
+  "tipo": "entrega"
+ },
+ {
+  "id": 10,
+  "nome": "Lapa",
+  "latitude": -23.527,
+  "longitude": -46.7016,
+  "tipo": "entrega"
+ },
+ {
+  "id": 11,
+  "nome": "Santana",
+  "latitude": -23.5013,
+  "longitude": -46.6256,
+  "tipo": "entrega"
+ },
+ {
+  "id": 12,
+  "nome": "Mooca",
+  "latitude": -23.5586,
+  "longitude": -46.5997,
+  "tipo": "entrega"
+ },
+ {
+  "id": 13,
+  "nome": "Museu do Ipiranga",
+  "latitude": -23.5853,
+  "longitude": -46.6102,
+  "tipo": "entrega"
+ },
+ {
+  "id": 14,
+  "nome": "Vila Mariana",
+  "latitude": -23.589,
+  "longitude": -46.6342,
+  "tipo": "entrega"
+ },
+ {
+  "id": 15,
+  "nome": "Pompeia",
+  "latitude": -23.529,
+  "longitude": -46.6874,
+  "tipo": "entrega"
+ },
+ {
+  "id": 16,
+  "nome": "Minha localização",
+  "latitude": -23.5614,
+  "longitude": -46.6559,
+  "tipo": "saída"
+ },
+ {
+  "id": 17,
+  "nome": "Minha localização",
+  "latitude": -23.5558,
+  "longitude": -46.6602,
+  "tipo": "saída"
+ },
+ {
+  "id": 18,
+  "nome": "Minha localização",
+  "latitude": -23.5894,
+  "longitude": -46.6347,
+  "tipo": "saída"
+ },
+ {
+  "id": 19,
+  "nome": "Minha localização",
+  "latitude": -23.5668,
+  "longitude": -46.6923,
+  "tipo": "saída"
+ },
+ {
+  "id": 20,
+  "nome": "Minha localização",
+  "latitude": -23.5505,
+  "longitude": -46.5995,
+  "tipo": "saída"
+ },
+ {
+  "id": 22,
+  "nome": "Minha localização",
+  "latitude": -23.5036,
+  "longitude": -46.6286,
+  "tipo": "saída"
+ }
+]
