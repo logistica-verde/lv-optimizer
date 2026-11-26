@@ -1,0 +1,3792 @@
+{
+ "draw_seed": 2026,
+ "delivery_points_in_draw": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "vehicle_mass_kg": 7500.0,
+ "load_ratio": 1.0,
+ "ga_parameters": {
+  "population_size": 300,
+  "generations": 500,
+  "crossover_rate": 0.9,
+  "mutation_rate": 0.4
+ },
+ "trials": [
+  {
+   "trial": 1,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 5,
+   "drawn_delivery_points": [
+    2,
+    6,
+    9,
+    13,
+    11
+   ],
+   "points_sent": [
+    17,
+    2,
+    6,
+    9,
+    11,
+    13
+   ],
+   "ga_seed": 15576292935,
+   "operations": {
+    "distance": 74,
+    "emission": 75
+   },
+   "route_distance": [
+    17,
+    13,
+    6,
+    11,
+    2,
+    9
+   ],
+   "route_emission": [
+    17,
+    2,
+    13,
+    6,
+    9,
+    11
+   ],
+   "e_distance_kg": 14.489678442752448,
+   "e_emission_kg": 13.576946899640888,
+   "km_distance_route": 38.0036,
+   "km_emission_route": 45.3365,
+   "gain_percent": 6.299184255314491
+  },
+  {
+   "trial": 2,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 5,
+   "drawn_delivery_points": [
+    14,
+    2,
+    4,
+    10,
+    12
+   ],
+   "points_sent": [
+    17,
+    2,
+    4,
+    10,
+    12,
+    14
+   ],
+   "ga_seed": 15576234346,
+   "operations": {
+    "distance": 76,
+    "emission": 77
+   },
+   "route_distance": [
+    17,
+    2,
+    14,
+    12,
+    4,
+    10
+   ],
+   "route_emission": [
+    17,
+    14,
+    12,
+    4,
+    2,
+    10
+   ],
+   "e_distance_kg": 12.962165568757587,
+   "e_emission_kg": 11.284272005882839,
+   "km_distance_route": 29.421400000000002,
+   "km_emission_route": 29.9739,
+   "gain_percent": 12.944546603531567
+  },
+  {
+   "trial": 3,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 5,
+   "drawn_delivery_points": [
+    9,
+    7,
+    13,
+    10,
+    15
+   ],
+   "points_sent": [
+    17,
+    7,
+    9,
+    10,
+    13,
+    15
+   ],
+   "ga_seed": 15581000938,
+   "operations": {
+    "distance": 78,
+    "emission": 79
+   },
+   "route_distance": [
+    17,
+    15,
+    10,
+    7,
+    9,
+    13
+   ],
+   "route_emission": [
+    17,
+    13,
+    7,
+    9,
+    10,
+    15
+   ],
+   "e_distance_kg": 17.272181946758696,
+   "e_emission_kg": 12.97013200134508,
+   "km_distance_route": 33.8645,
+   "km_emission_route": 40.8879,
+   "gain_percent": 24.907391310922016
+  },
+  {
+   "trial": 4,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 10,
+   "drawn_delivery_points": [
+    14,
+    12,
+    13,
+    8,
+    10,
+    15,
+    4,
+    1,
+    5,
+    11
+   ],
+   "points_sent": [
+    17,
+    1,
+    4,
+    5,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 445907784263786857,
+   "operations": {
+    "distance": 80,
+    "emission": 81
+   },
+   "route_distance": [
+    17,
+    15,
+    10,
+    8,
+    5,
+    14,
+    13,
+    12,
+    4,
+    1,
+    11
+   ],
+   "route_emission": [
+    17,
+    14,
+    13,
+    12,
+    11,
+    4,
+    1,
+    5,
+    8,
+    10,
+    15
+   ],
+   "e_distance_kg": 19.31112832053978,
+   "e_emission_kg": 17.27815721564497,
+   "km_distance_route": 45.0405,
+   "km_emission_route": 50.369,
+   "gain_percent": 10.527458940514068
+  },
+  {
+   "trial": 5,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 10,
+   "drawn_delivery_points": [
+    2,
+    5,
+    15,
+    8,
+    1,
+    12,
+    6,
+    4,
+    10,
+    3
+   ],
+   "points_sent": [
+    17,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    15
+   ],
+   "ga_seed": 445906019758583560,
+   "operations": {
+    "distance": 83,
+    "emission": 82
+   },
+   "route_distance": [
+    17,
+    2,
+    5,
+    8,
+    10,
+    15,
+    3,
+    4,
+    1,
+    6,
+    12
+   ],
+   "route_emission": [
+    17,
+    2,
+    12,
+    3,
+    4,
+    1,
+    6,
+    5,
+    8,
+    10,
+    15
+   ],
+   "e_distance_kg": 19.198265936266203,
+   "e_emission_kg": 15.589070639434016,
+   "km_distance_route": 41.529900000000005,
+   "km_emission_route": 45.0608,
+   "gain_percent": 18.799590071383946
+  },
+  {
+   "trial": 6,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 10,
+   "drawn_delivery_points": [
+    6,
+    15,
+    13,
+    7,
+    9,
+    2,
+    14,
+    10,
+    5,
+    12
+   ],
+   "points_sent": [
+    17,
+    2,
+    5,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 445935103372542727,
+   "operations": {
+    "distance": 85,
+    "emission": 84
+   },
+   "route_distance": [
+    17,
+    2,
+    5,
+    14,
+    13,
+    12,
+    6,
+    15,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    17,
+    2,
+    14,
+    13,
+    12,
+    6,
+    5,
+    15,
+    10,
+    7,
+    9
+   ],
+   "e_distance_kg": 18.734503169287002,
+   "e_emission_kg": 18.324702361356223,
+   "km_distance_route": 47.2701,
+   "km_emission_route": 50.4222,
+   "gain_percent": 2.187412199980829
+  },
+  {
+   "trial": 7,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 14,
+   "drawn_delivery_points": [
+    5,
+    15,
+    8,
+    3,
+    11,
+    10,
+    14,
+    1,
+    7,
+    6,
+    12,
+    9,
+    2,
+    4
+   ],
+   "points_sent": [
+    17,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15
+   ],
+   "ga_seed": 7681943982294628135,
+   "operations": {
+    "distance": 89,
+    "emission": 88
+   },
+   "route_distance": [
+    17,
+    2,
+    5,
+    14,
+    12,
+    6,
+    4,
+    1,
+    3,
+    11,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    17,
+    14,
+    12,
+    3,
+    11,
+    4,
+    1,
+    6,
+    2,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 28.968704672804552,
+   "e_emission_kg": 23.448274310317203,
+   "km_distance_route": 59.4829,
+   "km_emission_route": 63.662699999999994,
+   "gain_percent": 19.056531608297483
+  },
+  {
+   "trial": 8,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 14,
+   "drawn_delivery_points": [
+    2,
+    7,
+    10,
+    9,
+    8,
+    15,
+    14,
+    11,
+    4,
+    5,
+    3,
+    12,
+    6,
+    13
+   ],
+   "points_sent": [
+    17,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 5243292379090178023,
+   "operations": {
+    "distance": 91,
+    "emission": 90
+   },
+   "route_distance": [
+    17,
+    5,
+    14,
+    13,
+    12,
+    11,
+    3,
+    4,
+    6,
+    2,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    17,
+    2,
+    14,
+    13,
+    12,
+    3,
+    11,
+    4,
+    6,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 30.091065465240682,
+   "e_emission_kg": 22.6737031863671,
+   "km_distance_route": 62.501,
+   "km_emission_route": 64.5464,
+   "gain_percent": 24.649716333380272
+  },
+  {
+   "trial": 9,
+   "origin_name": "Consolacao",
+   "origin_coordinates": [
+    -23.5558,
+    -46.6602
+   ],
+   "origin_point": 17,
+   "points": 14,
+   "drawn_delivery_points": [
+    9,
+    15,
+    13,
+    1,
+    10,
+    4,
+    3,
+    12,
+    6,
+    5,
+    8,
+    11,
+    2,
+    7
+   ],
+   "points_sent": [
+    17,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15
+   ],
+   "ga_seed": 7681943982294628104,
+   "operations": {
+    "distance": 93,
+    "emission": 92
+   },
+   "route_distance": [
+    17,
+    2,
+    5,
+    13,
+    12,
+    6,
+    4,
+    1,
+    3,
+    11,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    17,
+    13,
+    12,
+    3,
+    11,
+    4,
+    1,
+    6,
+    2,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 30.531868121982146,
+   "e_emission_kg": 23.930451675962242,
+   "km_distance_route": 61.4336,
+   "km_emission_route": 65.2922,
+   "gain_percent": 21.621397091215186
+  },
+  {
+   "trial": 10,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 5,
+   "drawn_delivery_points": [
+    8,
+    4,
+    2,
+    11,
+    15
+   ],
+   "points_sent": [
+    16,
+    2,
+    4,
+    8,
+    11,
+    15
+   ],
+   "ga_seed": 15547603243,
+   "operations": {
+    "distance": 95,
+    "emission": 94
+   },
+   "route_distance": [
+    16,
+    2,
+    8,
+    15,
+    11,
+    4
+   ],
+   "route_emission": [
+    16,
+    2,
+    15,
+    8,
+    11,
+    4
+   ],
+   "e_distance_kg": 9.635919468401205,
+   "e_emission_kg": 9.41753267385769,
+   "km_distance_route": 25.8193,
+   "km_emission_route": 31.439799999999998,
+   "gain_percent": 2.2663825207305397
+  },
+  {
+   "trial": 11,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 5,
+   "drawn_delivery_points": [
+    11,
+    8,
+    12,
+    9,
+    5
+   ],
+   "points_sent": [
+    16,
+    5,
+    8,
+    9,
+    11,
+    12
+   ],
+   "ga_seed": 15550493928,
+   "operations": {
+    "distance": 96,
+    "emission": 97
+   },
+   "route_distance": [
+    16,
+    9,
+    8,
+    5,
+    12,
+    11
+   ],
+   "route_emission": [
+    16,
+    12,
+    5,
+    9,
+    8,
+    11
+   ],
+   "e_distance_kg": 18.156911920114087,
+   "e_emission_kg": 14.691241317944582,
+   "km_distance_route": 40.987199999999994,
+   "km_emission_route": 50.0629,
+   "gain_percent": 19.087334990760525
+  },
+  {
+   "trial": 12,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 5,
+   "drawn_delivery_points": [
+    9,
+    7,
+    11,
+    5,
+    15
+   ],
+   "points_sent": [
+    16,
+    5,
+    7,
+    9,
+    11,
+    15
+   ],
+   "ga_seed": 15550464140,
+   "operations": {
+    "distance": 99,
+    "emission": 98
+   },
+   "route_distance": [
+    16,
+    5,
+    9,
+    7,
+    15,
+    11
+   ],
+   "route_emission": [
+    16,
+    7,
+    9,
+    5,
+    15,
+    11
+   ],
+   "e_distance_kg": 14.17649636354013,
+   "e_emission_kg": 13.184053181397484,
+   "km_distance_route": 37.5345,
+   "km_emission_route": 44.2236,
+   "gain_percent": 7.000623826173751
+  },
+  {
+   "trial": 13,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 10,
+   "drawn_delivery_points": [
+    13,
+    11,
+    9,
+    12,
+    8,
+    7,
+    10,
+    4,
+    3,
+    15
+   ],
+   "points_sent": [
+    16,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15
+   ],
+   "ga_seed": 445141090216772165,
+   "operations": {
+    "distance": 101,
+    "emission": 100
+   },
+   "route_distance": [
+    16,
+    9,
+    8,
+    7,
+    10,
+    15,
+    3,
+    11,
+    4,
+    12,
+    13
+   ],
+   "route_emission": [
+    16,
+    9,
+    8,
+    7,
+    10,
+    15,
+    4,
+    13,
+    12,
+    3,
+    11
+   ],
+   "e_distance_kg": 23.20225240337262,
+   "e_emission_kg": 19.528719883193123,
+   "km_distance_route": 51.375699999999995,
+   "km_emission_route": 53.9081,
+   "gain_percent": 15.83265476262779
+  },
+  {
+   "trial": 14,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 10,
+   "drawn_delivery_points": [
+    1,
+    15,
+    3,
+    11,
+    10,
+    8,
+    9,
+    12,
+    13,
+    2
+   ],
+   "points_sent": [
+    16,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15
+   ],
+   "ga_seed": 445086395139919497,
+   "operations": {
+    "distance": 103,
+    "emission": 102
+   },
+   "route_distance": [
+    16,
+    2,
+    13,
+    12,
+    1,
+    3,
+    11,
+    15,
+    10,
+    8,
+    9
+   ],
+   "route_emission": [
+    16,
+    2,
+    13,
+    12,
+    3,
+    1,
+    9,
+    8,
+    10,
+    15,
+    11
+   ],
+   "e_distance_kg": 23.70094542299476,
+   "e_emission_kg": 19.943928709320836,
+   "km_distance_route": 50.9093,
+   "km_emission_route": 60.9504,
+   "gain_percent": 15.851758850213841
+  },
+  {
+   "trial": 15,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 10,
+   "drawn_delivery_points": [
+    5,
+    12,
+    8,
+    13,
+    9,
+    14,
+    7,
+    1,
+    11,
+    3
+   ],
+   "points_sent": [
+    16,
+    1,
+    3,
+    5,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14
+   ],
+   "ga_seed": 445087302139128806,
+   "operations": {
+    "distance": 105,
+    "emission": 104
+   },
+   "route_distance": [
+    16,
+    9,
+    8,
+    7,
+    5,
+    14,
+    13,
+    12,
+    1,
+    3,
+    11
+   ],
+   "route_emission": [
+    16,
+    9,
+    8,
+    7,
+    5,
+    14,
+    13,
+    12,
+    1,
+    3,
+    11
+   ],
+   "e_distance_kg": 18.799563963707847,
+   "e_emission_kg": 18.799563963707847,
+   "km_distance_route": 49.072300000000006,
+   "km_emission_route": 49.072300000000006,
+   "gain_percent": 0.0
+  },
+  {
+   "trial": 16,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 14,
+   "drawn_delivery_points": [
+    6,
+    8,
+    13,
+    2,
+    14,
+    9,
+    5,
+    11,
+    12,
+    4,
+    15,
+    1,
+    3,
+    7
+   ],
+   "points_sent": [
+    16,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 7054515783590878343,
+   "operations": {
+    "distance": 107,
+    "emission": 106
+   },
+   "route_distance": [
+    16,
+    2,
+    9,
+    8,
+    7,
+    15,
+    3,
+    11,
+    4,
+    1,
+    6,
+    5,
+    14,
+    13,
+    12
+   ],
+   "route_emission": [
+    16,
+    2,
+    9,
+    8,
+    7,
+    15,
+    4,
+    1,
+    6,
+    5,
+    14,
+    13,
+    12,
+    3,
+    11
+   ],
+   "e_distance_kg": 23.667394396326678,
+   "e_emission_kg": 21.87769555788409,
+   "km_distance_route": 59.5703,
+   "km_emission_route": 61.886300000000006,
+   "gain_percent": 7.561875246902387
+  },
+  {
+   "trial": 17,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 14,
+   "drawn_delivery_points": [
+    15,
+    8,
+    6,
+    2,
+    4,
+    7,
+    3,
+    14,
+    1,
+    10,
+    13,
+    11,
+    9,
+    5
+   ],
+   "points_sent": [
+    16,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 7054515783589925031,
+   "operations": {
+    "distance": 109,
+    "emission": 108
+   },
+   "route_distance": [
+    16,
+    2,
+    5,
+    14,
+    13,
+    6,
+    4,
+    1,
+    3,
+    11,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    16,
+    2,
+    14,
+    13,
+    3,
+    11,
+    4,
+    1,
+    6,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 27.608709973227086,
+   "e_emission_kg": 20.943124207261103,
+   "km_distance_route": 54.6174,
+   "km_emission_route": 60.8524,
+   "gain_percent": 24.143054030520737
+  },
+  {
+   "trial": 18,
+   "origin_name": "Paulista-Trianon",
+   "origin_coordinates": [
+    -23.5614,
+    -46.6559
+   ],
+   "origin_point": 16,
+   "points": 14,
+   "drawn_delivery_points": [
+    10,
+    13,
+    4,
+    14,
+    2,
+    15,
+    1,
+    5,
+    6,
+    7,
+    3,
+    11,
+    9,
+    12
+   ],
+   "points_sent": [
+    16,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 7054515784507011175,
+   "operations": {
+    "distance": 111,
+    "emission": 110
+   },
+   "route_distance": [
+    16,
+    5,
+    14,
+    13,
+    12,
+    11,
+    3,
+    4,
+    1,
+    6,
+    2,
+    15,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    16,
+    2,
+    14,
+    13,
+    12,
+    6,
+    3,
+    11,
+    4,
+    1,
+    5,
+    15,
+    10,
+    7,
+    9
+   ],
+   "e_distance_kg": 26.50933443508983,
+   "e_emission_kg": 23.413608063291992,
+   "km_distance_route": 60.7397,
+   "km_emission_route": 65.2702,
+   "gain_percent": 11.677872861644131
+  },
+  {
+   "trial": 19,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 5,
+   "drawn_delivery_points": [
+    11,
+    10,
+    14,
+    8,
+    3
+   ],
+   "points_sent": [
+    18,
+    3,
+    8,
+    10,
+    11,
+    14
+   ],
+   "ga_seed": 15605906151,
+   "operations": {
+    "distance": 112,
+    "emission": 113
+   },
+   "route_distance": [
+    18,
+    14,
+    8,
+    10,
+    3,
+    11
+   ],
+   "route_emission": [
+    18,
+    14,
+    11,
+    3,
+    8,
+    10
+   ],
+   "e_distance_kg": 11.596220484223423,
+   "e_emission_kg": 10.704893601239954,
+   "km_distance_route": 29.1066,
+   "km_emission_route": 31.286099999999998,
+   "gain_percent": 7.686356810791178
+  },
+  {
+   "trial": 20,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 5,
+   "drawn_delivery_points": [
+    9,
+    4,
+    8,
+    10,
+    3
+   ],
+   "points_sent": [
+    18,
+    3,
+    4,
+    8,
+    9,
+    10
+   ],
+   "ga_seed": 15605784999,
+   "operations": {
+    "distance": 114,
+    "emission": 115
+   },
+   "route_distance": [
+    18,
+    4,
+    3,
+    10,
+    8,
+    9
+   ],
+   "route_emission": [
+    18,
+    9,
+    8,
+    10,
+    4,
+    3
+   ],
+   "e_distance_kg": 16.749047607885107,
+   "e_emission_kg": 12.931146249493278,
+   "km_distance_route": 32.5253,
+   "km_emission_route": 41.4597,
+   "gain_percent": 22.794737036835695
+  },
+  {
+   "trial": 21,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 5,
+   "drawn_delivery_points": [
+    10,
+    12,
+    9,
+    5,
+    2
+   ],
+   "points_sent": [
+    18,
+    2,
+    5,
+    9,
+    10,
+    12
+   ],
+   "ga_seed": 15604892263,
+   "operations": {
+    "distance": 116,
+    "emission": 117
+   },
+   "route_distance": [
+    18,
+    12,
+    2,
+    5,
+    10,
+    9
+   ],
+   "route_emission": [
+    18,
+    12,
+    2,
+    5,
+    9,
+    10
+   ],
+   "e_distance_kg": 19.351550811535837,
+   "e_emission_kg": 15.228120050802016,
+   "km_distance_route": 40.8927,
+   "km_emission_route": 41.7419,
+   "gain_percent": 21.308011956725267
+  },
+  {
+   "trial": 22,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 10,
+   "drawn_delivery_points": [
+    7,
+    11,
+    3,
+    13,
+    10,
+    5,
+    9,
+    15,
+    4,
+    2
+   ],
+   "points_sent": [
+    18,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    13,
+    15
+   ],
+   "ga_seed": 446752969018969704,
+   "operations": {
+    "distance": 119,
+    "emission": 118
+   },
+   "route_distance": [
+    18,
+    13,
+    5,
+    7,
+    10,
+    15,
+    3,
+    11,
+    4,
+    2,
+    9
+   ],
+   "route_emission": [
+    18,
+    13,
+    5,
+    3,
+    11,
+    4,
+    2,
+    7,
+    9,
+    10,
+    15
+   ],
+   "e_distance_kg": 25.2437640799703,
+   "e_emission_kg": 21.647188808634567,
+   "km_distance_route": 55.5562,
+   "km_emission_route": 62.3873,
+   "gain_percent": 14.247381095553186
+  },
+  {
+   "trial": 23,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 10,
+   "drawn_delivery_points": [
+    9,
+    13,
+    4,
+    7,
+    1,
+    2,
+    12,
+    10,
+    11,
+    3
+   ],
+   "points_sent": [
+    18,
+    1,
+    2,
+    3,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "ga_seed": 446725648105653767,
+   "operations": {
+    "distance": 120,
+    "emission": 121
+   },
+   "route_distance": [
+    18,
+    13,
+    12,
+    11,
+    3,
+    4,
+    1,
+    2,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    18,
+    13,
+    12,
+    3,
+    11,
+    4,
+    1,
+    2,
+    7,
+    9,
+    10
+   ],
+   "e_distance_kg": 20.31763276009521,
+   "e_emission_kg": 18.623525330909615,
+   "km_distance_route": 49.5071,
+   "km_emission_route": 55.6735,
+   "gain_percent": 8.33811423402092
+  },
+  {
+   "trial": 24,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 10,
+   "drawn_delivery_points": [
+    11,
+    6,
+    13,
+    1,
+    12,
+    9,
+    8,
+    14,
+    10,
+    3
+   ],
+   "points_sent": [
+    18,
+    1,
+    3,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "ga_seed": 446726587142760872,
+   "operations": {
+    "distance": 123,
+    "emission": 122
+   },
+   "route_distance": [
+    18,
+    14,
+    13,
+    12,
+    6,
+    1,
+    11,
+    3,
+    10,
+    8,
+    9
+   ],
+   "route_emission": [
+    18,
+    14,
+    13,
+    12,
+    3,
+    11,
+    1,
+    6,
+    9,
+    8,
+    10
+   ],
+   "e_distance_kg": 21.884049844866322,
+   "e_emission_kg": 18.07093710840458,
+   "km_distance_route": 48.1734,
+   "km_emission_route": 52.8485,
+   "gain_percent": 17.424164007541975
+  },
+  {
+   "trial": 25,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 14,
+   "drawn_delivery_points": [
+    8,
+    6,
+    2,
+    15,
+    12,
+    10,
+    3,
+    9,
+    5,
+    7,
+    13,
+    4,
+    11,
+    14
+   ],
+   "points_sent": [
+    18,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 5870720577794882088,
+   "operations": {
+    "distance": 124,
+    "emission": 125
+   },
+   "route_distance": [
+    18,
+    14,
+    13,
+    12,
+    11,
+    3,
+    4,
+    6,
+    2,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "route_emission": [
+    18,
+    14,
+    13,
+    12,
+    3,
+    11,
+    4,
+    6,
+    2,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 24.083316928714396,
+   "e_emission_kg": 22.757397463515623,
+   "km_distance_route": 59.3639,
+   "km_emission_route": 60.1439,
+   "gain_percent": 5.505551702547612
+  },
+  {
+   "trial": 26,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 14,
+   "drawn_delivery_points": [
+    8,
+    10,
+    4,
+    11,
+    2,
+    9,
+    7,
+    1,
+    12,
+    6,
+    14,
+    15,
+    3,
+    13
+   ],
+   "points_sent": [
+    18,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 8309399501942231528,
+   "operations": {
+    "distance": 127,
+    "emission": 126
+   },
+   "route_distance": [
+    18,
+    14,
+    13,
+    12,
+    11,
+    3,
+    4,
+    1,
+    6,
+    2,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    18,
+    14,
+    13,
+    12,
+    6,
+    3,
+    4,
+    1,
+    2,
+    9,
+    8,
+    7,
+    10,
+    15,
+    11
+   ],
+   "e_distance_kg": 25.071292098349993,
+   "e_emission_kg": 21.190542970163534,
+   "km_distance_route": 53.2052,
+   "km_emission_route": 59.310199999999995,
+   "gain_percent": 15.478855708604906
+  },
+  {
+   "trial": 27,
+   "origin_name": "Vila Mariana",
+   "origin_coordinates": [
+    -23.5894,
+    -46.6347
+   ],
+   "origin_point": 18,
+   "points": 14,
+   "drawn_delivery_points": [
+    8,
+    14,
+    13,
+    11,
+    4,
+    15,
+    1,
+    3,
+    6,
+    5,
+    2,
+    7,
+    9,
+    10
+   ],
+   "points_sent": [
+    18,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 8309372180999333161,
+   "operations": {
+    "distance": 129,
+    "emission": 128
+   },
+   "route_distance": [
+    18,
+    14,
+    13,
+    6,
+    11,
+    3,
+    4,
+    1,
+    2,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "route_emission": [
+    18,
+    14,
+    13,
+    3,
+    11,
+    4,
+    1,
+    6,
+    2,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 23.165947654095014,
+   "e_emission_kg": 21.63752203845877,
+   "km_distance_route": 57.3181,
+   "km_emission_route": 58.219699999999996,
+   "gain_percent": 6.597725413430548
+  },
+  {
+   "trial": 28,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 5,
+   "drawn_delivery_points": [
+    7,
+    5,
+    15,
+    9,
+    13
+   ],
+   "points_sent": [
+    19,
+    5,
+    7,
+    9,
+    13,
+    15
+   ],
+   "ga_seed": 15636351655,
+   "operations": {
+    "distance": 130,
+    "emission": 131
+   },
+   "route_distance": [
+    19,
+    7,
+    15,
+    9,
+    5,
+    13
+   ],
+   "route_emission": [
+    19,
+    7,
+    9,
+    5,
+    13,
+    15
+   ],
+   "e_distance_kg": 18.44393362869593,
+   "e_emission_kg": 15.723550721495476,
+   "km_distance_route": 34.956900000000005,
+   "km_emission_route": 39.5622,
+   "gain_percent": 14.749472438829187
+  },
+  {
+   "trial": 29,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 5,
+   "drawn_delivery_points": [
+    14,
+    2,
+    7,
+    5,
+    3
+   ],
+   "points_sent": [
+    19,
+    2,
+    3,
+    5,
+    7,
+    14
+   ],
+   "ga_seed": 15633457897,
+   "operations": {
+    "distance": 133,
+    "emission": 132
+   },
+   "route_distance": [
+    19,
+    7,
+    5,
+    14,
+    2,
+    3
+   ],
+   "route_emission": [
+    19,
+    7,
+    5,
+    14,
+    2,
+    3
+   ],
+   "e_distance_kg": 10.124512376568555,
+   "e_emission_kg": 10.124512376568555,
+   "km_distance_route": 23.9953,
+   "km_emission_route": 23.9953,
+   "gain_percent": 0.0
+  },
+  {
+   "trial": 30,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 5,
+   "drawn_delivery_points": [
+    6,
+    3,
+    5,
+    8,
+    12
+   ],
+   "points_sent": [
+    19,
+    3,
+    5,
+    6,
+    8,
+    12
+   ],
+   "ga_seed": 15634441990,
+   "operations": {
+    "distance": 135,
+    "emission": 134
+   },
+   "route_distance": [
+    19,
+    8,
+    5,
+    6,
+    12,
+    3
+   ],
+   "route_emission": [
+    19,
+    8,
+    5,
+    6,
+    12,
+    3
+   ],
+   "e_distance_kg": 13.073410579402871,
+   "e_emission_kg": 13.073410579402871,
+   "km_distance_route": 25.312699999999996,
+   "km_emission_route": 25.312699999999996,
+   "gain_percent": 0.0
+  },
+  {
+   "trial": 31,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 10,
+   "drawn_delivery_points": [
+    13,
+    14,
+    7,
+    5,
+    8,
+    3,
+    6,
+    11,
+    4,
+    1
+   ],
+   "points_sent": [
+    19,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    13,
+    14
+   ],
+   "ga_seed": 447546157653254058,
+   "operations": {
+    "distance": 136,
+    "emission": 137
+   },
+   "route_distance": [
+    19,
+    8,
+    7,
+    5,
+    14,
+    13,
+    6,
+    4,
+    1,
+    3,
+    11
+   ],
+   "route_emission": [
+    19,
+    8,
+    7,
+    5,
+    14,
+    13,
+    6,
+    4,
+    1,
+    3,
+    11
+   ],
+   "e_distance_kg": 14.767291174439407,
+   "e_emission_kg": 14.767291174439407,
+   "km_distance_route": 34.2057,
+   "km_emission_route": 34.2057,
+   "gain_percent": 0.0
+  },
+  {
+   "trial": 32,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 10,
+   "drawn_delivery_points": [
+    9,
+    13,
+    15,
+    5,
+    2,
+    4,
+    10,
+    1,
+    8,
+    14
+   ],
+   "points_sent": [
+    19,
+    1,
+    2,
+    4,
+    5,
+    8,
+    9,
+    10,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 447545304821383497,
+   "operations": {
+    "distance": 139,
+    "emission": 138
+   },
+   "route_distance": [
+    19,
+    9,
+    8,
+    10,
+    15,
+    4,
+    1,
+    2,
+    5,
+    14,
+    13
+   ],
+   "route_emission": [
+    19,
+    8,
+    10,
+    15,
+    4,
+    1,
+    2,
+    14,
+    13,
+    5,
+    9
+   ],
+   "e_distance_kg": 21.139572433760442,
+   "e_emission_kg": 18.860889745858795,
+   "km_distance_route": 46.573,
+   "km_emission_route": 49.057199999999995,
+   "gain_percent": 10.779227891395436
+  },
+  {
+   "trial": 33,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 10,
+   "drawn_delivery_points": [
+    11,
+    6,
+    7,
+    9,
+    15,
+    3,
+    1,
+    14,
+    13,
+    2
+   ],
+   "points_sent": [
+    19,
+    1,
+    2,
+    3,
+    6,
+    7,
+    9,
+    11,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 447545278167673707,
+   "operations": {
+    "distance": 140,
+    "emission": 141
+   },
+   "route_distance": [
+    19,
+    7,
+    15,
+    3,
+    11,
+    1,
+    6,
+    13,
+    14,
+    2,
+    9
+   ],
+   "route_emission": [
+    19,
+    7,
+    9,
+    15,
+    2,
+    14,
+    13,
+    6,
+    1,
+    3,
+    11
+   ],
+   "e_distance_kg": 24.1747360951643,
+   "e_emission_kg": 20.18860572383826,
+   "km_distance_route": 49.5575,
+   "km_emission_route": 54.0457,
+   "gain_percent": 16.488826829937505
+  },
+  {
+   "trial": 34,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 14,
+   "drawn_delivery_points": [
+    6,
+    9,
+    11,
+    10,
+    14,
+    4,
+    2,
+    5,
+    8,
+    7,
+    13,
+    3,
+    12,
+    15
+   ],
+   "points_sent": [
+    19,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 6498148776499586153,
+   "operations": {
+    "distance": 142,
+    "emission": 143
+   },
+   "route_distance": [
+    19,
+    5,
+    14,
+    13,
+    12,
+    11,
+    3,
+    4,
+    6,
+    2,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    19,
+    8,
+    7,
+    5,
+    14,
+    13,
+    12,
+    3,
+    11,
+    4,
+    6,
+    2,
+    9,
+    10,
+    15
+   ],
+   "e_distance_kg": 32.56716093134475,
+   "e_emission_kg": 26.20333954001139,
+   "km_distance_route": 62.652800000000006,
+   "km_emission_route": 66.7212,
+   "gain_percent": 19.540608420700266
+  },
+  {
+   "trial": 35,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 14,
+   "drawn_delivery_points": [
+    11,
+    9,
+    3,
+    2,
+    5,
+    12,
+    7,
+    13,
+    1,
+    6,
+    14,
+    8,
+    4,
+    15
+   ],
+   "points_sent": [
+    19,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 8936800379704990538,
+   "operations": {
+    "distance": 144,
+    "emission": 145
+   },
+   "route_distance": [
+    19,
+    9,
+    8,
+    7,
+    15,
+    3,
+    4,
+    1,
+    6,
+    2,
+    5,
+    14,
+    13,
+    12,
+    11
+   ],
+   "route_emission": [
+    19,
+    8,
+    7,
+    15,
+    11,
+    3,
+    4,
+    1,
+    2,
+    14,
+    13,
+    12,
+    6,
+    5,
+    9
+   ],
+   "e_distance_kg": 28.351110512028548,
+   "e_emission_kg": 24.817049905293324,
+   "km_distance_route": 60.94,
+   "km_emission_route": 63.987199999999994,
+   "gain_percent": 12.465333960148845
+  },
+  {
+   "trial": 36,
+   "origin_name": "Pinheiros",
+   "origin_coordinates": [
+    -23.5668,
+    -46.6923
+   ],
+   "origin_point": 19,
+   "points": 14,
+   "drawn_delivery_points": [
+    11,
+    15,
+    2,
+    9,
+    6,
+    5,
+    13,
+    10,
+    3,
+    12,
+    7,
+    8,
+    1,
+    4
+   ],
+   "points_sent": [
+    19,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15
+   ],
+   "ga_seed": 8936800379704036234,
+   "operations": {
+    "distance": 147,
+    "emission": 146
+   },
+   "route_distance": [
+    19,
+    5,
+    13,
+    12,
+    11,
+    3,
+    4,
+    1,
+    6,
+    2,
+    15,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    19,
+    7,
+    3,
+    11,
+    4,
+    1,
+    2,
+    13,
+    12,
+    6,
+    5,
+    9,
+    8,
+    10,
+    15
+   ],
+   "e_distance_kg": 33.34610493076304,
+   "e_emission_kg": 26.66735329839108,
+   "km_distance_route": 63.282,
+   "km_emission_route": 74.6852,
+   "gain_percent": 20.0285809879119
+  },
+  {
+   "trial": 37,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 5,
+   "drawn_delivery_points": [
+    7,
+    14,
+    13,
+    5,
+    15
+   ],
+   "points_sent": [
+    20,
+    5,
+    7,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 15664984681,
+   "operations": {
+    "distance": 148,
+    "emission": 149
+   },
+   "route_distance": [
+    20,
+    13,
+    14,
+    5,
+    7,
+    15
+   ],
+   "route_emission": [
+    20,
+    13,
+    5,
+    14,
+    7,
+    15
+   ],
+   "e_distance_kg": 16.398207705134904,
+   "e_emission_kg": 15.155878588613678,
+   "km_distance_route": 28.4302,
+   "km_emission_route": 32.5698,
+   "gain_percent": 7.576005493162557
+  },
+  {
+   "trial": 38,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 5,
+   "drawn_delivery_points": [
+    1,
+    15,
+    2,
+    4,
+    14
+   ],
+   "points_sent": [
+    20,
+    1,
+    2,
+    4,
+    14,
+    15
+   ],
+   "ga_seed": 15661132993,
+   "operations": {
+    "distance": 150,
+    "emission": 151
+   },
+   "route_distance": [
+    20,
+    4,
+    1,
+    14,
+    2,
+    15
+   ],
+   "route_emission": [
+    20,
+    4,
+    1,
+    2,
+    14,
+    15
+   ],
+   "e_distance_kg": 10.25569967128244,
+   "e_emission_kg": 9.992839466087798,
+   "km_distance_route": 24.0564,
+   "km_emission_route": 24.7149,
+   "gain_percent": 2.563064575015698
+  },
+  {
+   "trial": 39,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 5,
+   "drawn_delivery_points": [
+    5,
+    2,
+    14,
+    11,
+    9
+   ],
+   "points_sent": [
+    20,
+    2,
+    5,
+    9,
+    11,
+    14
+   ],
+   "ga_seed": 15662150598,
+   "operations": {
+    "distance": 153,
+    "emission": 152
+   },
+   "route_distance": [
+    20,
+    11,
+    2,
+    14,
+    5,
+    9
+   ],
+   "route_emission": [
+    20,
+    11,
+    2,
+    14,
+    5,
+    9
+   ],
+   "e_distance_kg": 14.665715165858106,
+   "e_emission_kg": 14.665715165858106,
+   "km_distance_route": 37.052099999999996,
+   "km_emission_route": 37.052099999999996,
+   "gain_percent": 0.0
+  },
+  {
+   "trial": 40,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 10,
+   "drawn_delivery_points": [
+    10,
+    14,
+    6,
+    13,
+    8,
+    15,
+    1,
+    7,
+    3,
+    5
+   ],
+   "points_sent": [
+    20,
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 448365814369966859,
+   "operations": {
+    "distance": 155,
+    "emission": 154
+   },
+   "route_distance": [
+    20,
+    6,
+    1,
+    3,
+    15,
+    10,
+    7,
+    8,
+    5,
+    14,
+    13
+   ],
+   "route_emission": [
+    20,
+    1,
+    6,
+    5,
+    14,
+    13,
+    3,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 23.305106107675588,
+   "e_emission_kg": 19.19373571730697,
+   "km_distance_route": 38.5051,
+   "km_emission_route": 44.8882,
+   "gain_percent": 17.64150041357043
+  },
+  {
+   "trial": 41,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 10,
+   "drawn_delivery_points": [
+    4,
+    10,
+    8,
+    7,
+    11,
+    2,
+    6,
+    5,
+    15,
+    3
+   ],
+   "points_sent": [
+    20,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    15
+   ],
+   "ga_seed": 448392225562394508,
+   "operations": {
+    "distance": 156,
+    "emission": 157
+   },
+   "route_distance": [
+    20,
+    11,
+    3,
+    4,
+    6,
+    2,
+    5,
+    8,
+    7,
+    15,
+    10
+   ],
+   "route_emission": [
+    20,
+    4,
+    2,
+    15,
+    10,
+    8,
+    7,
+    5,
+    6,
+    3,
+    11
+   ],
+   "e_distance_kg": 19.089475704408926,
+   "e_emission_kg": 18.90082859873586,
+   "km_distance_route": 40.7878,
+   "km_emission_route": 47.9343,
+   "gain_percent": 0.9882257040170891
+  },
+  {
+   "trial": 42,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 10,
+   "drawn_delivery_points": [
+    14,
+    6,
+    1,
+    12,
+    7,
+    13,
+    5,
+    15,
+    3,
+    8
+   ],
+   "points_sent": [
+    20,
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 448365814370026441,
+   "operations": {
+    "distance": 159,
+    "emission": 158
+   },
+   "route_distance": [
+    20,
+    12,
+    6,
+    1,
+    3,
+    15,
+    7,
+    8,
+    5,
+    14,
+    13
+   ],
+   "route_emission": [
+    20,
+    12,
+    5,
+    14,
+    13,
+    6,
+    1,
+    3,
+    8,
+    7,
+    15
+   ],
+   "e_distance_kg": 22.6871412676424,
+   "e_emission_kg": 18.733691070262832,
+   "km_distance_route": 40.2409,
+   "km_emission_route": 45.9508,
+   "gain_percent": 17.425951338427055
+  },
+  {
+   "trial": 43,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 14,
+   "drawn_delivery_points": [
+    13,
+    15,
+    2,
+    5,
+    7,
+    6,
+    1,
+    10,
+    14,
+    12,
+    9,
+    8,
+    4,
+    3
+   ],
+   "points_sent": [
+    20,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 340856541553995274,
+   "operations": {
+    "distance": 161,
+    "emission": 160
+   },
+   "route_distance": [
+    20,
+    12,
+    13,
+    14,
+    5,
+    8,
+    7,
+    10,
+    15,
+    3,
+    4,
+    1,
+    6,
+    2,
+    9
+   ],
+   "route_emission": [
+    20,
+    4,
+    1,
+    6,
+    2,
+    15,
+    10,
+    8,
+    7,
+    9,
+    5,
+    14,
+    13,
+    12,
+    3
+   ],
+   "e_distance_kg": 29.331204494715163,
+   "e_emission_kg": 25.321496127401538,
+   "km_distance_route": 58.7031,
+   "km_emission_route": 64.8086,
+   "gain_percent": 13.670452463130472
+  },
+  {
+   "trial": 44,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 14,
+   "drawn_delivery_points": [
+    2,
+    1,
+    3,
+    9,
+    6,
+    10,
+    5,
+    14,
+    4,
+    12,
+    15,
+    13,
+    11,
+    7
+   ],
+   "points_sent": [
+    20,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 340856542471051627,
+   "operations": {
+    "distance": 163,
+    "emission": 162
+   },
+   "route_distance": [
+    20,
+    6,
+    2,
+    5,
+    14,
+    13,
+    12,
+    4,
+    1,
+    3,
+    11,
+    15,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    20,
+    4,
+    1,
+    15,
+    10,
+    7,
+    9,
+    5,
+    6,
+    2,
+    14,
+    13,
+    12,
+    3,
+    11
+   ],
+   "e_distance_kg": 30.900065618860733,
+   "e_emission_kg": 27.045382204788734,
+   "km_distance_route": 63.6866,
+   "km_emission_route": 72.7404,
+   "gain_percent": 12.474677114339796
+  },
+  {
+   "trial": 45,
+   "origin_name": "Mooca",
+   "origin_coordinates": [
+    -23.5505,
+    -46.5995
+   ],
+   "origin_point": 20,
+   "points": 14,
+   "drawn_delivery_points": [
+    7,
+    4,
+    13,
+    15,
+    11,
+    14,
+    3,
+    9,
+    5,
+    1,
+    12,
+    10,
+    2,
+    6
+   ],
+   "points_sent": [
+    20,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 340856542471051627,
+   "operations": {
+    "distance": 165,
+    "emission": 164
+   },
+   "route_distance": [
+    20,
+    6,
+    2,
+    5,
+    14,
+    13,
+    12,
+    4,
+    1,
+    3,
+    11,
+    15,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    20,
+    4,
+    1,
+    15,
+    10,
+    7,
+    9,
+    5,
+    6,
+    2,
+    14,
+    13,
+    12,
+    3,
+    11
+   ],
+   "e_distance_kg": 30.900065618860733,
+   "e_emission_kg": 27.045382204788734,
+   "km_distance_route": 63.6866,
+   "km_emission_route": 72.7404,
+   "gain_percent": 12.474677114339796
+  },
+  {
+   "trial": 46,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 5,
+   "drawn_delivery_points": [
+    4,
+    1,
+    14,
+    5,
+    9
+   ],
+   "points_sent": [
+    22,
+    1,
+    4,
+    5,
+    9,
+    14
+   ],
+   "ga_seed": 15718451682,
+   "operations": {
+    "distance": 168,
+    "emission": 169
+   },
+   "route_distance": [
+    22,
+    4,
+    1,
+    14,
+    5,
+    9
+   ],
+   "route_emission": [
+    22,
+    4,
+    1,
+    5,
+    14,
+    9
+   ],
+   "e_distance_kg": 13.151752671300837,
+   "e_emission_kg": 13.043204914388884,
+   "km_distance_route": 27.9227,
+   "km_emission_route": 29.855,
+   "gain_percent": 0.8253482225895361
+  },
+  {
+   "trial": 47,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 5,
+   "drawn_delivery_points": [
+    8,
+    7,
+    5,
+    6,
+    3
+   ],
+   "points_sent": [
+    22,
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "ga_seed": 15720329408,
+   "operations": {
+    "distance": 171,
+    "emission": 170
+   },
+   "route_distance": [
+    22,
+    3,
+    6,
+    5,
+    8,
+    7
+   ],
+   "route_emission": [
+    22,
+    3,
+    8,
+    7,
+    5,
+    6
+   ],
+   "e_distance_kg": 12.15062531798247,
+   "e_emission_kg": 11.040488553455383,
+   "km_distance_route": 24.7467,
+   "km_emission_route": 27.1184,
+   "gain_percent": 9.136457881588422
+  },
+  {
+   "trial": 48,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 5,
+   "drawn_delivery_points": [
+    11,
+    10,
+    2,
+    3,
+    9
+   ],
+   "points_sent": [
+    22,
+    2,
+    3,
+    9,
+    10,
+    11
+   ],
+   "ga_seed": 15719349284,
+   "operations": {
+    "distance": 172,
+    "emission": 173
+   },
+   "route_distance": [
+    22,
+    11,
+    3,
+    2,
+    10,
+    9
+   ],
+   "route_emission": [
+    22,
+    11,
+    3,
+    2,
+    9,
+    10
+   ],
+   "e_distance_kg": 17.417893000361467,
+   "e_emission_kg": 13.48739385520985,
+   "km_distance_route": 31.301299999999998,
+   "km_emission_route": 32.854800000000004,
+   "gain_percent": 22.565870309744398
+  },
+  {
+   "trial": 49,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 10,
+   "drawn_delivery_points": [
+    1,
+    11,
+    9,
+    5,
+    6,
+    13,
+    14,
+    15,
+    10,
+    8
+   ],
+   "points_sent": [
+    22,
+    1,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 450006806072759951,
+   "operations": {
+    "distance": 174,
+    "emission": 175
+   },
+   "route_distance": [
+    22,
+    11,
+    1,
+    6,
+    13,
+    14,
+    5,
+    9,
+    8,
+    15,
+    10
+   ],
+   "route_emission": [
+    22,
+    11,
+    1,
+    6,
+    14,
+    13,
+    5,
+    9,
+    8,
+    10,
+    15
+   ],
+   "e_distance_kg": 24.117881789867265,
+   "e_emission_kg": 20.809274779729193,
+   "km_distance_route": 48.532300000000006,
+   "km_emission_route": 49.953199999999995,
+   "gain_percent": 13.71848091372655
+  },
+  {
+   "trial": 50,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 10,
+   "drawn_delivery_points": [
+    11,
+    4,
+    8,
+    1,
+    14,
+    9,
+    3,
+    7,
+    6,
+    10
+   ],
+   "points_sent": [
+    22,
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    14
+   ],
+   "ga_seed": 450005043431281582,
+   "operations": {
+    "distance": 177,
+    "emission": 176
+   },
+   "route_distance": [
+    22,
+    11,
+    3,
+    4,
+    1,
+    6,
+    14,
+    10,
+    7,
+    8,
+    9
+   ],
+   "route_emission": [
+    22,
+    11,
+    3,
+    4,
+    1,
+    6,
+    14,
+    9,
+    8,
+    7,
+    10
+   ],
+   "e_distance_kg": 21.032518116558435,
+   "e_emission_kg": 17.40952346006977,
+   "km_distance_route": 40.6812,
+   "km_emission_route": 40.9817,
+   "gain_percent": 17.225681853264927
+  },
+  {
+   "trial": 51,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 10,
+   "drawn_delivery_points": [
+    13,
+    4,
+    9,
+    5,
+    6,
+    14,
+    11,
+    15,
+    10,
+    8
+   ],
+   "points_sent": [
+    22,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 450086124939241964,
+   "operations": {
+    "distance": 179,
+    "emission": 178
+   },
+   "route_distance": [
+    22,
+    11,
+    4,
+    6,
+    13,
+    14,
+    5,
+    9,
+    8,
+    15,
+    10
+   ],
+   "route_emission": [
+    22,
+    11,
+    4,
+    6,
+    14,
+    13,
+    5,
+    9,
+    8,
+    10,
+    15
+   ],
+   "e_distance_kg": 22.797207340231942,
+   "e_emission_kg": 19.48860033009387,
+   "km_distance_route": 48.0983,
+   "km_emission_route": 49.5192,
+   "gain_percent": 14.513211906877405
+  },
+  {
+   "trial": 52,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 14,
+   "drawn_delivery_points": [
+    8,
+    9,
+    13,
+    15,
+    11,
+    10,
+    5,
+    4,
+    2,
+    6,
+    12,
+    7,
+    14,
+    1
+   ],
+   "points_sent": [
+    22,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 1621968365089657612,
+   "operations": {
+    "distance": 181,
+    "emission": 180
+   },
+   "route_distance": [
+    22,
+    11,
+    4,
+    1,
+    6,
+    2,
+    9,
+    8,
+    7,
+    15,
+    10,
+    5,
+    14,
+    13,
+    12
+   ],
+   "route_emission": [
+    22,
+    11,
+    4,
+    2,
+    14,
+    13,
+    12,
+    6,
+    1,
+    5,
+    9,
+    8,
+    7,
+    15,
+    10
+   ],
+   "e_distance_kg": 27.3472987834382,
+   "e_emission_kg": 23.80466960307874,
+   "km_distance_route": 57.996300000000005,
+   "km_emission_route": 62.636900000000004,
+   "gain_percent": 12.954219750964633
+  },
+  {
+   "trial": 53,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 14,
+   "drawn_delivery_points": [
+    6,
+    14,
+    9,
+    12,
+    7,
+    1,
+    3,
+    2,
+    13,
+    11,
+    5,
+    15,
+    10,
+    4
+   ],
+   "points_sent": [
+    22,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 1595712939880459757,
+   "operations": {
+    "distance": 183,
+    "emission": 182
+   },
+   "route_distance": [
+    22,
+    11,
+    3,
+    4,
+    1,
+    5,
+    14,
+    13,
+    12,
+    6,
+    2,
+    15,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    22,
+    11,
+    4,
+    1,
+    6,
+    2,
+    15,
+    10,
+    7,
+    9,
+    5,
+    14,
+    13,
+    12,
+    3
+   ],
+   "e_distance_kg": 26.408296396713197,
+   "e_emission_kg": 26.176660957328924,
+   "km_distance_route": 58.7555,
+   "km_emission_route": 63.3295,
+   "gain_percent": 0.8771313223109055
+  },
+  {
+   "trial": 54,
+   "origin_name": "Santana",
+   "origin_coordinates": [
+    -23.5036,
+    -46.6286
+   ],
+   "origin_point": 22,
+   "points": 14,
+   "drawn_delivery_points": [
+    15,
+    1,
+    9,
+    4,
+    10,
+    5,
+    14,
+    7,
+    12,
+    11,
+    6,
+    2,
+    3,
+    13
+   ],
+   "points_sent": [
+    22,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "ga_seed": 1595712939880459757,
+   "operations": {
+    "distance": 184,
+    "emission": 185
+   },
+   "route_distance": [
+    22,
+    11,
+    3,
+    4,
+    1,
+    5,
+    14,
+    13,
+    12,
+    6,
+    2,
+    15,
+    10,
+    7,
+    9
+   ],
+   "route_emission": [
+    22,
+    11,
+    4,
+    1,
+    6,
+    2,
+    15,
+    10,
+    7,
+    9,
+    5,
+    14,
+    13,
+    12,
+    3
+   ],
+   "e_distance_kg": 26.408296396713197,
+   "e_emission_kg": 26.176660957328924,
+   "km_distance_route": 58.7555,
+   "km_emission_route": 63.3295,
+   "gain_percent": 0.8771313223109055
+  }
+ ]
+}

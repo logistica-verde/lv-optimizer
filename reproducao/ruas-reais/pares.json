@@ -1,0 +1,3782 @@
+[
+{
+"from_point": 1,
+"to_point": 2,
+"distance_meters": 3804.7,
+"duration_seconds": 416.2,
+"average_speed_kmh": 32.909466602594904,
+"slope_percent": 1.5237199509284038,
+"samples": 40
+},
+{
+"from_point": 1,
+"to_point": 3,
+"distance_meters": 3505.4,
+"duration_seconds": 423.6,
+"average_speed_kmh": 29.79093484419263,
+"slope_percent": -0.6242469601522346,
+"samples": 37
+},
+{
+"from_point": 1,
+"to_point": 4,
+"distance_meters": 2460.6,
+"duration_seconds": 311.7,
+"average_speed_kmh": 28.418864292589028,
+"slope_percent": -1.5755553906376067,
+"samples": 26
+},
+{
+"from_point": 1,
+"to_point": 5,
+"distance_meters": 7083,
+"duration_seconds": 801.3,
+"average_speed_kmh": 31.82178959191314,
+"slope_percent": -0.11622030295031786,
+"samples": 72
+},
+{
+"from_point": 1,
+"to_point": 6,
+"distance_meters": 2012.5,
+"duration_seconds": 276.7,
+"average_speed_kmh": 26.1835923382725,
+"slope_percent": -0.494279176201373,
+"samples": 22
+},
+{
+"from_point": 1,
+"to_point": 7,
+"distance_meters": 8212,
+"duration_seconds": 924.3,
+"average_speed_kmh": 31.984420642648494,
+"slope_percent": 0.016637300828457872,
+"samples": 84
+},
+{
+"from_point": 1,
+"to_point": 8,
+"distance_meters": 8369.9,
+"duration_seconds": 903.3,
+"average_speed_kmh": 33.35728993689804,
+"slope_percent": -0.3059744572523086,
+"samples": 85
+},
+{
+"from_point": 1,
+"to_point": 9,
+"distance_meters": 12800.1,
+"duration_seconds": 1218.7,
+"average_speed_kmh": 37.81107737753344,
+"slope_percent": -0.10316110350269778,
+"samples": 130
+},
+{
+"from_point": 1,
+"to_point": 10,
+"distance_meters": 9375.3,
+"duration_seconds": 981,
+"average_speed_kmh": 34.40477064220184,
+"slope_percent": -0.22159677363754351,
+"samples": 95
+},
+{
+"from_point": 1,
+"to_point": 11,
+"distance_meters": 7209.6,
+"duration_seconds": 741.3,
+"average_speed_kmh": 35.01222177256172,
+"slope_percent": -0.36603516646557793,
+"samples": 74
+},
+{
+"from_point": 1,
+"to_point": 12,
+"distance_meters": 6051,
+"duration_seconds": 688.3,
+"average_speed_kmh": 31.64840912392852,
+"slope_percent": 0.005695467994738409,
+"samples": 62
+},
+{
+"from_point": 1,
+"to_point": 13,
+"distance_meters": 6190.5,
+"duration_seconds": 685,
+"average_speed_kmh": 32.534014598540146,
+"slope_percent": 0.15571188534520833,
+"samples": 64
+},
+{
+"from_point": 1,
+"to_point": 14,
+"distance_meters": 5382.8,
+"duration_seconds": 561.8,
+"average_speed_kmh": 34.49284442862229,
+"slope_percent": 0.9388879679434794,
+"samples": 55
+},
+{
+"from_point": 1,
+"to_point": 15,
+"distance_meters": 8603.6,
+"duration_seconds": 912.9,
+"average_speed_kmh": 33.92809727242853,
+"slope_percent": -0.19430990583969002,
+"samples": 88
+},
+{
+"from_point": 1,
+"to_point": 16,
+"distance_meters": 3804.7,
+"duration_seconds": 416.2,
+"average_speed_kmh": 32.909466602594904,
+"slope_percent": 1.5237199509284038,
+"samples": 40
+},
+{
+"from_point": 1,
+"to_point": 17,
+"distance_meters": 4466.2,
+"duration_seconds": 522.2,
+"average_speed_kmh": 30.789582535427034,
+"slope_percent": 1.5699314645507914,
+"samples": 46
+},
+{
+"from_point": 1,
+"to_point": 18,
+"distance_meters": 6251.8,
+"duration_seconds": 662.2,
+"average_speed_kmh": 33.98743581999396,
+"slope_percent": 0.7709255144354504,
+"samples": 64
+},
+{
+"from_point": 1,
+"to_point": 19,
+"distance_meters": 8142.7,
+"duration_seconds": 931.2,
+"average_speed_kmh": 31.47951030927835,
+"slope_percent": -0.3063070807799205,
+"samples": 83
+},
+{
+"from_point": 1,
+"to_point": 20,
+"distance_meters": 4796.1,
+"duration_seconds": 562.8,
+"average_speed_kmh": 30.678678038379534,
+"slope_percent": -0.34085665617807137,
+"samples": 49
+},
+{
+"from_point": 1,
+"to_point": 22,
+"distance_meters": 6412,
+"duration_seconds": 658.8,
+"average_speed_kmh": 35.03825136612022,
+"slope_percent": -0.6168163529361271,
+"samples": 66
+},
+{
+"from_point": 2,
+"to_point": 1,
+"distance_meters": 4962.4,
+"duration_seconds": 588.1,
+"average_speed_kmh": 30.37687468117667,
+"slope_percent": -1.315447722428215,
+"samples": 51
+},
+{
+"from_point": 2,
+"to_point": 3,
+"distance_meters": 6276.5,
+"duration_seconds": 679.7,
+"average_speed_kmh": 33.24319552743857,
+"slope_percent": -1.2999309158675414,
+"samples": 64
+},
+{
+"from_point": 2,
+"to_point": 4,
+"distance_meters": 6051.1,
+"duration_seconds": 658.7,
+"average_speed_kmh": 33.07114012448763,
+"slope_percent": -1.6174861796150983,
+"samples": 62
+},
+{
+"from_point": 2,
+"to_point": 5,
+"distance_meters": 5248.4,
+"duration_seconds": 678.3,
+"average_speed_kmh": 27.855285272003538,
+"slope_percent": -1.366242709262655,
+"samples": 54
+},
+{
+"from_point": 2,
+"to_point": 6,
+"distance_meters": 4695.4,
+"duration_seconds": 579.5,
+"average_speed_kmh": 29.169007765314923,
+"slope_percent": -1.4593376310950024,
+"samples": 49
+},
+{
+"from_point": 2,
+"to_point": 7,
+"distance_meters": 5864.4,
+"duration_seconds": 635.4,
+"average_speed_kmh": 33.22606232294618,
+"slope_percent": -1.0001870738734377,
+"samples": 60
+},
+{
+"from_point": 2,
+"to_point": 8,
+"distance_meters": 5395.7,
+"duration_seconds": 588.5,
+"average_speed_kmh": 33.00683092608326,
+"slope_percent": -1.610256600341297,
+"samples": 55
+},
+{
+"from_point": 2,
+"to_point": 9,
+"distance_meters": 9129.6,
+"duration_seconds": 803.7,
+"average_speed_kmh": 40.894064949608065,
+"slope_percent": -0.7949721540678429,
+"samples": 93
+},
+{
+"from_point": 2,
+"to_point": 10,
+"distance_meters": 8254,
+"duration_seconds": 857.8,
+"average_speed_kmh": 34.640242480764755,
+"slope_percent": -0.9890204125995523,
+"samples": 84
+},
+{
+"from_point": 2,
+"to_point": 11,
+"distance_meters": 9980.7,
+"duration_seconds": 997.4,
+"average_speed_kmh": 36.02418287547624,
+"slope_percent": -0.86884859495999,
+"samples": 102
+},
+{
+"from_point": 2,
+"to_point": 12,
+"distance_meters": 9570.2,
+"duration_seconds": 1027.4,
+"average_speed_kmh": 33.53389137628967,
+"slope_percent": -0.6224997187635203,
+"samples": 97
+},
+{
+"from_point": 2,
+"to_point": 13,
+"distance_meters": 8051.4,
+"duration_seconds": 939.5,
+"average_speed_kmh": 30.851559340074505,
+"slope_percent": -0.6409766616577105,
+"samples": 82
+},
+{
+"from_point": 2,
+"to_point": 14,
+"distance_meters": 5162.8,
+"duration_seconds": 559.7,
+"average_speed_kmh": 33.207218152581746,
+"slope_percent": -0.19472637586839106,
+"samples": 53
+},
+{
+"from_point": 2,
+"to_point": 15,
+"distance_meters": 7223.1,
+"duration_seconds": 773.4,
+"average_speed_kmh": 33.62187742435997,
+"slope_percent": -1.0438601297623442,
+"samples": 74
+},
+{
+"from_point": 2,
+"to_point": 16,
+"distance_meters": 0,
+"duration_seconds": 0,
+"average_speed_kmh": 30.0,
+"slope_percent": 0.0,
+"samples": 1
+},
+{
+"from_point": 2,
+"to_point": 17,
+"distance_meters": 2377.2,
+"duration_seconds": 284.4,
+"average_speed_kmh": 30.091139240506333,
+"slope_percent": 0.3671240420357028,
+"samples": 25
+},
+{
+"from_point": 2,
+"to_point": 18,
+"distance_meters": 6031.8,
+"duration_seconds": 660.1,
+"average_speed_kmh": 32.89574306923193,
+"slope_percent": -0.19997590922536104,
+"samples": 62
+},
+{
+"from_point": 2,
+"to_point": 19,
+"distance_meters": 5309.3,
+"duration_seconds": 603.2,
+"average_speed_kmh": 31.68680371352785,
+"slope_percent": -1.6103817829092353,
+"samples": 55
+},
+{
+"from_point": 2,
+"to_point": 20,
+"distance_meters": 8315.2,
+"duration_seconds": 901.9,
+"average_speed_kmh": 33.19073067967624,
+"slope_percent": -0.9116422701652453,
+"samples": 85
+},
+{
+"from_point": 2,
+"to_point": 22,
+"distance_meters": 9183.1,
+"duration_seconds": 914.9,
+"average_speed_kmh": 36.13417859875396,
+"slope_percent": -1.079503306420143,
+"samples": 94
+},
+{
+"from_point": 3,
+"to_point": 1,
+"distance_meters": 3739.2,
+"duration_seconds": 413.5,
+"average_speed_kmh": 32.55409915356711,
+"slope_percent": 0.442261367058114,
+"samples": 39
+},
+{
+"from_point": 3,
+"to_point": 2,
+"distance_meters": 5909.3,
+"duration_seconds": 558,
+"average_speed_kmh": 38.124516129032266,
+"slope_percent": 1.2662681909345688,
+"samples": 61
+},
+{
+"from_point": 3,
+"to_point": 4,
+"distance_meters": 2437.6,
+"duration_seconds": 259,
+"average_speed_kmh": 33.881698841698835,
+"slope_percent": -0.7580513976684123,
+"samples": 26
+},
+{
+"from_point": 3,
+"to_point": 5,
+"distance_meters": 10214.1,
+"duration_seconds": 1017,
+"average_speed_kmh": 36.15610619469027,
+"slope_percent": 0.07654596927957215,
+"samples": 104
+},
+{
+"from_point": 3,
+"to_point": 6,
+"distance_meters": 5330.6,
+"duration_seconds": 568.6,
+"average_speed_kmh": 33.74984171649666,
+"slope_percent": 0.19481137929342635,
+"samples": 55
+},
+{
+"from_point": 3,
+"to_point": 7,
+"distance_meters": 8758.6,
+"duration_seconds": 983.2,
+"average_speed_kmh": 32.06973148901546,
+"slope_percent": 0.2881774493357311,
+"samples": 89
+},
+{
+"from_point": 3,
+"to_point": 8,
+"distance_meters": 9173.1,
+"duration_seconds": 981.9,
+"average_speed_kmh": 33.63189734188818,
+"slope_percent": -0.033431082912719436,
+"samples": 93
+},
+{
+"from_point": 3,
+"to_point": 9,
+"distance_meters": 14904.7,
+"duration_seconds": 1360.5,
+"average_speed_kmh": 39.43911797133407,
+"slope_percent": 0.045333061093190186,
+"samples": 151
+},
+{
+"from_point": 3,
+"to_point": 10,
+"distance_meters": 8367.2,
+"duration_seconds": 905.3,
+"average_speed_kmh": 33.272859825472224,
+"slope_percent": 0.020404879447971758,
+"samples": 85
+},
+{
+"from_point": 3,
+"to_point": 11,
+"distance_meters": 4984.6,
+"duration_seconds": 492.9,
+"average_speed_kmh": 36.4060864272672,
+"slope_percent": -0.13235208887819006,
+"samples": 51
+},
+{
+"from_point": 3,
+"to_point": 12,
+"distance_meters": 7674.3,
+"duration_seconds": 783,
+"average_speed_kmh": 35.284137931034486,
+"slope_percent": 0.25864103421665574,
+"samples": 78
+},
+{
+"from_point": 3,
+"to_point": 13,
+"distance_meters": 8493.4,
+"duration_seconds": 853.9,
+"average_speed_kmh": 35.807752664246394,
+"slope_percent": 0.34555309239181375,
+"samples": 87
+},
+{
+"from_point": 3,
+"to_point": 14,
+"distance_meters": 8513.9,
+"duration_seconds": 777.5,
+"average_speed_kmh": 39.4212733118971,
+"slope_percent": 0.8056852687398031,
+"samples": 87
+},
+{
+"from_point": 3,
+"to_point": 15,
+"distance_meters": 7646.2,
+"duration_seconds": 788.3,
+"average_speed_kmh": 34.91858429531904,
+"slope_percent": 0.10741719198207388,
+"samples": 78
+},
+{
+"from_point": 3,
+"to_point": 16,
+"distance_meters": 5909.3,
+"duration_seconds": 558,
+"average_speed_kmh": 38.124516129032266,
+"slope_percent": 1.2662681909345688,
+"samples": 61
+},
+{
+"from_point": 3,
+"to_point": 17,
+"distance_meters": 6570.8,
+"duration_seconds": 664,
+"average_speed_kmh": 35.624819277108436,
+"slope_percent": 1.344490016436354,
+"samples": 67
+},
+{
+"from_point": 3,
+"to_point": 18,
+"distance_meters": 9382.9,
+"duration_seconds": 877.9,
+"average_speed_kmh": 38.47640961385124,
+"slope_percent": 0.718534300042734,
+"samples": 96
+},
+{
+"from_point": 3,
+"to_point": 19,
+"distance_meters": 8946,
+"duration_seconds": 1009.8,
+"average_speed_kmh": 31.893048128342247,
+"slope_percent": -0.02667520273154119,
+"samples": 91
+},
+{
+"from_point": 3,
+"to_point": 20,
+"distance_meters": 5942.2,
+"duration_seconds": 616.1,
+"average_speed_kmh": 34.72150624898555,
+"slope_percent": 0.06963634738788259,
+"samples": 61
+},
+{
+"from_point": 3,
+"to_point": 22,
+"distance_meters": 4187.1,
+"duration_seconds": 410.4,
+"average_speed_kmh": 36.72894736842106,
+"slope_percent": -0.49318143822693705,
+"samples": 43
+},
+{
+"from_point": 4,
+"to_point": 1,
+"distance_meters": 1429.4,
+"duration_seconds": 185.5,
+"average_speed_kmh": 27.74037735849057,
+"slope_percent": 2.717654529603596,
+"samples": 16
+},
+{
+"from_point": 4,
+"to_point": 2,
+"distance_meters": 5311.5,
+"duration_seconds": 554.3,
+"average_speed_kmh": 34.49648204943172,
+"slope_percent": 1.7661243021310786,
+"samples": 55
+},
+{
+"from_point": 4,
+"to_point": 3,
+"distance_meters": 4368.8,
+"duration_seconds": 432.9,
+"average_speed_kmh": 36.33097713097714,
+"slope_percent": 0.399659344907467,
+"samples": 45
+},
+{
+"from_point": 4,
+"to_point": 5,
+"distance_meters": 8742.6,
+"duration_seconds": 906.6,
+"average_speed_kmh": 34.71581733951026,
+"slope_percent": 0.3160147665081805,
+"samples": 89
+},
+{
+"from_point": 4,
+"to_point": 6,
+"distance_meters": 2994.4,
+"duration_seconds": 333.9,
+"average_speed_kmh": 32.284636118598385,
+"slope_percent": 1.1066634729656277,
+"samples": 32
+},
+{
+"from_point": 4,
+"to_point": 7,
+"distance_meters": 9877.8,
+"duration_seconds": 1066,
+"average_speed_kmh": 33.358424015009376,
+"slope_percent": 0.3995213258597376,
+"samples": 100
+},
+{
+"from_point": 4,
+"to_point": 8,
+"distance_meters": 10141.4,
+"duration_seconds": 1022,
+"average_speed_kmh": 35.723131115459886,
+"slope_percent": 0.1307511783382965,
+"samples": 103
+},
+{
+"from_point": 4,
+"to_point": 9,
+"distance_meters": 15525.6,
+"duration_seconds": 1342.4,
+"average_speed_kmh": 41.635995232419546,
+"slope_percent": 0.16311559826786293,
+"samples": 157
+},
+{
+"from_point": 4,
+"to_point": 10,
+"distance_meters": 10985.5,
+"duration_seconds": 1103.9,
+"average_speed_kmh": 35.8255276746082,
+"slope_percent": 0.15452467927700397,
+"samples": 111
+},
+{
+"from_point": 4,
+"to_point": 11,
+"distance_meters": 7055,
+"duration_seconds": 713.4,
+"average_speed_kmh": 35.60134566862911,
+"slope_percent": 0.1701606083327336,
+"samples": 72
+},
+{
+"from_point": 4,
+"to_point": 12,
+"distance_meters": 6033.3,
+"duration_seconds": 623.7,
+"average_speed_kmh": 34.82424242424242,
+"slope_percent": 0.6569003424590496,
+"samples": 62
+},
+{
+"from_point": 4,
+"to_point": 13,
+"distance_meters": 6157.2,
+"duration_seconds": 619.2,
+"average_speed_kmh": 35.79767441860465,
+"slope_percent": 0.7608075820899818,
+"samples": 63
+},
+{
+"from_point": 4,
+"to_point": 14,
+"distance_meters": 6225.5,
+"duration_seconds": 662.5,
+"average_speed_kmh": 33.8291320754717,
+"slope_percent": 1.4101178258116078,
+"samples": 64
+},
+{
+"from_point": 4,
+"to_point": 15,
+"distance_meters": 10213.7,
+"duration_seconds": 1035.8,
+"average_speed_kmh": 35.49847460899788,
+"slope_percent": 0.21966225329074118,
+"samples": 104
+},
+{
+"from_point": 4,
+"to_point": 16,
+"distance_meters": 5311.5,
+"duration_seconds": 554.3,
+"average_speed_kmh": 34.49648204943172,
+"slope_percent": 1.7661243021310786,
+"samples": 55
+},
+{
+"from_point": 4,
+"to_point": 17,
+"distance_meters": 6132.1,
+"duration_seconds": 663.9,
+"average_speed_kmh": 33.251333032083146,
+"slope_percent": 1.7806116809720791,
+"samples": 63
+},
+{
+"from_point": 4,
+"to_point": 18,
+"distance_meters": 7094.5,
+"duration_seconds": 762.9,
+"average_speed_kmh": 33.47778214707039,
+"slope_percent": 1.217844809359363,
+"samples": 73
+},
+{
+"from_point": 4,
+"to_point": 19,
+"distance_meters": 9914.2,
+"duration_seconds": 1049.9,
+"average_speed_kmh": 33.99478045528146,
+"slope_percent": 0.13380107444321254,
+"samples": 101
+},
+{
+"from_point": 4,
+"to_point": 20,
+"distance_meters": 4778.3,
+"duration_seconds": 498.2,
+"average_speed_kmh": 34.528061019670815,
+"slope_percent": 0.46587425580682057,
+"samples": 49
+},
+{
+"from_point": 4,
+"to_point": 22,
+"distance_meters": 6778.8,
+"duration_seconds": 657.3,
+"average_speed_kmh": 37.12715654952077,
+"slope_percent": -0.025331499928774936,
+"samples": 69
+},
+{
+"from_point": 5,
+"to_point": 1,
+"distance_meters": 6450.5,
+"duration_seconds": 705.5,
+"average_speed_kmh": 32.91537916371368,
+"slope_percent": 0.04265286026389938,
+"samples": 66
+},
+{
+"from_point": 5,
+"to_point": 2,
+"distance_meters": 6723.2,
+"duration_seconds": 778.9,
+"average_speed_kmh": 31.07397612016947,
+"slope_percent": 0.8837181909528422,
+"samples": 69
+},
+{
+"from_point": 5,
+"to_point": 3,
+"distance_meters": 8470.6,
+"duration_seconds": 871.3,
+"average_speed_kmh": 34.998462068174,
+"slope_percent": -0.16926013974913656,
+"samples": 86
+},
+{
+"from_point": 5,
+"to_point": 4,
+"distance_meters": 7669.2,
+"duration_seconds": 817.2,
+"average_speed_kmh": 33.78502202643172,
+"slope_percent": -0.39268183846496996,
+"samples": 78
+},
+{
+"from_point": 5,
+"to_point": 6,
+"distance_meters": 5454.4,
+"duration_seconds": 644.6,
+"average_speed_kmh": 30.46205398696866,
+"slope_percent": -0.03805132916751995,
+"samples": 56
+},
+{
+"from_point": 5,
+"to_point": 7,
+"distance_meters": 7219.5,
+"duration_seconds": 893.4,
+"average_speed_kmh": 29.091336467427805,
+"slope_percent": 0.11867961932780569,
+"samples": 74
+},
+{
+"from_point": 5,
+"to_point": 8,
+"distance_meters": 7229.2,
+"duration_seconds": 873.9,
+"average_speed_kmh": 29.780432543769308,
+"slope_percent": -0.24178156973713025,
+"samples": 74
+},
+{
+"from_point": 5,
+"to_point": 9,
+"distance_meters": 10356.1,
+"duration_seconds": 1053,
+"average_speed_kmh": 35.40547008547009,
+"slope_percent": -0.052509231242764645,
+"samples": 105
+},
+{
+"from_point": 5,
+"to_point": 10,
+"distance_meters": 10184.8,
+"duration_seconds": 1166.4,
+"average_speed_kmh": 31.434567901234566,
+"slope_percent": -0.1502238630115466,
+"samples": 103
+},
+{
+"from_point": 5,
+"to_point": 11,
+"distance_meters": 12174.8,
+"duration_seconds": 1189,
+"average_speed_kmh": 36.86230445752733,
+"slope_percent": -0.1586395635803205,
+"samples": 124
+},
+{
+"from_point": 5,
+"to_point": 12,
+"distance_meters": 10887.5,
+"duration_seconds": 1134.2,
+"average_speed_kmh": 34.557397284429555,
+"slope_percent": 0.059257987560401085,
+"samples": 110
+},
+{
+"from_point": 5,
+"to_point": 13,
+"distance_meters": 6832.5,
+"duration_seconds": 864.4,
+"average_speed_kmh": 28.455576122165663,
+"slope_percent": 0.2311166450950522,
+"samples": 70
+},
+{
+"from_point": 5,
+"to_point": 14,
+"distance_meters": 3622.7,
+"duration_seconds": 476,
+"average_speed_kmh": 27.39857142857143,
+"slope_percent": 1.5855051546662786,
+"samples": 38
+},
+{
+"from_point": 5,
+"to_point": 15,
+"distance_meters": 9605.5,
+"duration_seconds": 1116.6,
+"average_speed_kmh": 30.968833960236434,
+"slope_percent": -0.08858229066497823,
+"samples": 98
+},
+{
+"from_point": 5,
+"to_point": 16,
+"distance_meters": 6723.2,
+"duration_seconds": 778.9,
+"average_speed_kmh": 31.07397612016947,
+"slope_percent": 0.8837181909528422,
+"samples": 69
+},
+{
+"from_point": 5,
+"to_point": 17,
+"distance_meters": 5861.5,
+"duration_seconds": 781.6,
+"average_speed_kmh": 26.997697031729786,
+"slope_percent": 1.306772860668262,
+"samples": 60
+},
+{
+"from_point": 5,
+"to_point": 18,
+"distance_meters": 3557.9,
+"duration_seconds": 467.5,
+"average_speed_kmh": 27.397732620320856,
+"slope_percent": 1.597108671175828,
+"samples": 37
+},
+{
+"from_point": 5,
+"to_point": 19,
+"distance_meters": 6664.4,
+"duration_seconds": 861.2,
+"average_speed_kmh": 27.85861588481189,
+"slope_percent": -0.2732467500488622,
+"samples": 68
+},
+{
+"from_point": 5,
+"to_point": 20,
+"distance_meters": 9632.5,
+"duration_seconds": 1008.7,
+"average_speed_kmh": 34.377912164171704,
+"slope_percent": -0.08833399356163493,
+"samples": 98
+},
+{
+"from_point": 5,
+"to_point": 22,
+"distance_meters": 11377.2,
+"duration_seconds": 1106.5,
+"average_speed_kmh": 37.015743334839584,
+"slope_percent": -0.28326072006352887,
+"samples": 116
+},
+{
+"from_point": 6,
+"to_point": 1,
+"distance_meters": 1440.1,
+"duration_seconds": 195.2,
+"average_speed_kmh": 26.55922131147541,
+"slope_percent": -0.10683018807454915,
+"samples": 16
+},
+{
+"from_point": 6,
+"to_point": 2,
+"distance_meters": 3518.7,
+"duration_seconds": 431.7,
+"average_speed_kmh": 29.34287699791522,
+"slope_percent": 1.544688128469904,
+"samples": 37
+},
+{
+"from_point": 6,
+"to_point": 3,
+"distance_meters": 4759.4,
+"duration_seconds": 499.6,
+"average_speed_kmh": 34.295116092874295,
+"slope_percent": -0.3946423644924187,
+"samples": 49
+},
+{
+"from_point": 6,
+"to_point": 4,
+"distance_meters": 2658.8,
+"duration_seconds": 306.9,
+"average_speed_kmh": 31.188269794721414,
+"slope_percent": -1.3539942831352505,
+"samples": 28
+},
+{
+"from_point": 6,
+"to_point": 5,
+"distance_meters": 6301.8,
+"duration_seconds": 753.5,
+"average_speed_kmh": 30.108135368281353,
+"slope_percent": -0.23478528237537247,
+"samples": 65
+},
+{
+"from_point": 6,
+"to_point": 7,
+"distance_meters": 7978.4,
+"duration_seconds": 894.9,
+"average_speed_kmh": 32.0954743546765,
+"slope_percent": 0.008570147946463514,
+"samples": 81
+},
+{
+"from_point": 6,
+"to_point": 8,
+"distance_meters": 8136.3,
+"duration_seconds": 873.9,
+"average_speed_kmh": 33.51719876416066,
+"slope_percent": -0.31074730938305384,
+"samples": 83
+},
+{
+"from_point": 6,
+"to_point": 9,
+"distance_meters": 12143.6,
+"duration_seconds": 1161.3,
+"average_speed_kmh": 37.64484629294756,
+"slope_percent": -0.10883647902324407,
+"samples": 123
+},
+{
+"from_point": 6,
+"to_point": 10,
+"distance_meters": 9818.7,
+"duration_seconds": 1028,
+"average_speed_kmh": 34.38455252918288,
+"slope_percent": -0.22521720861066888,
+"samples": 100
+},
+{
+"from_point": 6,
+"to_point": 11,
+"distance_meters": 7445.5,
+"duration_seconds": 780.1,
+"average_speed_kmh": 34.35944109729522,
+"slope_percent": -0.3265740177711472,
+"samples": 76
+},
+{
+"from_point": 6,
+"to_point": 12,
+"distance_meters": 6249.2,
+"duration_seconds": 689.2,
+"average_speed_kmh": 32.64236796285548,
+"slope_percent": 0.044071214885996586,
+"samples": 64
+},
+{
+"from_point": 6,
+"to_point": 13,
+"distance_meters": 5430.8,
+"duration_seconds": 593.7,
+"average_speed_kmh": 32.93057099545224,
+"slope_percent": 0.23566955399508027,
+"samples": 56
+},
+{
+"from_point": 6,
+"to_point": 14,
+"distance_meters": 4234.5,
+"duration_seconds": 462,
+"average_speed_kmh": 32.9961038961039,
+"slope_percent": 1.2796550211339894,
+"samples": 44
+},
+{
+"from_point": 6,
+"to_point": 15,
+"distance_meters": 9046.9,
+"duration_seconds": 959.9,
+"average_speed_kmh": 33.92940931347015,
+"slope_percent": -0.16952855289309482,
+"samples": 92
+},
+{
+"from_point": 6,
+"to_point": 16,
+"distance_meters": 3518.7,
+"duration_seconds": 431.7,
+"average_speed_kmh": 29.34287699791522,
+"slope_percent": 1.544688128469904,
+"samples": 37
+},
+{
+"from_point": 6,
+"to_point": 17,
+"distance_meters": 4232.7,
+"duration_seconds": 492.8,
+"average_speed_kmh": 30.92069805194805,
+"slope_percent": 1.6766479947739437,
+"samples": 44
+},
+{
+"from_point": 6,
+"to_point": 18,
+"distance_meters": 5103.4,
+"duration_seconds": 562.4,
+"average_speed_kmh": 32.667567567567566,
+"slope_percent": 1.032514271531399,
+"samples": 53
+},
+{
+"from_point": 6,
+"to_point": 19,
+"distance_meters": 7909.2,
+"duration_seconds": 901.8,
+"average_speed_kmh": 31.57365269461078,
+"slope_percent": -0.3241924043016442,
+"samples": 81
+},
+{
+"from_point": 6,
+"to_point": 20,
+"distance_meters": 4994.3,
+"duration_seconds": 563.7,
+"average_speed_kmh": 31.895476317189992,
+"slope_percent": -0.2780948058564549,
+"samples": 51
+},
+{
+"from_point": 6,
+"to_point": 22,
+"distance_meters": 7169.4,
+"duration_seconds": 724,
+"average_speed_kmh": 35.64895027624309,
+"slope_percent": -0.5260452159774289,
+"samples": 73
+},
+{
+"from_point": 7,
+"to_point": 1,
+"distance_meters": 7952.9,
+"duration_seconds": 863.4,
+"average_speed_kmh": 33.160111188325224,
+"slope_percent": -0.01719525415284244,
+"samples": 81
+},
+{
+"from_point": 7,
+"to_point": 2,
+"distance_meters": 6060,
+"duration_seconds": 679.9,
+"average_speed_kmh": 32.08707162818062,
+"slope_percent": 0.8132423411832703,
+"samples": 62
+},
+{
+"from_point": 7,
+"to_point": 3,
+"distance_meters": 8309,
+"duration_seconds": 881.3,
+"average_speed_kmh": 33.94122319301033,
+"slope_percent": -0.22191628824460105,
+"samples": 85
+},
+{
+"from_point": 7,
+"to_point": 4,
+"distance_meters": 9087.8,
+"duration_seconds": 967.7,
+"average_speed_kmh": 33.808081016844056,
+"slope_percent": -0.3825353214619625,
+"samples": 92
+},
+{
+"from_point": 7,
+"to_point": 5,
+"distance_meters": 6605.8,
+"duration_seconds": 820.5,
+"average_speed_kmh": 28.983400365630715,
+"slope_percent": -0.171644033099118,
+"samples": 68
+},
+{
+"from_point": 7,
+"to_point": 6,
+"distance_meters": 8635.2,
+"duration_seconds": 922.6,
+"average_speed_kmh": 33.69468892261002,
+"slope_percent": -0.07901993482217745,
+"samples": 88
+},
+{
+"from_point": 7,
+"to_point": 8,
+"distance_meters": 2112.2,
+"duration_seconds": 261.9,
+"average_speed_kmh": 29.03367697594502,
+"slope_percent": -1.1283653694410232,
+"samples": 23
+},
+{
+"from_point": 7,
+"to_point": 9,
+"distance_meters": 8174.8,
+"duration_seconds": 753.3,
+"average_speed_kmh": 39.06714456391876,
+"slope_percent": -0.11702630849276688,
+"samples": 83
+},
+{
+"from_point": 7,
+"to_point": 10,
+"distance_meters": 4348.9,
+"duration_seconds": 549.5,
+"average_speed_kmh": 28.49142857142857,
+"slope_percent": -0.5058750488629309,
+"samples": 45
+},
+{
+"from_point": 7,
+"to_point": 11,
+"distance_meters": 12762,
+"duration_seconds": 1212,
+"average_speed_kmh": 37.906930693069306,
+"slope_percent": -0.18308321082180978,
+"samples": 129
+},
+{
+"from_point": 7,
+"to_point": 12,
+"distance_meters": 13051.7,
+"duration_seconds": 1325.3,
+"average_speed_kmh": 35.45319550290501,
+"slope_percent": 0.023341875984791077,
+"samples": 132
+},
+{
+"from_point": 7,
+"to_point": 13,
+"distance_meters": 11359.3,
+"duration_seconds": 1228.5,
+"average_speed_kmh": 33.28732600732601,
+"slope_percent": 0.08661876800758565,
+"samples": 115
+},
+{
+"from_point": 7,
+"to_point": 14,
+"distance_meters": 8149.5,
+"duration_seconds": 840.1,
+"average_speed_kmh": 34.92227115819546,
+"slope_percent": 0.6288729369899994,
+"samples": 83
+},
+{
+"from_point": 7,
+"to_point": 15,
+"distance_meters": 3836.3,
+"duration_seconds": 503.4,
+"average_speed_kmh": 27.43480333730632,
+"slope_percent": -0.4029783765466605,
+"samples": 40
+},
+{
+"from_point": 7,
+"to_point": 16,
+"distance_meters": 6060,
+"duration_seconds": 679.9,
+"average_speed_kmh": 32.08707162818062,
+"slope_percent": 0.8132423411832703,
+"samples": 62
+},
+{
+"from_point": 7,
+"to_point": 17,
+"distance_meters": 4196.4,
+"duration_seconds": 459.8,
+"average_speed_kmh": 32.85567638103523,
+"slope_percent": 1.7348203221809178,
+"samples": 43
+},
+{
+"from_point": 7,
+"to_point": 18,
+"distance_meters": 8084.7,
+"duration_seconds": 831.6,
+"average_speed_kmh": 34.9987012987013,
+"slope_percent": 0.6256543654187874,
+"samples": 82
+},
+{
+"from_point": 7,
+"to_point": 19,
+"distance_meters": 1976.4,
+"duration_seconds": 248.4,
+"average_speed_kmh": 28.643478260869564,
+"slope_percent": -1.236816658796015,
+"samples": 21
+},
+{
+"from_point": 7,
+"to_point": 20,
+"distance_meters": 11796.8,
+"duration_seconds": 1199.8,
+"average_speed_kmh": 35.39629938323054,
+"slope_percent": -0.11209936534513158,
+"samples": 119
+},
+{
+"from_point": 7,
+"to_point": 22,
+"distance_meters": 11964.4,
+"duration_seconds": 1129.5,
+"average_speed_kmh": 38.13354581673307,
+"slope_percent": -0.30599252358267376,
+"samples": 121
+},
+{
+"from_point": 8,
+"to_point": 1,
+"distance_meters": 7685.4,
+"duration_seconds": 832.3,
+"average_speed_kmh": 33.24214826384717,
+"slope_percent": 0.23600304184268686,
+"samples": 78
+},
+{
+"from_point": 8,
+"to_point": 2,
+"distance_meters": 5792.4,
+"duration_seconds": 648.8,
+"average_speed_kmh": 32.1403205918619,
+"slope_percent": 1.1741575989556117,
+"samples": 59
+},
+{
+"from_point": 8,
+"to_point": 3,
+"distance_meters": 8041.4,
+"duration_seconds": 850.2,
+"average_speed_kmh": 34.049682427664074,
+"slope_percent": 0.02125078667264094,
+"samples": 82
+},
+{
+"from_point": 8,
+"to_point": 4,
+"distance_meters": 8820.2,
+"duration_seconds": 936.6,
+"average_speed_kmh": 33.902114029468294,
+"slope_percent": -0.16237544591346872,
+"samples": 90
+},
+{
+"from_point": 8,
+"to_point": 5,
+"distance_meters": 6398.8,
+"duration_seconds": 773.6,
+"average_speed_kmh": 29.777249224405377,
+"slope_percent": 0.12899244005076346,
+"samples": 66
+},
+{
+"from_point": 8,
+"to_point": 6,
+"distance_meters": 8367.6,
+"duration_seconds": 891.5,
+"average_speed_kmh": 33.78952327537858,
+"slope_percent": 0.15506967058771495,
+"samples": 85
+},
+{
+"from_point": 8,
+"to_point": 7,
+"distance_meters": 1652.2,
+"duration_seconds": 208.7,
+"average_speed_kmh": 28.499856252994732,
+"slope_percent": 1.6234246593767285,
+"samples": 18
+},
+{
+"from_point": 8,
+"to_point": 9,
+"distance_meters": 7334.4,
+"duration_seconds": 674.3,
+"average_speed_kmh": 39.157407682040635,
+"slope_percent": 0.13546009469329823,
+"samples": 75
+},
+{
+"from_point": 8,
+"to_point": 10,
+"distance_meters": 6469.4,
+"duration_seconds": 639.5,
+"average_speed_kmh": 36.418827208756845,
+"slope_percent": -0.058476346849302016,
+"samples": 66
+},
+{
+"from_point": 8,
+"to_point": 11,
+"distance_meters": 13092.9,
+"duration_seconds": 1228.9,
+"average_speed_kmh": 38.354984132150705,
+"slope_percent": -0.03102092326022853,
+"samples": 133
+},
+{
+"from_point": 8,
+"to_point": 12,
+"distance_meters": 12784.1,
+"duration_seconds": 1294.2,
+"average_speed_kmh": 35.56077885952712,
+"slope_percent": 0.16952274835113704,
+"samples": 129
+},
+{
+"from_point": 8,
+"to_point": 13,
+"distance_meters": 11152.3,
+"duration_seconds": 1181.6,
+"average_speed_kmh": 33.97789438050101,
+"slope_percent": 0.26780723856663385,
+"samples": 113
+},
+{
+"from_point": 8,
+"to_point": 14,
+"distance_meters": 7942.5,
+"duration_seconds": 793.2,
+"average_speed_kmh": 36.04765506807867,
+"slope_percent": 0.8996284728107212,
+"samples": 81
+},
+{
+"from_point": 8,
+"to_point": 15,
+"distance_meters": 5683,
+"duration_seconds": 616.5,
+"average_speed_kmh": 33.18540145985402,
+"slope_percent": 0.14588965495177,
+"samples": 58
+},
+{
+"from_point": 8,
+"to_point": 16,
+"distance_meters": 5792.4,
+"duration_seconds": 648.8,
+"average_speed_kmh": 32.1403205918619,
+"slope_percent": 1.1741575989556117,
+"samples": 59
+},
+{
+"from_point": 8,
+"to_point": 17,
+"distance_meters": 3928.8,
+"duration_seconds": 428.7,
+"average_speed_kmh": 32.992022393282014,
+"slope_percent": 2.4381356567962365,
+"samples": 41
+},
+{
+"from_point": 8,
+"to_point": 18,
+"distance_meters": 7877.7,
+"duration_seconds": 784.7,
+"average_speed_kmh": 36.140843634510006,
+"slope_percent": 0.8899580475040322,
+"samples": 80
+},
+{
+"from_point": 8,
+"to_point": 19,
+"distance_meters": 927.9,
+"duration_seconds": 124.4,
+"average_speed_kmh": 26.852411575562698,
+"slope_percent": -0.3143298487624283,
+"samples": 11
+},
+{
+"from_point": 8,
+"to_point": 20,
+"distance_meters": 11529.2,
+"duration_seconds": 1168.7,
+"average_speed_kmh": 35.513921451185084,
+"slope_percent": 0.06178058336696266,
+"samples": 117
+},
+{
+"from_point": 8,
+"to_point": 22,
+"distance_meters": 12295.3,
+"duration_seconds": 1146.4,
+"average_speed_kmh": 38.61050244242847,
+"slope_percent": -0.13777533456184457,
+"samples": 125
+},
+{
+"from_point": 9,
+"to_point": 1,
+"distance_meters": 12750.7,
+"duration_seconds": 1176.7,
+"average_speed_kmh": 39.00953514064757,
+"slope_percent": 0.06373755265972948,
+"samples": 129
+},
+{
+"from_point": 9,
+"to_point": 2,
+"distance_meters": 10961.5,
+"duration_seconds": 952.4,
+"average_speed_kmh": 41.433641327173454,
+"slope_percent": 0.5327287481493863,
+"samples": 111
+},
+{
+"from_point": 9,
+"to_point": 3,
+"distance_meters": 13614.5,
+"duration_seconds": 1264.8,
+"average_speed_kmh": 38.750948766603415,
+"slope_percent": -0.06211605364469374,
+"samples": 138
+},
+{
+"from_point": 9,
+"to_point": 4,
+"distance_meters": 13839.4,
+"duration_seconds": 1247.3,
+"average_speed_kmh": 39.943750501082334,
+"slope_percent": -0.17839331529463476,
+"samples": 140
+},
+{
+"from_point": 9,
+"to_point": 5,
+"distance_meters": 10501.5,
+"duration_seconds": 1037.6,
+"average_speed_kmh": 36.435427910562844,
+"slope_percent": -0.016175955327505844,
+"samples": 107
+},
+{
+"from_point": 9,
+"to_point": 6,
+"distance_meters": 12464.7,
+"duration_seconds": 1199,
+"average_speed_kmh": 37.42528773978316,
+"slope_percent": 0.024459317013685672,
+"samples": 126
+},
+{
+"from_point": 9,
+"to_point": 7,
+"distance_meters": 8016.3,
+"duration_seconds": 739.7,
+"average_speed_kmh": 39.01403271596593,
+"slope_percent": 0.1748020686332605,
+"samples": 82
+},
+{
+"from_point": 9,
+"to_point": 8,
+"distance_meters": 6364.1,
+"duration_seconds": 531,
+"average_speed_kmh": 43.146440677966105,
+"slope_percent": -0.20004686908909292,
+"samples": 65
+},
+{
+"from_point": 9,
+"to_point": 10,
+"distance_meters": 11957.2,
+"duration_seconds": 1015.5,
+"average_speed_kmh": 42.38889217134417,
+"slope_percent": -0.11339880602397169,
+"samples": 121
+},
+{
+"from_point": 9,
+"to_point": 11,
+"distance_meters": 17768.9,
+"duration_seconds": 1586,
+"average_speed_kmh": 40.33293820933166,
+"slope_percent": -0.075890170381107,
+"samples": 179
+},
+{
+"from_point": 9,
+"to_point": 12,
+"distance_meters": 17358.4,
+"duration_seconds": 1616,
+"average_speed_kmh": 38.66970297029703,
+"slope_percent": 0.07381989980857713,
+"samples": 175
+},
+{
+"from_point": 9,
+"to_point": 13,
+"distance_meters": 14345.1,
+"duration_seconds": 1377.8,
+"average_speed_kmh": 37.48175352010452,
+"slope_percent": 0.14138409729346654,
+"samples": 145
+},
+{
+"from_point": 9,
+"to_point": 14,
+"distance_meters": 11135.2,
+"duration_seconds": 989.4,
+"average_speed_kmh": 40.5161916312917,
+"slope_percent": 0.5516766922040282,
+"samples": 113
+},
+{
+"from_point": 9,
+"to_point": 15,
+"distance_meters": 12635.9,
+"duration_seconds": 1125.2,
+"average_speed_kmh": 40.42769285460362,
+"slope_percent": -0.034842525397215114,
+"samples": 128
+},
+{
+"from_point": 9,
+"to_point": 16,
+"distance_meters": 10961.5,
+"duration_seconds": 952.4,
+"average_speed_kmh": 41.433641327173454,
+"slope_percent": 0.5327287481493863,
+"samples": 111
+},
+{
+"from_point": 9,
+"to_point": 17,
+"distance_meters": 9455.3,
+"duration_seconds": 855.7,
+"average_speed_kmh": 39.77922168984457,
+"slope_percent": 0.8570793790075134,
+"samples": 96
+},
+{
+"from_point": 9,
+"to_point": 18,
+"distance_meters": 11070.4,
+"duration_seconds": 980.9,
+"average_speed_kmh": 40.62946273830156,
+"slope_percent": 0.5396654074473822,
+"samples": 112
+},
+{
+"from_point": 9,
+"to_point": 19,
+"distance_meters": 6542.8,
+"duration_seconds": 606.8,
+"average_speed_kmh": 38.816875411997366,
+"slope_percent": -0.1838853396099541,
+"samples": 67
+},
+{
+"from_point": 9,
+"to_point": 20,
+"distance_meters": 16103.5,
+"duration_seconds": 1490.5,
+"average_speed_kmh": 38.89473331096948,
+"slope_percent": -0.020958176793864927,
+"samples": 163
+},
+{
+"from_point": 9,
+"to_point": 22,
+"distance_meters": 16971.3,
+"duration_seconds": 1503.5,
+"average_speed_kmh": 40.63630196208846,
+"slope_percent": -0.15899858575434447,
+"samples": 171
+},
+{
+"from_point": 10,
+"to_point": 1,
+"distance_meters": 9387.4,
+"duration_seconds": 950.1,
+"average_speed_kmh": 35.5695610988317,
+"slope_percent": 0.2612197107871699,
+"samples": 95
+},
+{
+"from_point": 10,
+"to_point": 2,
+"distance_meters": 8165.2,
+"duration_seconds": 884.2,
+"average_speed_kmh": 33.24442433838498,
+"slope_percent": 0.8243317167164711,
+"samples": 83
+},
+{
+"from_point": 10,
+"to_point": 3,
+"distance_meters": 8480.4,
+"duration_seconds": 830.8,
+"average_speed_kmh": 36.74703899855561,
+"slope_percent": 0.10063365579671688,
+"samples": 86
+},
+{
+"from_point": 10,
+"to_point": 4,
+"distance_meters": 11905.8,
+"duration_seconds": 940,
+"average_speed_kmh": 45.59668085106383,
+"slope_percent": -0.05979139635972896,
+"samples": 121
+},
+{
+"from_point": 10,
+"to_point": 5,
+"distance_meters": 9859.6,
+"duration_seconds": 1133.8,
+"average_speed_kmh": 31.305838772270242,
+"slope_percent": 0.12076774407527001,
+"samples": 100
+},
+{
+"from_point": 10,
+"to_point": 6,
+"distance_meters": 10198.2,
+"duration_seconds": 1004.3,
+"average_speed_kmh": 36.55632779050085,
+"slope_percent": 0.20999628938595452,
+"samples": 104
+},
+{
+"from_point": 10,
+"to_point": 7,
+"distance_meters": 4181.2,
+"duration_seconds": 472.7,
+"average_speed_kmh": 31.843283266342286,
+"slope_percent": 0.6361810006696652,
+"samples": 43
+},
+{
+"from_point": 10,
+"to_point": 8,
+"distance_meters": 5944.3,
+"duration_seconds": 634.5,
+"average_speed_kmh": 33.72652482269503,
+"slope_percent": -0.07541272514324132,
+"samples": 61
+},
+{
+"from_point": 10,
+"to_point": 9,
+"distance_meters": 11279.3,
+"duration_seconds": 1015.1,
+"average_speed_kmh": 40.00145798443503,
+"slope_percent": 0.07219292990573124,
+"samples": 115
+},
+{
+"from_point": 10,
+"to_point": 11,
+"distance_meters": 12055.4,
+"duration_seconds": 961.4,
+"average_speed_kmh": 45.14191803619721,
+"slope_percent": 0.0253033509304314,
+"samples": 122
+},
+{
+"from_point": 10,
+"to_point": 12,
+"distance_meters": 16985.2,
+"duration_seconds": 1402.2,
+"average_speed_kmh": 43.60770218228498,
+"slope_percent": 0.16681189113659736,
+"samples": 171
+},
+{
+"from_point": 10,
+"to_point": 13,
+"distance_meters": 14611.1,
+"duration_seconds": 1404.9,
+"average_speed_kmh": 37.440358744394615,
+"slope_percent": 0.25903782646117685,
+"samples": 148
+},
+{
+"from_point": 10,
+"to_point": 14,
+"distance_meters": 10802.4,
+"duration_seconds": 1113.4,
+"average_speed_kmh": 34.927824681156814,
+"slope_percent": 0.6443993177470891,
+"samples": 110
+},
+{
+"from_point": 10,
+"to_point": 15,
+"distance_meters": 1746.5,
+"duration_seconds": 199,
+"average_speed_kmh": 31.59497487437186,
+"slope_percent": 0.2791296879473257,
+"samples": 19
+},
+{
+"from_point": 10,
+"to_point": 16,
+"distance_meters": 8165.2,
+"duration_seconds": 884.2,
+"average_speed_kmh": 33.24442433838498,
+"slope_percent": 0.8243317167164711,
+"samples": 83
+},
+{
+"from_point": 10,
+"to_point": 17,
+"distance_meters": 6301.6,
+"duration_seconds": 664.1,
+"average_speed_kmh": 34.16015660292125,
+"slope_percent": 1.4797402537126607,
+"samples": 65
+},
+{
+"from_point": 10,
+"to_point": 18,
+"distance_meters": 11338.4,
+"duration_seconds": 1144.9,
+"average_speed_kmh": 35.65223163595074,
+"slope_percent": 0.6044566630716355,
+"samples": 115
+},
+{
+"from_point": 10,
+"to_point": 19,
+"distance_meters": 6054.4,
+"duration_seconds": 647,
+"average_speed_kmh": 33.68754250386399,
+"slope_percent": -0.06830723474397105,
+"samples": 62
+},
+{
+"from_point": 10,
+"to_point": 20,
+"distance_meters": 15253.1,
+"duration_seconds": 1235.3,
+"average_speed_kmh": 44.45167975390594,
+"slope_percent": 0.08857172492696222,
+"samples": 154
+},
+{
+"from_point": 10,
+"to_point": 22,
+"distance_meters": 11257.8,
+"duration_seconds": 878.9,
+"average_speed_kmh": 46.112276709523265,
+"slope_percent": -0.0874135340905044,
+"samples": 114
+},
+{
+"from_point": 11,
+"to_point": 1,
+"distance_meters": 6079.1,
+"duration_seconds": 668.3,
+"average_speed_kmh": 32.7469100703277,
+"slope_percent": 0.49321529251793234,
+"samples": 62
+},
+{
+"from_point": 11,
+"to_point": 2,
+"distance_meters": 8032,
+"duration_seconds": 758.7,
+"average_speed_kmh": 38.11150652431791,
+"slope_percent": 0.974425084472238,
+"samples": 82
+},
+{
+"from_point": 11,
+"to_point": 3,
+"distance_meters": 4317.4,
+"duration_seconds": 413.9,
+"average_speed_kmh": 37.55167914955303,
+"slope_percent": 0.20220870732752977,
+"samples": 45
+},
+{
+"from_point": 11,
+"to_point": 4,
+"distance_meters": 4663.2,
+"duration_seconds": 499.3,
+"average_speed_kmh": 33.62211095533747,
+"slope_percent": -0.17171486119847673,
+"samples": 48
+},
+{
+"from_point": 11,
+"to_point": 5,
+"distance_meters": 12336.8,
+"duration_seconds": 1217.7,
+"average_speed_kmh": 36.47243163340724,
+"slope_percent": 0.16202800595171718,
+"samples": 125
+},
+{
+"from_point": 11,
+"to_point": 6,
+"distance_meters": 7644,
+"duration_seconds": 816.7,
+"average_speed_kmh": 33.69462470919554,
+"slope_percent": 0.2686202686202686,
+"samples": 78
+},
+{
+"from_point": 11,
+"to_point": 7,
+"distance_meters": 11172.5,
+"duration_seconds": 1126.1,
+"average_speed_kmh": 35.717076636177964,
+"slope_percent": 0.28554961112580307,
+"samples": 113
+},
+{
+"from_point": 11,
+"to_point": 8,
+"distance_meters": 12161.2,
+"duration_seconds": 1206,
+"average_speed_kmh": 36.30208955223881,
+"slope_percent": 0.03622632269476362,
+"samples": 123
+},
+{
+"from_point": 11,
+"to_point": 9,
+"distance_meters": 17027.4,
+"duration_seconds": 1561.2,
+"average_speed_kmh": 39.26379707916987,
+"slope_percent": 0.09903981421381927,
+"samples": 172
+},
+{
+"from_point": 11,
+"to_point": 10,
+"distance_meters": 12066.4,
+"duration_seconds": 1020,
+"average_speed_kmh": 42.58729411764706,
+"slope_percent": 0.07022301063898376,
+"samples": 122
+},
+{
+"from_point": 11,
+"to_point": 12,
+"distance_meters": 9958.9,
+"duration_seconds": 1012.6,
+"average_speed_kmh": 35.405925340707086,
+"slope_percent": 0.2971396111487602,
+"samples": 101
+},
+{
+"from_point": 11,
+"to_point": 13,
+"distance_meters": 10806.9,
+"duration_seconds": 1102,
+"average_speed_kmh": 35.30384754990926,
+"slope_percent": 0.35191546741410684,
+"samples": 110
+},
+{
+"from_point": 11,
+"to_point": 14,
+"distance_meters": 10636.6,
+"duration_seconds": 978.2,
+"average_speed_kmh": 39.145123696585564,
+"slope_percent": 0.7440914554089825,
+"samples": 108
+},
+{
+"from_point": 11,
+"to_point": 15,
+"distance_meters": 9178.7,
+"duration_seconds": 886.4,
+"average_speed_kmh": 37.27811371841156,
+"slope_percent": 0.16705343167696224,
+"samples": 93
+},
+{
+"from_point": 11,
+"to_point": 16,
+"distance_meters": 8032,
+"duration_seconds": 758.7,
+"average_speed_kmh": 38.11150652431791,
+"slope_percent": 0.974425084472238,
+"samples": 82
+},
+{
+"from_point": 11,
+"to_point": 17,
+"distance_meters": 8693.5,
+"duration_seconds": 864.7,
+"average_speed_kmh": 36.19359315369493,
+"slope_percent": 1.1652651473100057,
+"samples": 89
+},
+{
+"from_point": 11,
+"to_point": 18,
+"distance_meters": 11505.6,
+"duration_seconds": 1078.6,
+"average_speed_kmh": 38.40178008529576,
+"slope_percent": 0.6662405329598973,
+"samples": 117
+},
+{
+"from_point": 11,
+"to_point": 19,
+"distance_meters": 12025.4,
+"duration_seconds": 1192.5,
+"average_speed_kmh": 36.30309433962264,
+"slope_percent": 0.039458962190162185,
+"samples": 122
+},
+{
+"from_point": 11,
+"to_point": 20,
+"distance_meters": 8226.8,
+"duration_seconds": 845.7,
+"average_speed_kmh": 35.02007804185882,
+"slope_percent": 0.170225546097359,
+"samples": 84
+},
+{
+"from_point": 11,
+"to_point": 22,
+"distance_meters": 590.3,
+"duration_seconds": 74,
+"average_speed_kmh": 28.717297297297296,
+"slope_percent": -2.439437574114857,
+"samples": 7
+},
+{
+"from_point": 12,
+"to_point": 1,
+"distance_meters": 4571.9,
+"duration_seconds": 459.2,
+"average_speed_kmh": 35.842421602787454,
+"slope_percent": 0.03811160004427747,
+"samples": 47
+},
+{
+"from_point": 12,
+"to_point": 2,
+"distance_meters": 7248.4,
+"duration_seconds": 722,
+"average_speed_kmh": 36.14160664819944,
+"slope_percent": 0.7376081443131501,
+"samples": 74
+},
+{
+"from_point": 12,
+"to_point": 3,
+"distance_meters": 6094.4,
+"duration_seconds": 587.6,
+"average_speed_kmh": 37.33805309734513,
+"slope_percent": -0.28259093958752596,
+"samples": 63
+},
+{
+"from_point": 12,
+"to_point": 4,
+"distance_meters": 4636.3,
+"duration_seconds": 446.8,
+"average_speed_kmh": 37.356042972247096,
+"slope_percent": -0.720881354144948,
+"samples": 48
+},
+{
+"from_point": 12,
+"to_point": 5,
+"distance_meters": 10679.6,
+"duration_seconds": 1074.3,
+"average_speed_kmh": 35.78754537838593,
+"slope_percent": -0.04134867425627307,
+"samples": 108
+},
+{
+"from_point": 12,
+"to_point": 6,
+"distance_meters": 4859.6,
+"duration_seconds": 499.7,
+"average_speed_kmh": 35.010126075645395,
+"slope_percent": -0.10726738738675629,
+"samples": 50
+},
+{
+"from_point": 12,
+"to_point": 7,
+"distance_meters": 11814.8,
+"duration_seconds": 1233.7,
+"average_speed_kmh": 34.476193564075544,
+"slope_percent": 0.04591276555253973,
+"samples": 120
+},
+{
+"from_point": 12,
+"to_point": 8,
+"distance_meters": 12078.3,
+"duration_seconds": 1189.7,
+"average_speed_kmh": 36.54860889299823,
+"slope_percent": -0.17398148416781217,
+"samples": 122
+},
+{
+"from_point": 12,
+"to_point": 9,
+"distance_meters": 17462.5,
+"duration_seconds": 1510.1,
+"average_speed_kmh": 41.62969339778823,
+"slope_percent": -0.048272998980749666,
+"samples": 176
+},
+{
+"from_point": 12,
+"to_point": 10,
+"distance_meters": 13353.6,
+"duration_seconds": 1310.5,
+"average_speed_kmh": 36.682914917970244,
+"slope_percent": -0.1292353804036047,
+"samples": 135
+},
+{
+"from_point": 12,
+"to_point": 11,
+"distance_meters": 8207.2,
+"duration_seconds": 851.7,
+"average_speed_kmh": 34.69052483268757,
+"slope_percent": -0.27467601467666447,
+"samples": 84
+},
+{
+"from_point": 12,
+"to_point": 13,
+"distance_meters": 5515.4,
+"duration_seconds": 610.1,
+"average_speed_kmh": 32.54456646451401,
+"slope_percent": 0.10028038215779281,
+"samples": 57
+},
+{
+"from_point": 12,
+"to_point": 14,
+"distance_meters": 8090.7,
+"duration_seconds": 828.3,
+"average_speed_kmh": 35.16421586381746,
+"slope_percent": 0.6632087192468057,
+"samples": 82
+},
+{
+"from_point": 12,
+"to_point": 15,
+"distance_meters": 12581.8,
+"duration_seconds": 1242.4,
+"average_speed_kmh": 36.45724404378622,
+"slope_percent": -0.08076181724857051,
+"samples": 127
+},
+{
+"from_point": 12,
+"to_point": 16,
+"distance_meters": 7248.4,
+"duration_seconds": 722,
+"average_speed_kmh": 36.14160664819944,
+"slope_percent": 0.7376081443131501,
+"samples": 74
+},
+{
+"from_point": 12,
+"to_point": 17,
+"distance_meters": 8069,
+"duration_seconds": 831.6,
+"average_speed_kmh": 34.93073593073593,
+"slope_percent": 0.9021869916275918,
+"samples": 82
+},
+{
+"from_point": 12,
+"to_point": 18,
+"distance_meters": 8342.8,
+"duration_seconds": 853.2,
+"average_speed_kmh": 35.20168776371308,
+"slope_percent": 0.5320784856695482,
+"samples": 85
+},
+{
+"from_point": 12,
+"to_point": 19,
+"distance_meters": 11851.2,
+"duration_seconds": 1217.6,
+"average_speed_kmh": 35.039684625492775,
+"slope_percent": -0.17450479007114553,
+"samples": 120
+},
+{
+"from_point": 12,
+"to_point": 20,
+"distance_meters": 1049.2,
+"duration_seconds": 147.8,
+"average_speed_kmh": 25.555615696887685,
+"slope_percent": -1.3202298753194583,
+"samples": 12
+},
+{
+"from_point": 12,
+"to_point": 22,
+"distance_meters": 8504.3,
+"duration_seconds": 816.2,
+"average_speed_kmh": 37.50977701543739,
+"slope_percent": -0.4133296526556398,
+"samples": 87
+},
+{
+"from_point": 13,
+"to_point": 1,
+"distance_meters": 7171.1,
+"duration_seconds": 699.9,
+"average_speed_kmh": 36.8852121731676,
+"slope_percent": -0.2199303952173113,
+"samples": 73
+},
+{
+"from_point": 13,
+"to_point": 2,
+"distance_meters": 8018.9,
+"duration_seconds": 961.7,
+"average_speed_kmh": 30.017718623271286,
+"slope_percent": 0.4858774310248999,
+"samples": 82
+},
+{
+"from_point": 13,
+"to_point": 3,
+"distance_meters": 9330.6,
+"duration_seconds": 878.2,
+"average_speed_kmh": 38.24887269414712,
+"slope_percent": -0.379614278343005,
+"samples": 95
+},
+{
+"from_point": 13,
+"to_point": 4,
+"distance_meters": 7225.2,
+"duration_seconds": 683.7,
+"average_speed_kmh": 38.04405440982887,
+"slope_percent": -0.7162593936350582,
+"samples": 74
+},
+{
+"from_point": 13,
+"to_point": 5,
+"distance_meters": 8121.6,
+"duration_seconds": 1030,
+"average_speed_kmh": 28.386174757281555,
+"slope_percent": -0.31551664696611503,
+"samples": 83
+},
+{
+"from_point": 13,
+"to_point": 6,
+"distance_meters": 5602.8,
+"duration_seconds": 703.3,
+"average_speed_kmh": 28.67919806625907,
+"slope_percent": -0.3761106459757142,
+"samples": 58
+},
+{
+"from_point": 13,
+"to_point": 7,
+"distance_meters": 11215.7,
+"duration_seconds": 1326.3,
+"average_speed_kmh": 30.4429767021036,
+"slope_percent": -0.0998439526574195,
+"samples": 114
+},
+{
+"from_point": 13,
+"to_point": 8,
+"distance_meters": 11373.6,
+"duration_seconds": 1305.3,
+"average_speed_kmh": 31.3682371868536,
+"slope_percent": -0.33410705493423404,
+"samples": 115
+},
+{
+"from_point": 13,
+"to_point": 9,
+"distance_meters": 15087.1,
+"duration_seconds": 1505.2,
+"average_speed_kmh": 36.083948976880144,
+"slope_percent": -0.1679286971637933,
+"samples": 152
+},
+{
+"from_point": 13,
+"to_point": 10,
+"distance_meters": 13346.8,
+"duration_seconds": 1497.6,
+"average_speed_kmh": 32.083653846153844,
+"slope_percent": -0.25860244789126624,
+"samples": 135
+},
+{
+"from_point": 13,
+"to_point": 11,
+"distance_meters": 12016.7,
+"duration_seconds": 1158.7,
+"average_speed_kmh": 37.33504789850695,
+"slope_percent": -0.3356440065353491,
+"samples": 122
+},
+{
+"from_point": 13,
+"to_point": 12,
+"distance_meters": 5607.9,
+"duration_seconds": 604.3,
+"average_speed_kmh": 33.4079761707761,
+"slope_percent": -0.2587259207384388,
+"samples": 58
+},
+{
+"from_point": 13,
+"to_point": 14,
+"distance_meters": 3656.4,
+"duration_seconds": 473.5,
+"average_speed_kmh": 27.799450897571276,
+"slope_percent": 0.9733748000896004,
+"samples": 38
+},
+{
+"from_point": 13,
+"to_point": 15,
+"distance_meters": 12315.9,
+"duration_seconds": 1413.2,
+"average_speed_kmh": 31.37364845740164,
+"slope_percent": -0.23107540978282237,
+"samples": 125
+},
+{
+"from_point": 13,
+"to_point": 16,
+"distance_meters": 8018.9,
+"duration_seconds": 961.7,
+"average_speed_kmh": 30.017718623271286,
+"slope_percent": 0.4858774310248999,
+"samples": 82
+},
+{
+"from_point": 13,
+"to_point": 17,
+"distance_meters": 7469.9,
+"duration_seconds": 924.2,
+"average_speed_kmh": 29.09720839645098,
+"slope_percent": 0.7381221475705141,
+"samples": 76
+},
+{
+"from_point": 13,
+"to_point": 18,
+"distance_meters": 3591.6,
+"duration_seconds": 465,
+"average_speed_kmh": 27.805935483870968,
+"slope_percent": 1.021992492285921,
+"samples": 37
+},
+{
+"from_point": 13,
+"to_point": 19,
+"distance_meters": 11395.3,
+"duration_seconds": 1313.4,
+"average_speed_kmh": 31.23426222019187,
+"slope_percent": -0.32746513227636975,
+"samples": 116
+},
+{
+"from_point": 13,
+"to_point": 20,
+"distance_meters": 6428.5,
+"duration_seconds": 716.7,
+"average_speed_kmh": 32.29049811636668,
+"slope_percent": -0.47613697765366053,
+"samples": 66
+},
+{
+"from_point": 13,
+"to_point": 22,
+"distance_meters": 11740.5,
+"duration_seconds": 1102.6,
+"average_speed_kmh": 38.33284962815165,
+"slope_percent": -0.45921207021377525,
+"samples": 119
+},
+{
+"from_point": 14,
+"to_point": 1,
+"distance_meters": 5537.1,
+"duration_seconds": 548.7,
+"average_speed_kmh": 36.32870420995079,
+"slope_percent": -1.0176026983862618,
+"samples": 57
+},
+{
+"from_point": 14,
+"to_point": 2,
+"distance_meters": 5752.8,
+"duration_seconds": 597.8,
+"average_speed_kmh": 34.643827367012385,
+"slope_percent": -0.09601949526855728,
+"samples": 59
+},
+{
+"from_point": 14,
+"to_point": 3,
+"distance_meters": 7557.2,
+"duration_seconds": 714.5,
+"average_speed_kmh": 38.076864940517844,
+"slope_percent": -0.9603633167916231,
+"samples": 77
+},
+{
+"from_point": 14,
+"to_point": 4,
+"distance_meters": 6755.8,
+"duration_seconds": 660.4,
+"average_speed_kmh": 36.827498485766206,
+"slope_percent": -1.3166389613294502,
+"samples": 69
+},
+{
+"from_point": 14,
+"to_point": 5,
+"distance_meters": 5678.3,
+"duration_seconds": 686.7,
+"average_speed_kmh": 29.768283093053732,
+"slope_percent": -1.0707430040681183,
+"samples": 58
+},
+{
+"from_point": 14,
+"to_point": 6,
+"distance_meters": 4225.7,
+"duration_seconds": 466.6,
+"average_speed_kmh": 32.6029147021003,
+"slope_percent": -1.4891456863547503,
+"samples": 44
+},
+{
+"from_point": 14,
+"to_point": 7,
+"distance_meters": 8949.5,
+"duration_seconds": 962.4,
+"average_speed_kmh": 33.476932668329184,
+"slope_percent": -0.5561509276800629,
+"samples": 91
+},
+{
+"from_point": 14,
+"to_point": 8,
+"distance_meters": 9107.4,
+"duration_seconds": 941.4,
+"average_speed_kmh": 34.82753346080306,
+"slope_percent": -0.838064935392383,
+"samples": 93
+},
+{
+"from_point": 14,
+"to_point": 9,
+"distance_meters": 12643.8,
+"duration_seconds": 1161.9,
+"average_speed_kmh": 39.17521301316808,
+"slope_percent": -0.5035616929509585,
+"samples": 128
+},
+{
+"from_point": 14,
+"to_point": 10,
+"distance_meters": 11080.7,
+"duration_seconds": 1133.7,
+"average_speed_kmh": 35.18613389785658,
+"slope_percent": -0.6647644143304632,
+"samples": 112
+},
+{
+"from_point": 14,
+"to_point": 11,
+"distance_meters": 11261.4,
+"duration_seconds": 1032.2,
+"average_speed_kmh": 39.27634179422592,
+"slope_percent": -0.6870315357714794,
+"samples": 114
+},
+{
+"from_point": 14,
+"to_point": 12,
+"distance_meters": 6867,
+"duration_seconds": 822.9,
+"average_speed_kmh": 30.0415603353992,
+"slope_percent": -0.7548539521701242,
+"samples": 70
+},
+{
+"from_point": 14,
+"to_point": 13,
+"distance_meters": 3028.1,
+"duration_seconds": 408.7,
+"average_speed_kmh": 26.672767310986053,
+"slope_percent": -1.4708969282737505,
+"samples": 32
+},
+{
+"from_point": 14,
+"to_point": 15,
+"distance_meters": 10049.7,
+"duration_seconds": 1049.3,
+"average_speed_kmh": 34.47910035261604,
+"slope_percent": -0.656467993801446,
+"samples": 102
+},
+{
+"from_point": 14,
+"to_point": 16,
+"distance_meters": 5752.8,
+"duration_seconds": 597.8,
+"average_speed_kmh": 34.643827367012385,
+"slope_percent": -0.09601949526855728,
+"samples": 59
+},
+{
+"from_point": 14,
+"to_point": 17,
+"distance_meters": 5203.8,
+"duration_seconds": 560.3,
+"average_speed_kmh": 33.43508834552918,
+"slope_percent": 0.39274969246957964,
+"samples": 54
+},
+{
+"from_point": 14,
+"to_point": 18,
+"distance_meters": 1410.7,
+"duration_seconds": 195.6,
+"average_speed_kmh": 25.963803680981595,
+"slope_percent": -0.27264151457814484,
+"samples": 16
+},
+{
+"from_point": 14,
+"to_point": 19,
+"distance_meters": 8880.3,
+"duration_seconds": 969.3,
+"average_speed_kmh": 32.981615598885796,
+"slope_percent": -0.8601414565099386,
+"samples": 90
+},
+{
+"from_point": 14,
+"to_point": 20,
+"distance_meters": 8719.1,
+"duration_seconds": 851.9,
+"average_speed_kmh": 36.84559220565795,
+"slope_percent": -0.7667386906709937,
+"samples": 89
+},
+{
+"from_point": 14,
+"to_point": 22,
+"distance_meters": 10463.8,
+"duration_seconds": 949.7,
+"average_speed_kmh": 39.66482046962198,
+"slope_percent": -0.8703144284585771,
+"samples": 106
+},
+{
+"from_point": 15,
+"to_point": 1,
+"distance_meters": 7844.9,
+"duration_seconds": 801.7,
+"average_speed_kmh": 35.22719221653985,
+"slope_percent": 0.23976754081663057,
+"samples": 80
+},
+{
+"from_point": 15,
+"to_point": 2,
+"distance_meters": 7773.7,
+"duration_seconds": 745.3,
+"average_speed_kmh": 37.549067489601505,
+"slope_percent": 0.8669582932465281,
+"samples": 79
+},
+{
+"from_point": 15,
+"to_point": 3,
+"distance_meters": 6937.9,
+"duration_seconds": 682.4,
+"average_speed_kmh": 36.600879249706914,
+"slope_percent": 0.019783349711121265,
+"samples": 71
+},
+{
+"from_point": 15,
+"to_point": 4,
+"distance_meters": 7822.7,
+"duration_seconds": 807.6,
+"average_speed_kmh": 34.87087667161961,
+"slope_percent": -0.18361481794823223,
+"samples": 80
+},
+{
+"from_point": 15,
+"to_point": 5,
+"distance_meters": 9772.8,
+"duration_seconds": 1123,
+"average_speed_kmh": 31.328655387355298,
+"slope_percent": 0.14275733555264578,
+"samples": 99
+},
+{
+"from_point": 15,
+"to_point": 6,
+"distance_meters": 8655.7,
+"duration_seconds": 855.9,
+"average_speed_kmh": 36.40672975814932,
+"slope_percent": 0.15372393166284845,
+"samples": 88
+},
+{
+"from_point": 15,
+"to_point": 7,
+"distance_meters": 4217.3,
+"duration_seconds": 499.4,
+"average_speed_kmh": 30.401041249499404,
+"slope_percent": 0.5885551943514142,
+"samples": 44
+},
+{
+"from_point": 15,
+"to_point": 8,
+"distance_meters": 6460.6,
+"duration_seconds": 704.9,
+"average_speed_kmh": 32.994978011065406,
+"slope_percent": -0.04790945260870654,
+"samples": 66
+},
+{
+"from_point": 15,
+"to_point": 9,
+"distance_meters": 12049.1,
+"duration_seconds": 1125.7,
+"average_speed_kmh": 38.533143821622104,
+"slope_percent": 0.1040792776763287,
+"samples": 122
+},
+{
+"from_point": 15,
+"to_point": 10,
+"distance_meters": 1730.7,
+"duration_seconds": 248.3,
+"average_speed_kmh": 25.092710430930328,
+"slope_percent": 0.2383428670480128,
+"samples": 19
+},
+{
+"from_point": 15,
+"to_point": 11,
+"distance_meters": 10077.4,
+"duration_seconds": 903.8,
+"average_speed_kmh": 40.1401194954636,
+"slope_percent": -0.040494652200052404,
+"samples": 102
+},
+{
+"from_point": 15,
+"to_point": 12,
+"distance_meters": 13072.2,
+"duration_seconds": 1258.6,
+"average_speed_kmh": 37.3906880661052,
+"slope_percent": 0.17090532023162,
+"samples": 132
+},
+{
+"from_point": 15,
+"to_point": 13,
+"distance_meters": 13068.7,
+"duration_seconds": 1256.5,
+"average_speed_kmh": 37.44315161161958,
+"slope_percent": 0.2331151245270744,
+"samples": 132
+},
+{
+"from_point": 15,
+"to_point": 14,
+"distance_meters": 10706.3,
+"duration_seconds": 1028,
+"average_speed_kmh": 37.492879377431905,
+"slope_percent": 0.6598125349930631,
+"samples": 109
+},
+{
+"from_point": 15,
+"to_point": 16,
+"distance_meters": 7773.7,
+"duration_seconds": 745.3,
+"average_speed_kmh": 37.549067489601505,
+"slope_percent": 0.8669582932465281,
+"samples": 79
+},
+{
+"from_point": 15,
+"to_point": 17,
+"distance_meters": 5848.7,
+"duration_seconds": 623.8,
+"average_speed_kmh": 33.75331837127285,
+"slope_percent": 1.5868973532079969,
+"samples": 60
+},
+{
+"from_point": 15,
+"to_point": 18,
+"distance_meters": 11575.3,
+"duration_seconds": 1128.4,
+"average_speed_kmh": 36.92935129386742,
+"slope_percent": 0.6036244851471655,
+"samples": 117
+},
+{
+"from_point": 15,
+"to_point": 19,
+"distance_meters": 6324.8,
+"duration_seconds": 691.4,
+"average_speed_kmh": 32.93213769164015,
+"slope_percent": -0.03808187058148172,
+"samples": 65
+},
+{
+"from_point": 15,
+"to_point": 20,
+"distance_meters": 11817.3,
+"duration_seconds": 1133.1,
+"average_speed_kmh": 37.5450357426529,
+"slope_percent": 0.05450987485800886,
+"samples": 120
+},
+{
+"from_point": 15,
+"to_point": 22,
+"distance_meters": 9279.8,
+"duration_seconds": 821.3,
+"average_speed_kmh": 40.67609886764885,
+"slope_percent": -0.18721983635020556,
+"samples": 94
+},
+{
+"from_point": 16,
+"to_point": 1,
+"distance_meters": 4962.4,
+"duration_seconds": 588.1,
+"average_speed_kmh": 30.37687468117667,
+"slope_percent": -1.315447722428215,
+"samples": 51
+},
+{
+"from_point": 16,
+"to_point": 2,
+"distance_meters": 0,
+"duration_seconds": 0,
+"average_speed_kmh": 30.0,
+"slope_percent": 0.0,
+"samples": 1
+},
+{
+"from_point": 16,
+"to_point": 3,
+"distance_meters": 6276.5,
+"duration_seconds": 679.7,
+"average_speed_kmh": 33.24319552743857,
+"slope_percent": -1.2999309158675414,
+"samples": 64
+},
+{
+"from_point": 16,
+"to_point": 4,
+"distance_meters": 6051.1,
+"duration_seconds": 658.7,
+"average_speed_kmh": 33.07114012448763,
+"slope_percent": -1.6174861796150983,
+"samples": 62
+},
+{
+"from_point": 16,
+"to_point": 5,
+"distance_meters": 5248.4,
+"duration_seconds": 678.3,
+"average_speed_kmh": 27.855285272003538,
+"slope_percent": -1.366242709262655,
+"samples": 54
+},
+{
+"from_point": 16,
+"to_point": 6,
+"distance_meters": 4695.4,
+"duration_seconds": 579.5,
+"average_speed_kmh": 29.169007765314923,
+"slope_percent": -1.4593376310950024,
+"samples": 49
+},
+{
+"from_point": 16,
+"to_point": 7,
+"distance_meters": 5864.4,
+"duration_seconds": 635.4,
+"average_speed_kmh": 33.22606232294618,
+"slope_percent": -1.0001870738734377,
+"samples": 60
+},
+{
+"from_point": 16,
+"to_point": 8,
+"distance_meters": 5395.7,
+"duration_seconds": 588.5,
+"average_speed_kmh": 33.00683092608326,
+"slope_percent": -1.610256600341297,
+"samples": 55
+},
+{
+"from_point": 16,
+"to_point": 9,
+"distance_meters": 9129.6,
+"duration_seconds": 803.7,
+"average_speed_kmh": 40.894064949608065,
+"slope_percent": -0.7949721540678429,
+"samples": 93
+},
+{
+"from_point": 16,
+"to_point": 10,
+"distance_meters": 8254,
+"duration_seconds": 857.8,
+"average_speed_kmh": 34.640242480764755,
+"slope_percent": -0.9890204125995523,
+"samples": 84
+},
+{
+"from_point": 16,
+"to_point": 11,
+"distance_meters": 9980.7,
+"duration_seconds": 997.4,
+"average_speed_kmh": 36.02418287547624,
+"slope_percent": -0.86884859495999,
+"samples": 102
+},
+{
+"from_point": 16,
+"to_point": 12,
+"distance_meters": 9570.2,
+"duration_seconds": 1027.4,
+"average_speed_kmh": 33.53389137628967,
+"slope_percent": -0.6224997187635203,
+"samples": 97
+},
+{
+"from_point": 16,
+"to_point": 13,
+"distance_meters": 8051.4,
+"duration_seconds": 939.5,
+"average_speed_kmh": 30.851559340074505,
+"slope_percent": -0.6409766616577105,
+"samples": 82
+},
+{
+"from_point": 16,
+"to_point": 14,
+"distance_meters": 5162.8,
+"duration_seconds": 559.7,
+"average_speed_kmh": 33.207218152581746,
+"slope_percent": -0.19472637586839106,
+"samples": 53
+},
+{
+"from_point": 16,
+"to_point": 15,
+"distance_meters": 7223.1,
+"duration_seconds": 773.4,
+"average_speed_kmh": 33.62187742435997,
+"slope_percent": -1.0438601297623442,
+"samples": 74
+},
+{
+"from_point": 16,
+"to_point": 17,
+"distance_meters": 2377.2,
+"duration_seconds": 284.4,
+"average_speed_kmh": 30.091139240506333,
+"slope_percent": 0.3671240420357028,
+"samples": 25
+},
+{
+"from_point": 16,
+"to_point": 18,
+"distance_meters": 6031.8,
+"duration_seconds": 660.1,
+"average_speed_kmh": 32.89574306923193,
+"slope_percent": -0.19997590922536104,
+"samples": 62
+},
+{
+"from_point": 16,
+"to_point": 19,
+"distance_meters": 5309.3,
+"duration_seconds": 603.2,
+"average_speed_kmh": 31.68680371352785,
+"slope_percent": -1.6103817829092353,
+"samples": 55
+},
+{
+"from_point": 16,
+"to_point": 20,
+"distance_meters": 8315.2,
+"duration_seconds": 901.9,
+"average_speed_kmh": 33.19073067967624,
+"slope_percent": -0.9116422701652453,
+"samples": 85
+},
+{
+"from_point": 16,
+"to_point": 22,
+"distance_meters": 9183.1,
+"duration_seconds": 914.9,
+"average_speed_kmh": 36.13417859875396,
+"slope_percent": -1.079503306420143,
+"samples": 94
+},
+{
+"from_point": 17,
+"to_point": 1,
+"distance_meters": 3942.7,
+"duration_seconds": 448.4,
+"average_speed_kmh": 31.654148082069582,
+"slope_percent": -1.7620839579609484,
+"samples": 41
+},
+{
+"from_point": 17,
+"to_point": 2,
+"distance_meters": 1769.8,
+"duration_seconds": 233.4,
+"average_speed_kmh": 27.297686375321337,
+"slope_percent": -1.1018194146231237,
+"samples": 19
+},
+{
+"from_point": 17,
+"to_point": 3,
+"distance_meters": 4664.2,
+"duration_seconds": 527.6,
+"average_speed_kmh": 31.825473843821072,
+"slope_percent": -1.8511371883868766,
+"samples": 48
+},
+{
+"from_point": 17,
+"to_point": 4,
+"distance_meters": 5161.4,
+"duration_seconds": 560.1,
+"average_speed_kmh": 33.174504552758435,
+"slope_percent": -1.9746580385166814,
+"samples": 53
+},
+{
+"from_point": 17,
+"to_point": 5,
+"distance_meters": 6185.4,
+"duration_seconds": 771.7,
+"average_speed_kmh": 28.85504729817286,
+"slope_percent": -1.174989132113975,
+"samples": 63
+},
+{
+"from_point": 17,
+"to_point": 6,
+"distance_meters": 4713.4,
+"duration_seconds": 525.1,
+"average_speed_kmh": 32.3143020377071,
+"slope_percent": -1.5792163323438642,
+"samples": 49
+},
+{
+"from_point": 17,
+"to_point": 7,
+"distance_meters": 4332.5,
+"duration_seconds": 477.7,
+"average_speed_kmh": 32.65019886958342,
+"slope_percent": -1.6845730406030455,
+"samples": 45
+},
+{
+"from_point": 17,
+"to_point": 8,
+"distance_meters": 4490.4,
+"duration_seconds": 456.7,
+"average_speed_kmh": 35.396190059119775,
+"slope_percent": -2.2528681341901478,
+"samples": 46
+},
+{
+"from_point": 17,
+"to_point": 9,
+"distance_meters": 9168.8,
+"duration_seconds": 797.3,
+"average_speed_kmh": 41.39932271416029,
+"slope_percent": -0.8287364233616747,
+"samples": 93
+},
+{
+"from_point": 17,
+"to_point": 10,
+"distance_meters": 6463.6,
+"duration_seconds": 649,
+"average_speed_kmh": 35.853559322033895,
+"slope_percent": -1.4791828951120978,
+"samples": 66
+},
+{
+"from_point": 17,
+"to_point": 11,
+"distance_meters": 9225.2,
+"duration_seconds": 927,
+"average_speed_kmh": 35.82601941747573,
+"slope_percent": -0.9711811840762968,
+"samples": 94
+},
+{
+"from_point": 17,
+"to_point": 12,
+"distance_meters": 8751.8,
+"duration_seconds": 936.7,
+"average_speed_kmh": 33.635614390946934,
+"slope_percent": -0.7249007114549725,
+"samples": 89
+},
+{
+"from_point": 17,
+"to_point": 13,
+"distance_meters": 7793.7,
+"duration_seconds": 914.9,
+"average_speed_kmh": 30.667089299376983,
+"slope_percent": -0.8252279337629645,
+"samples": 79
+},
+{
+"from_point": 17,
+"to_point": 14,
+"distance_meters": 4905.1,
+"duration_seconds": 535.1,
+"average_speed_kmh": 33.000112128574095,
+"slope_percent": -0.49551600488380404,
+"samples": 51
+},
+{
+"from_point": 17,
+"to_point": 15,
+"distance_meters": 5432.7,
+"duration_seconds": 564.6,
+"average_speed_kmh": 34.63995749202976,
+"slope_percent": -1.6363754867594817,
+"samples": 56
+},
+{
+"from_point": 17,
+"to_point": 16,
+"distance_meters": 1769.8,
+"duration_seconds": 233.4,
+"average_speed_kmh": 27.297686375321337,
+"slope_percent": -1.1018194146231237,
+"samples": 19
+},
+{
+"from_point": 17,
+"to_point": 18,
+"distance_meters": 5774.1,
+"duration_seconds": 635.5,
+"average_speed_kmh": 32.70929976396538,
+"slope_percent": -0.44843104800500755,
+"samples": 59
+},
+{
+"from_point": 17,
+"to_point": 19,
+"distance_meters": 4263.3,
+"duration_seconds": 484.6,
+"average_speed_kmh": 31.671234007428804,
+"slope_percent": -2.353419495070328,
+"samples": 44
+},
+{
+"from_point": 17,
+"to_point": 20,
+"distance_meters": 7496.9,
+"duration_seconds": 811.2,
+"average_speed_kmh": 33.270266272189346,
+"slope_percent": -1.0689349771421504,
+"samples": 76
+},
+{
+"from_point": 17,
+"to_point": 22,
+"distance_meters": 8427.6,
+"duration_seconds": 844.5,
+"average_speed_kmh": 35.925825932504445,
+"slope_percent": -1.219220228962745,
+"samples": 86
+},
+{
+"from_point": 18,
+"to_point": 1,
+"distance_meters": 5291.9,
+"duration_seconds": 526.8,
+"average_speed_kmh": 36.16332574031891,
+"slope_percent": -1.013886244143809,
+"samples": 55
+},
+{
+"from_point": 18,
+"to_point": 2,
+"distance_meters": 5507.5,
+"duration_seconds": 575.9,
+"average_speed_kmh": 34.4278520576489,
+"slope_percent": 0.08159468289593733,
+"samples": 57
+},
+{
+"from_point": 18,
+"to_point": 3,
+"distance_meters": 7311.9,
+"duration_seconds": 692.6,
+"average_speed_kmh": 38.005833092694196,
+"slope_percent": -0.9745655610615477,
+"samples": 75
+},
+{
+"from_point": 18,
+"to_point": 4,
+"distance_meters": 6510.6,
+"duration_seconds": 638.5,
+"average_speed_kmh": 36.70815974941269,
+"slope_percent": -1.330522532485485,
+"samples": 67
+},
+{
+"from_point": 18,
+"to_point": 5,
+"distance_meters": 5560.4,
+"duration_seconds": 686.9,
+"average_speed_kmh": 29.141709127966223,
+"slope_percent": -1.1128074097165044,
+"samples": 57
+},
+{
+"from_point": 18,
+"to_point": 6,
+"distance_meters": 3980.5,
+"duration_seconds": 444.7,
+"average_speed_kmh": 32.22352147515179,
+"slope_percent": -1.5426079329714826,
+"samples": 41
+},
+{
+"from_point": 18,
+"to_point": 7,
+"distance_meters": 8704.3,
+"duration_seconds": 940.5,
+"average_speed_kmh": 33.3178947368421,
+"slope_percent": -0.5564388696061927,
+"samples": 89
+},
+{
+"from_point": 18,
+"to_point": 8,
+"distance_meters": 8862.2,
+"duration_seconds": 919.5,
+"average_speed_kmh": 34.69703099510604,
+"slope_percent": -0.8503549147695274,
+"samples": 90
+},
+{
+"from_point": 18,
+"to_point": 9,
+"distance_meters": 12351.6,
+"duration_seconds": 1147.8,
+"average_speed_kmh": 38.739989545216936,
+"slope_percent": -0.5019592603387416,
+"samples": 125
+},
+{
+"from_point": 18,
+"to_point": 10,
+"distance_meters": 10835.4,
+"duration_seconds": 1111.8,
+"average_speed_kmh": 35.08494333513222,
+"slope_percent": -0.6581059417737534,
+"samples": 110
+},
+{
+"from_point": 18,
+"to_point": 11,
+"distance_meters": 11016.1,
+"duration_seconds": 1010.3,
+"average_speed_kmh": 39.25364743145601,
+"slope_percent": -0.6840696631760569,
+"samples": 112
+},
+{
+"from_point": 18,
+"to_point": 12,
+"distance_meters": 6931.8,
+"duration_seconds": 831.4,
+"average_speed_kmh": 30.015010825114267,
+"slope_percent": -0.7128273277630969,
+"samples": 71
+},
+{
+"from_point": 18,
+"to_point": 13,
+"distance_meters": 3092.9,
+"duration_seconds": 417.2,
+"average_speed_kmh": 26.688494726749763,
+"slope_percent": -1.4861624120204115,
+"samples": 32
+},
+{
+"from_point": 18,
+"to_point": 14,
+"distance_meters": 64.8,
+"duration_seconds": 8.5,
+"average_speed_kmh": 27.44470588235294,
+"slope_percent": 1.54320987654321,
+"samples": 2
+},
+{
+"from_point": 18,
+"to_point": 15,
+"distance_meters": 9804.5,
+"duration_seconds": 1027.4,
+"average_speed_kmh": 34.354876386996295,
+"slope_percent": -0.6766301819120506,
+"samples": 100
+},
+{
+"from_point": 18,
+"to_point": 16,
+"distance_meters": 5507.5,
+"duration_seconds": 575.9,
+"average_speed_kmh": 34.4278520576489,
+"slope_percent": 0.08159468289593733,
+"samples": 57
+},
+{
+"from_point": 18,
+"to_point": 17,
+"distance_meters": 4958.5,
+"duration_seconds": 538.4,
+"average_speed_kmh": 33.15490341753343,
+"slope_percent": 0.38514111570479265,
+"samples": 51
+},
+{
+"from_point": 18,
+"to_point": 19,
+"distance_meters": 8635,
+"duration_seconds": 947.4,
+"average_speed_kmh": 32.811906269791,
+"slope_percent": -0.8652883272591028,
+"samples": 88
+},
+{
+"from_point": 18,
+"to_point": 20,
+"distance_meters": 8473.9,
+"duration_seconds": 830,
+"average_speed_kmh": 36.75426506024097,
+"slope_percent": -0.7815161802522292,
+"samples": 86
+},
+{
+"from_point": 18,
+"to_point": 22,
+"distance_meters": 10218.5,
+"duration_seconds": 927.8,
+"average_speed_kmh": 39.649277861608105,
+"slope_percent": -0.8649296695584329,
+"samples": 104
+},
+{
+"from_point": 19,
+"to_point": 1,
+"distance_meters": 7821,
+"duration_seconds": 887.5,
+"average_speed_kmh": 31.724619718309864,
+"slope_percent": 0.3060912151821248,
+"samples": 80
+},
+{
+"from_point": 19,
+"to_point": 2,
+"distance_meters": 5928.1,
+"duration_seconds": 704,
+"average_speed_kmh": 30.314147727272733,
+"slope_percent": 1.34950490038967,
+"samples": 61
+},
+{
+"from_point": 19,
+"to_point": 3,
+"distance_meters": 8177,
+"duration_seconds": 905.4,
+"average_speed_kmh": 32.51292246520875,
+"slope_percent": 0.07521095756389874,
+"samples": 83
+},
+{
+"from_point": 19,
+"to_point": 4,
+"distance_meters": 8955.8,
+"duration_seconds": 991.8,
+"average_speed_kmh": 32.507441016333935,
+"slope_percent": -0.11039062547582125,
+"samples": 91
+},
+{
+"from_point": 19,
+"to_point": 5,
+"distance_meters": 6337.2,
+"duration_seconds": 809.8,
+"average_speed_kmh": 28.17228945418622,
+"slope_percent": 0.24976262370206642,
+"samples": 65
+},
+{
+"from_point": 19,
+"to_point": 6,
+"distance_meters": 8503.3,
+"duration_seconds": 946.7,
+"average_speed_kmh": 32.335354388929964,
+"slope_percent": 0.22876272685170407,
+"samples": 87
+},
+{
+"from_point": 19,
+"to_point": 7,
+"distance_meters": 1737.5,
+"duration_seconds": 265.9,
+"average_speed_kmh": 23.5238811583302,
+"slope_percent": 1.6402877697841753,
+"samples": 19
+},
+{
+"from_point": 19,
+"to_point": 8,
+"distance_meters": 1115.9,
+"duration_seconds": 171.3,
+"average_speed_kmh": 23.45148861646235,
+"slope_percent": 0.2509185410879152,
+"samples": 13
+},
+{
+"from_point": 19,
+"to_point": 9,
+"distance_meters": 7037,
+"duration_seconds": 663.6,
+"average_speed_kmh": 38.175406871609404,
+"slope_percent": 0.20958920378757198,
+"samples": 72
+},
+{
+"from_point": 19,
+"to_point": 10,
+"distance_meters": 6554.7,
+"duration_seconds": 687.3,
+"average_speed_kmh": 34.332780445220436,
+"slope_percent": -0.03146597098265367,
+"samples": 67
+},
+{
+"from_point": 19,
+"to_point": 11,
+"distance_meters": 13178.2,
+"duration_seconds": 1286.1,
+"average_speed_kmh": 36.88789363191043,
+"slope_percent": -0.012841721117509626,
+"samples": 133
+},
+{
+"from_point": 19,
+"to_point": 12,
+"distance_meters": 12919.8,
+"duration_seconds": 1349.4,
+"average_speed_kmh": 34.46811916407292,
+"slope_percent": 0.21224690010681282,
+"samples": 131
+},
+{
+"from_point": 19,
+"to_point": 13,
+"distance_meters": 11090.7,
+"duration_seconds": 1217.8,
+"average_speed_kmh": 32.78577763179505,
+"slope_percent": 0.29994549528768716,
+"samples": 112
+},
+{
+"from_point": 19,
+"to_point": 14,
+"distance_meters": 7880.8,
+"duration_seconds": 829.4,
+"average_speed_kmh": 34.20651073064866,
+"slope_percent": 0.9590407900224158,
+"samples": 80
+},
+{
+"from_point": 19,
+"to_point": 15,
+"distance_meters": 5768.2,
+"duration_seconds": 673.7,
+"average_speed_kmh": 30.823096333679675,
+"slope_percent": 0.17955589017618767,
+"samples": 59
+},
+{
+"from_point": 19,
+"to_point": 16,
+"distance_meters": 5928.1,
+"duration_seconds": 704,
+"average_speed_kmh": 30.314147727272733,
+"slope_percent": 1.34950490038967,
+"samples": 61
+},
+{
+"from_point": 19,
+"to_point": 17,
+"distance_meters": 4064.4,
+"duration_seconds": 483.9,
+"average_speed_kmh": 30.23732176069436,
+"slope_percent": 2.4227459273222474,
+"samples": 42
+},
+{
+"from_point": 19,
+"to_point": 18,
+"distance_meters": 7816,
+"duration_seconds": 820.9,
+"average_speed_kmh": 34.27652576440492,
+"slope_percent": 0.9626163669152416,
+"samples": 80
+},
+{
+"from_point": 19,
+"to_point": 20,
+"distance_meters": 11664.8,
+"duration_seconds": 1223.9,
+"average_speed_kmh": 34.31103848353623,
+"slope_percent": 0.09884811383485986,
+"samples": 118
+},
+{
+"from_point": 19,
+"to_point": 22,
+"distance_meters": 12380.6,
+"duration_seconds": 1203.6,
+"average_speed_kmh": 37.03070787637089,
+"slope_percent": -0.12314347963220088,
+"samples": 125
+},
+{
+"from_point": 20,
+"to_point": 1,
+"distance_meters": 4200.2,
+"duration_seconds": 556,
+"average_speed_kmh": 27.195539568345325,
+"slope_percent": 0.5333079377172496,
+"samples": 43
+},
+{
+"from_point": 20,
+"to_point": 2,
+"distance_meters": 7271.5,
+"duration_seconds": 835.5,
+"average_speed_kmh": 31.33141831238779,
+"slope_percent": 0.9379340979752765,
+"samples": 74
+},
+{
+"from_point": 20,
+"to_point": 3,
+"distance_meters": 5710,
+"duration_seconds": 687.8,
+"average_speed_kmh": 29.88659494038965,
+"slope_percent": 0.012092402635309129,
+"samples": 59
+},
+{
+"from_point": 20,
+"to_point": 4,
+"distance_meters": 4268.3,
+"duration_seconds": 546.6,
+"average_speed_kmh": 28.111745334796925,
+"slope_percent": -0.3603803345860949,
+"samples": 44
+},
+{
+"from_point": 20,
+"to_point": 5,
+"distance_meters": 10702.7,
+"duration_seconds": 1187.8,
+"average_speed_kmh": 32.43788516585284,
+"slope_percent": 0.0729845810376535,
+"samples": 109
+},
+{
+"from_point": 20,
+"to_point": 6,
+"distance_meters": 4839.7,
+"duration_seconds": 605.3,
+"average_speed_kmh": 28.78394184701801,
+"slope_percent": 0.25850028509767836,
+"samples": 50
+},
+{
+"from_point": 20,
+"to_point": 7,
+"distance_meters": 11837.9,
+"duration_seconds": 1347.2,
+"average_speed_kmh": 31.633343230403796,
+"slope_percent": 0.19474848625289126,
+"samples": 120
+},
+{
+"from_point": 20,
+"to_point": 8,
+"distance_meters": 12101.4,
+"duration_seconds": 1303.2,
+"average_speed_kmh": 33.4292817679558,
+"slope_percent": -0.022403284835731303,
+"samples": 123
+},
+{
+"from_point": 20,
+"to_point": 9,
+"distance_meters": 17485.7,
+"duration_seconds": 1623.6,
+"average_speed_kmh": 38.7709534368071,
+"slope_percent": 0.05399402449232818,
+"samples": 176
+},
+{
+"from_point": 20,
+"to_point": 10,
+"distance_meters": 12985.5,
+"duration_seconds": 1410.3,
+"average_speed_kmh": 33.147415443522654,
+"slope_percent": 0.005214149115038272,
+"samples": 131
+},
+{
+"from_point": 20,
+"to_point": 11,
+"distance_meters": 7822.9,
+"duration_seconds": 951.9,
+"average_speed_kmh": 29.58550267885282,
+"slope_percent": -0.05683170494174137,
+"samples": 80
+},
+{
+"from_point": 20,
+"to_point": 12,
+"distance_meters": 3410.5,
+"duration_seconds": 473.5,
+"average_speed_kmh": 25.929883843717,
+"slope_percent": 0.5597686289666938,
+"samples": 36
+},
+{
+"from_point": 20,
+"to_point": 13,
+"distance_meters": 8039.7,
+"duration_seconds": 871.1,
+"average_speed_kmh": 33.225714613706806,
+"slope_percent": 0.29757392232187063,
+"samples": 82
+},
+{
+"from_point": 20,
+"to_point": 14,
+"distance_meters": 8070.8,
+"duration_seconds": 933.9,
+"average_speed_kmh": 31.11133954384838,
+"slope_percent": 0.8977511052501809,
+"samples": 82
+},
+{
+"from_point": 20,
+"to_point": 15,
+"distance_meters": 12213.8,
+"duration_seconds": 1342.2,
+"average_speed_kmh": 32.75940992400536,
+"slope_percent": 0.04161395002455562,
+"samples": 124
+},
+{
+"from_point": 20,
+"to_point": 16,
+"distance_meters": 7271.5,
+"duration_seconds": 835.5,
+"average_speed_kmh": 31.33141831238779,
+"slope_percent": 0.9379340979752765,
+"samples": 74
+},
+{
+"from_point": 20,
+"to_point": 17,
+"distance_meters": 8092.2,
+"duration_seconds": 945.1,
+"average_speed_kmh": 30.824166754840757,
+"slope_percent": 1.1107742758380548,
+"samples": 82
+},
+{
+"from_point": 20,
+"to_point": 18,
+"distance_meters": 8939.8,
+"duration_seconds": 1034.3,
+"average_speed_kmh": 31.116001160204966,
+"slope_percent": 0.7779307651788022,
+"samples": 91
+},
+{
+"from_point": 20,
+"to_point": 19,
+"distance_meters": 11874.3,
+"duration_seconds": 1331.1,
+"average_speed_kmh": 32.114401622718056,
+"slope_percent": -0.031406859598837884,
+"samples": 120
+},
+{
+"from_point": 20,
+"to_point": 22,
+"distance_meters": 8120,
+"duration_seconds": 916.4,
+"average_speed_kmh": 31.898734177215193,
+"slope_percent": -0.2145935960591133,
+"samples": 83
+},
+{
+"from_point": 22,
+"to_point": 1,
+"distance_meters": 6491.9,
+"duration_seconds": 700.5,
+"average_speed_kmh": 33.363083511777305,
+"slope_percent": 0.55068623977572,
+"samples": 67
+},
+{
+"from_point": 22,
+"to_point": 2,
+"distance_meters": 7947.5,
+"duration_seconds": 753,
+"average_speed_kmh": 37.996015936254985,
+"slope_percent": 1.0668301325740768,
+"samples": 81
+},
+{
+"from_point": 22,
+"to_point": 3,
+"distance_meters": 4232.9,
+"duration_seconds": 408.2,
+"average_speed_kmh": 37.330818226359625,
+"slope_percent": 0.42946589309026734,
+"samples": 44
+},
+{
+"from_point": 22,
+"to_point": 4,
+"distance_meters": 5076.1,
+"duration_seconds": 531.5,
+"average_speed_kmh": 34.38186265286924,
+"slope_percent": 0.02050425181794315,
+"samples": 52
+},
+{
+"from_point": 22,
+"to_point": 5,
+"distance_meters": 12252.3,
+"duration_seconds": 1212,
+"average_speed_kmh": 36.392970297029706,
+"slope_percent": 0.24336803553766934,
+"samples": 124
+},
+{
+"from_point": 22,
+"to_point": 6,
+"distance_meters": 8096,
+"duration_seconds": 828.6,
+"average_speed_kmh": 35.174511223750905,
+"slope_percent": 0.3629364295125159,
+"samples": 83
+},
+{
+"from_point": 22,
+"to_point": 7,
+"distance_meters": 10652.7,
+"duration_seconds": 1073.1,
+"average_speed_kmh": 35.737321778026285,
+"slope_percent": 0.38583258048745706,
+"samples": 108
+},
+{
+"from_point": 22,
+"to_point": 8,
+"distance_meters": 11641.4,
+"duration_seconds": 1153,
+"average_speed_kmh": 36.34782307025152,
+"slope_percent": 0.11361251186731613,
+"samples": 118
+},
+{
+"from_point": 22,
+"to_point": 9,
+"distance_meters": 16942.9,
+"duration_seconds": 1555.5,
+"average_speed_kmh": 39.2121118611379,
+"slope_percent": 0.15130184699738927,
+"samples": 171
+},
+{
+"from_point": 22,
+"to_point": 10,
+"distance_meters": 10825,
+"duration_seconds": 968.7,
+"average_speed_kmh": 40.22917311861257,
+"slope_percent": 0.15997927953206276,
+"samples": 110
+},
+{
+"from_point": 22,
+"to_point": 11,
+"distance_meters": 1541.3,
+"duration_seconds": 182.4,
+"average_speed_kmh": 30.420394736842105,
+"slope_percent": 0.9145032177537235,
+"samples": 17
+},
+{
+"from_point": 22,
+"to_point": 12,
+"distance_meters": 10513.3,
+"duration_seconds": 1026.4,
+"average_speed_kmh": 36.874395946999215,
+"slope_percent": 0.37162939153750835,
+"samples": 107
+},
+{
+"from_point": 22,
+"to_point": 13,
+"distance_meters": 11219.7,
+"duration_seconds": 1134.2,
+"average_speed_kmh": 35.6118144947981,
+"slope_percent": 0.4113314094864407,
+"samples": 114
+},
+{
+"from_point": 22,
+"to_point": 14,
+"distance_meters": 10552.1,
+"duration_seconds": 972.5,
+"average_speed_kmh": 39.06175835475579,
+"slope_percent": 0.8403358281581572,
+"samples": 107
+},
+{
+"from_point": 22,
+"to_point": 15,
+"distance_meters": 8658.9,
+"duration_seconds": 833.4,
+"average_speed_kmh": 37.403455723542116,
+"slope_percent": 0.28369314673172047,
+"samples": 88
+},
+{
+"from_point": 22,
+"to_point": 16,
+"distance_meters": 7947.5,
+"duration_seconds": 753,
+"average_speed_kmh": 37.996015936254985,
+"slope_percent": 1.0668301325740768,
+"samples": 81
+},
+{
+"from_point": 22,
+"to_point": 17,
+"distance_meters": 8608.9,
+"duration_seconds": 859,
+"average_speed_kmh": 36.079208381839344,
+"slope_percent": 1.268181423738634,
+"samples": 88
+},
+{
+"from_point": 22,
+"to_point": 18,
+"distance_meters": 11421,
+"duration_seconds": 1072.9,
+"average_speed_kmh": 38.321931214465465,
+"slope_percent": 0.7514749908244893,
+"samples": 116
+},
+{
+"from_point": 22,
+"to_point": 19,
+"distance_meters": 11505.6,
+"duration_seconds": 1139.5,
+"average_speed_kmh": 36.34941641070645,
+"slope_percent": 0.1179186783999821,
+"samples": 117
+},
+{
+"from_point": 22,
+"to_point": 20,
+"distance_meters": 8781.1,
+"duration_seconds": 859.5,
+"average_speed_kmh": 36.77947643979058,
+"slope_percent": 0.2563645546341204,
+"samples": 89
+}
+]
